@@ -8,6 +8,7 @@ import { AiFillCaretDown } from "react-icons/ai";
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 import AnimatedNumber from "../AboutUs/AnimatedNumber";
 import testimonials from "@/app/data/Testimonials";
+import ContactForm from "../Contact/ContactFrom";
 
 export default function Testimonial() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -42,65 +43,16 @@ export default function Testimonial() {
         </div>
         <div className="flex justify-between text-white absolute -top-20 w-full px-40 ">
           {/* Quote Form */}
-          <motion.div
-            className="w-full bg-[#222222] p-8 rounded-md"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-          >
-            <h2 className="text-3xl mb-2 poppins-bold">
-              Get a quote{" "}
-              <span className="poppins-bold-italic text-[#BF1D2F]">now</span>
-            </h2>
-            <p className="border-2 border-[#BF1D2F] inline-block px-10 mb-4"></p>
-            <form className="space-y-4">
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-              >
-                <input
-                  id="name"
-                  type="text"
-                  className="w-full p-2 bg-[#333333] rounded-md text-white text-sm"
-                  placeholder="Your Name"
-                />
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.4 }}
-              >
-                <input
-                  id="email"
-                  type="email"
-                  className="w-full p-2 bg-[#333333] rounded-md text-white text-sm"
-                  placeholder="Your Email"
-                />
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.6 }}
-              >
-                <textarea
-                  id="message"
-                  className="w-full p-2 bg-[#333333] rounded-md text-white text-sm"
-                  placeholder="Your Message"
-                  rows="4"
-                ></textarea>
-              </motion.div>
-              <motion.button
-                type="submit"
-                className="w-full p-2 bg-[#BF1D2F] rounded-md text-white "
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ duration: 0.2 }}
-              >
-                Submit
-              </motion.button>
-            </form>
-          </motion.div>
+          <div className="w-full">
+            <ContactForm
+              bgColor="#222222"
+              bgColor2="#0C0C0C"
+              borderColor="#BF1D2F"
+              textColor="#FFFFFF"
+              buttonBgColor="#BF1D2F"
+            />
+          </div>
+
           <div className="mx-10"></div>
 
           {/* Testimonial Slider */}
