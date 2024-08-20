@@ -54,11 +54,11 @@ export default function ServiceHero() {
           transition={{ duration: 0.8, ease: "easeInOut" }}
         >
           <p className="mulish-semibold text-sm  leading-normal mx-auto text-gray-500">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            possimus sint unde voluptatum? Harum ducimus sequi soluta deleniti
-            culpa quod. Quasi, error ipsa? Illo placeat aliquam fugit facilis
-            doloremque illum nostrum consequatur minima tenetur enim, labore
-            ullam officia, animi eos, sint et similique !
+            We are proud of our relationships with our customers from around the
+            world and in every industry. Over the last 15 years, we’ve been
+            helping them lower costs, improve productivity, enhance equipment
+            efficiency, and much more through our customized services to ensure
+            they meet their needs with pinpoint precision.
           </p>
         </motion.div>
       </div>

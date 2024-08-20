@@ -45,7 +45,7 @@ export default function Hero({
           </div>
         </div>
         <motion.div
-          className="flex flex-col md:flex-row md:justify-between w-full absolute inset-y-10 md:-inset-y-1/3 px-4 sm:px-6 md:px-8 lg:px-20 xl:px-40"
+          className="flex flex-col md:flex-row md:justify-between w-full absolute inset-y-10 md:inset-y-56 px-4 sm:px-6 md:px-8 lg:px-20 xl:px-40"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}

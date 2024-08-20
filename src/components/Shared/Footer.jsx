@@ -14,7 +14,7 @@ export default function Footer() {
     <>
       <div className="bg-[#191514]  ">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-4  lg:px-8 py-20">
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6 text-white">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-20 text-white">
             <div>
               <Image
                 src={LubxenLogoFooter}
@@ -107,7 +107,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div>
+            {/* <div>
               <p className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-3xl leading-normal mt-5 md:mt-28 lg:mt-28 xl:mt-28 mb-3 md:mb-8 lg:mb-8 xl:mb-8">
                 Links
               </p>
@@ -167,10 +167,10 @@ export default function Footer() {
                   </Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
             <div>
               <p className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-3xl leading-normal mt-5 md:mt-28 lg:mt-28 xl:mt-28 mb-3 md:mb-8 lg:mb-8 xl:mb-8">
-                Links
+                Media
               </p>
               <div className="grid grid-cols-4 gap-6">
                 <div>

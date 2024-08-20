@@ -45,8 +45,10 @@ const Navbar = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className={`z-30 sticky top-0 w-full shadow-md backdrop-filter ${
-          scrolled ? "backdrop-blur-lg bg-white/80" : "bg-white"
+        className={`z-30 sticky md:fixed top-0 w-full  backdrop-filter ${
+          scrolled
+            ? "backdrop-blur-lg bg-[#F5F7F9]/80 shadow-md"
+            : "bg-transparent"
         }`}
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-3 lg:px-8">
