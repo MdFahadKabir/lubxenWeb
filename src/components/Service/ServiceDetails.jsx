@@ -15,7 +15,7 @@ import { motion } from "framer-motion";
 
 export default function ServiceDetails({ service }) {
   return (
-    <div className="flex flex-col lg:flex-row justify-between mt-10 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16">
+    <div className="flex flex-col lg:flex-row justify-between mt-10 md:mt-40 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16">
       <div className="w-full lg:w-2/5 mb-8 lg:mb-0">
         <motion.ul
           initial={{ opacity: 0, x: -50 }}

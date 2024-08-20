@@ -65,7 +65,7 @@ export default function ContactForm({
   return (
     <div>
       <motion.div
-        className="w-full p-8 rounded-md"
+        className="w-full p-8 rounded-3xl"
         style={{ backgroundColor: bgColor }}
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}

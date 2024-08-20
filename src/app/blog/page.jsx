@@ -5,7 +5,7 @@ import React from "react";
 export default function Service() {
   return (
     <>
-      <div className="my-20">
+      <div className="mt-5 mb-20 md:mt-40">
         <BlogHero />
         <BlogsList />
       </div>

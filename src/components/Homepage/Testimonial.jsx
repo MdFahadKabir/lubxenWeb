@@ -173,7 +173,7 @@ export default function Testimonial() {
   return (
     <>
       <div>
-        <div className="relative bg-[#101010] h-screen">
+        <div className="relative bg-[#101010] h-screen  md:rounded-tr-[150px]">
           <div className="h-screen">
             <Image src={glove} alt="glove" className="w-full h-auto" />
           </div>
@@ -202,7 +202,7 @@ export default function Testimonial() {
                 transition={{ type: "spring", stiffness: 100, damping: 20 }}
               >
                 <FaQuoteLeft className="text-2xl sm:text-3xl md:text-4xl text-[#0189FF] absolute -top-5 left-5" />
-                <p className="p-6 sm:p-8 md:p-10 bg-[#222222] overflow-hidden text-white text-xs sm:text-sm md:text-base rounded-lg">
+                <p className="p-6 sm:p-8 md:p-10 bg-[#222222] overflow-hidden text-white text-xs sm:text-sm md:text-base rounded-3xl">
                   {testimonials[currentIndex].quote}
                 </p>
                 <AiFillCaretDown className="text-3xl sm:text-4xl md:text-5xl text-[#222222] absolute -bottom-8 left-5" />
@@ -216,7 +216,7 @@ export default function Testimonial() {
                     src={testimonials[currentIndex].image}
                     width={80}
                     height={80}
-                    className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full"
+                    className="w-16 h-16 sm:w-20 sm:h-20 md:w-20 md:h-20 rounded-full"
                     alt={testimonials[currentIndex].name}
                   />
                   <div className="my-auto pl-5 text-xs sm:text-sm md:text-base">

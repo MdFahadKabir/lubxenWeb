@@ -5,7 +5,7 @@ import React from "react";
 export default function team() {
   return (
     <>
-      <div className="mt-16 mb-20">
+      <div className=" mb-40 md:mt-36 ">
         <TeamHero />
         <TeamMember />
       </div>
