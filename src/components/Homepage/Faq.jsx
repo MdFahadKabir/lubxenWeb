@@ -16,7 +16,7 @@ export default function Faq() {
 
   return (
     <>
-      <div className="relative bg-[#101010] w-full">
+      <div className="relative bg-[#101010] w-full h-screen ">
         <motion.div
           className="h-screen"
           initial={{ opacity: 0 }}
@@ -25,7 +25,7 @@ export default function Faq() {
         >
           <Image src={faq} alt="faq" className="w-full object-cover" />
         </motion.div>
-        <div className="absolute top-20 bottom-0 left-0 right-0 w-full px-40">
+        <div className="absolute top-10 md:top-20 bottom-0 left-0 right-0 w-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16">
           <motion.div
             className="text-center text-white"
             initial={{ opacity: 0, y: -50 }}
@@ -33,7 +33,7 @@ export default function Faq() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <p className="poppins-regular">About us</p>
-            <p className="poppins-bold text-2xl leading-normal w-2/5 mx-auto">
+            <p className="poppins-bold text-2xl leading-normal w-full md:w-2/5 mx-auto">
               Easy to work with us. Learn more from our {""}
               <motion.span
                 className="text-[#BF1D2F] playfair-display-sc-bold-italic"
@@ -43,24 +43,24 @@ export default function Faq() {
               </motion.span>
             </p>
             <motion.div
-              className="border-2 border-[#BF1D2F] w-20 mt-2 mb-5 mx-auto"
+              className="border-2 border-[#BF1D2F] w-full md:w-20 mt-2 mb-5 mx-auto"
               initial={{ width: 0 }}
               animate={{ width: "80px" }}
               transition={{ duration: 0.6, ease: "easeInOut" }}
             ></motion.div>
-            <p className="mulish-semibold text-sm leading-normal text-center w-1/2 mx-auto">
+            <p className="mulish-semibold text-xs md:text-sm leading-normal text-center w-full md:w-1/2 mx-auto">
               Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
               eiusmod tempor incididunt ut labore et dolore magna.
             </p>
           </motion.div>
-          <div className="flex justify-between mt-16 w-full">
+          <div className="flex flex-col md:flex-row md:justify-between mt-3 md:mt-16 w-full">
             <motion.div
               className="w-full text-white"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <p className="poppins-bold text-xl pb-2">
+              <p className="poppins-bold text-lg md:text-xl pb-2">
                 We are working with our experience
               </p>
               <p className="mulish-semibold text-sm leading-normal">
@@ -75,7 +75,7 @@ export default function Faq() {
                   >
                     <MdKeyboardDoubleArrowRight className="text-2xl" />
                   </motion.div>
-                  <p className="w-full">
+                  <p className="w-full text-xs md:text-base">
                     Experience is the knowledge or mastery of an event.
                   </p>
                 </div>
@@ -87,7 +87,7 @@ export default function Faq() {
                   >
                     <MdKeyboardDoubleArrowRight className="text-2xl" />
                   </motion.div>
-                  <p className="w-full">
+                  <p className="w-full text-xs md:text-base">
                     Open the following link into the website you'll use this
                     resource on. If you want to know more..
                   </p>
@@ -100,7 +100,7 @@ export default function Faq() {
                   >
                     <MdKeyboardDoubleArrowRight className="text-2xl" />
                   </motion.div>
-                  <p className="w-full">
+                  <p className="w-full text-xs md:text-base">
                     Open the following link into the website you'll use this
                     resource on. If you want to know more..
                   </p>
@@ -116,19 +116,21 @@ export default function Faq() {
               {items.map((item, index) => (
                 <div key={index} className="mb-4">
                   <motion.div
-                    className="flex justify-between items-center bg-[#222222] text-white p-4 rounded-lg cursor-pointer"
+                    className="flex justify-between items-center bg-[#222222] text-white p-2 md:p-4 rounded-lg cursor-pointer"
                     onClick={() => toggleAccordion(index)}
                     whileHover={{ scale: 1.02 }}
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                   >
-                    <p className="poppins-semibold text-base ">{item.header}</p>
+                    <p className="poppins-semibold text-sm md:text-base ">
+                      {item.header}
+                    </p>
                     <motion.div
                       animate={{
                         rotate: activeIndex === index ? 180 : 0,
                       }}
                       transition={{ duration: 0.4 }}
                     >
-                      <IoIosArrowDropdown className="text-2xl" />
+                      <IoIosArrowDropdown className="text-xl md:text-2xl" />
                     </motion.div>
                   </motion.div>
                   <AnimatePresence initial={false}>
@@ -141,7 +143,7 @@ export default function Faq() {
                           height: { duration: 0.6, ease: "easeInOut" },
                           opacity: { duration: 0.4, ease: "easeInOut" },
                         }}
-                        className="overflow-hidden mulish-regular text-sm bg-white mulish text-black p-4 rounded-lg mt-2"
+                        className="overflow-hidden mulish-regular text-xs md:text-sm bg-white mulish text-black p-2 md:p-4 rounded-lg mt-2"
                       >
                         {item.content}
                       </motion.div>
