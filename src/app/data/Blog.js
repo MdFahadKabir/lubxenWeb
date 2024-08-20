@@ -1,7 +1,6 @@
 import img1 from "../../../public/images/1.jpg";
 import img2 from "../../../public/images/factor1.jpg";
 import img3 from "../../../public/images/factor2.jpg";
-import img4 from "../../../public/images/factor3.jpg";
 
 const blogs = [
   {

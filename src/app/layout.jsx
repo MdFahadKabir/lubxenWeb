@@ -1,22 +1,19 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Shared/Navbar";
-import Footer from "@/components/Shared/Footer";
+import ClientWrapper from "./ClientWrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Oil Industry",
-  description: "Shadman oil industry",
+  title: "LUBXEN",
+  description: "OXYGEN FOR ENGINE",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
-        {children}
-        <Footer />
+        <ClientWrapper>{children}</ClientWrapper>
       </body>
     </html>
   );
