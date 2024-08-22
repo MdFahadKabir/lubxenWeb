@@ -24,12 +24,6 @@ export default function AboutUs() {
             priority
             className="w-full h-auto"
           />
-          {/* <div className="absolute w-full h-full flex justify-center items-center">
-            <div className="relative">
-              <div className="border border-dashed border-[#BF1D2F] rounded-full absolute w-60 h-60 lg:w-72 lg:h-72 animate-spin"></div>
-              <div className="border border-dashed border-[#BF1D2F] rounded-full absolute w-52 h-52 lg:w-64 lg:h-64 animate-spin"></div>
-            </div>
-          </div> */}
           <div className="absolute right-1/2 lg:-right-16 transform translate-x-1/2 lg:translate-x-0 -bottom-20   bg-white border border-white rounded-full shadow-md p-10 w-40 h-40 lg:w-40 lg:h-40 text-center">
             <GoTrophy className="mx-auto text-3xl lg:text-4xl text-[#BF1D2F]" />
             <p className="leading-tight mulish-semibold">Best Awarded</p>
