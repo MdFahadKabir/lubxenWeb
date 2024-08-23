@@ -48,13 +48,13 @@ export default function AboutUs() {
           </p>
           <div className="border-2 border-[#BF1D2F] w-16 sm:w-20 mt-2 mb-5"></div>
           <p className="mulish-semibold text-sm  leading-normal mx-auto text-gray-500">
-            The argument in Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Soluta corporis consectetur architecto, delectus ipsa
-            provident accusantium nam harum ut ipsam?
+            LUBXEN is an emerging lubricant manufacturing company, established
+            to represent a group of experienced oil exporters in the UAE. We are
+            at the forefront of the industry, supplying premium lubricants and
+            greases to meet the evolving demands of our clients.
           </p>
           <p className="mulish-semibold text-sm  leading-normal mx-auto text-gray-500 pt-3">
-            Aenean tinc Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Placeat vero neque molestias maxime quis iure!
+            Our commitment to quality is unmatched
           </p>
           <div className="flex flex-col sm:flex-row pt-5 items-start">
             <Image

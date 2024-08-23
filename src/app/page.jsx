@@ -15,23 +15,24 @@ export default function Home() {
   return (
     <div className="">
       <Hero />
-      <div className="mt-80 md:mt-20 pb-32 md:pb-60 ">
+      <div className="mt-52 md:mt-20 pb-32 md:pb-60 ">
         <AboutUs />
       </div>
-      <div className=" pb-20 ">
+      <div className="pb-5 md:pb-20 ">
         <Testimonial />
       </div>
-      <div className=" pb-20 ">
+      {/* <div className=" pb-20 ">
         <ServiceHero />
         <ServicesList />
-      </div>
-      <div className=" pb-10 ">
-        <Faq />
-      </div>
-      <div className=" pb-24 ">
+      </div> */}
+      <div className=" pb-20 md:pb-40 ">
         <TeamHero />
         <TeamMember showBoardOnly={true} />
       </div>
+      <div className=" pb-10 md:pb-24 ">
+        <Faq />
+      </div>
+
       <div className=" pb-20 ">
         <BlogHero />
         <BlogsList />

@@ -70,7 +70,7 @@ export default function Hero({
                 className="relative inline-block "
                 initial={{ backgroundPosition: "100% 0%" }}
                 whileHover={{
-                  backgroundPosition: "0% 50%",
+                  backgroundPosition: "0% 100%",
                 }}
                 transition={{
                   duration: 0.5,
@@ -112,19 +112,19 @@ export default function Hero({
               transition={{ duration: 1.4, delay: 0.8 }}
             >
               <Link
-                href="/contact"
-                className="bg-[#BF1D2F] text-lg px-5 py-2 rounded-full text-white border border-[#BF1D2F] mulish-semibold hover:text-[#BF1D2F] hover:bg-white hover:border-black duration-700"
+                href="/become_a_distributor"
+                className="bg-[#BF1D2F] text-sm md:text-lg px-5 py-2 rounded-full text-white border border-[#BF1D2F] mulish-semibold hover:text-[#BF1D2F] hover:bg-white hover:border-black duration-700"
               >
-                Contact Us
+                Become a distributor
               </Link>
               <Link
-                href="/service"
-                className="bg-white text-lg px-5 py-2 rounded-full text-black border border-black mulish-semibold hover:text-white hover:bg-[#BF1D2F] hover:border-[#BF1D2F] duration-700 ml-5"
+                href="/"
+                className="bg-white text-sm md:text-lg px-5 py-2 rounded-full text-black border border-black mulish-semibold hover:text-white hover:bg-[#BF1D2F] hover:border-[#BF1D2F] duration-700 ml-5"
               >
                 Discover More
               </Link>
             </motion.div>
-            <motion.div
+            {/* <motion.div
               className="grid grid-cols-3 gap-6"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -160,9 +160,9 @@ export default function Hero({
                   </div>
                 </motion.div>
               ))}
-            </motion.div>
+            </motion.div> */}
           </div>
-          <div className="mx-10 "></div>
+          <div className="mx-10 mb-10 "></div>
           {/* Floating images */}
           <div className="w-full my-auto">
             <div className="grid grid-cols-2 gap-6">

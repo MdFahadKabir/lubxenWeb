@@ -72,9 +72,9 @@ export default function ContactForm({
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <h2 className="text-3xl mb-2 poppins-bold" style={{ color: textColor }}>
-          Get a quote{" "}
+          Become a{" "}
           <span className="poppins-bold-italic" style={{ color: borderColor }}>
-            now
+            distributor
           </span>
         </h2>
         <p
