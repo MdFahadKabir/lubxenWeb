@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 
 export default function AnimatedNumber({
   data = [
-    { count: 100, label: "Completed Work" },
-    { count: 88, label: "Happy Clients" },
-    { count: 12, label: "Winning Awards" },
+    { count: 100, label: "Total Distributor" },
+    { count: 88, label: "Total Products" },
+    { count: 12, label: "Happy Clients" },
     { count: 9, label: "Team Members" },
   ],
   textColor = "text-[#BF1D2F]",
@@ -18,7 +18,7 @@ export default function AnimatedNumber({
 }) {
   return (
     <div className="mx-4 sm:mx-8 md:mx-12 lg:mx-16 xl:mx-40">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {data.map((item, index) => (
           <motion.div
             key={index}
@@ -46,16 +46,16 @@ export default function AnimatedNumber({
                   start={0}
                   end={item.count}
                   duration={2.5}
-                  className={`text-4xl sm:text-5xl md:text-6xl poppins-bold ${textColor}`}
+                  className={`text-xl  md:text-6xl poppins-bold ${textColor}`}
                 />
                 <p
-                  className={`text-2xl sm:text-3xl md:text-4xl poppins-bold mb-0 pb-0 pt-2 ${textColor}`}
+                  className={`text-lg  md:text-4xl poppins-bold mb-0 pb-0 pt-2 ${textColor}`}
                 >
                   +
                 </p>
               </div>
               <p
-                className={`mt-2 text-base sm:text-lg md:text-xl mulish-bold ${textColor2}`}
+                className={`mt-2 text-xs md:text-xl mulish-bold ${textColor2}`}
               >
                 {item.label}
               </p>

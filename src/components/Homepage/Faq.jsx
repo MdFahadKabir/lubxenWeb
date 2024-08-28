@@ -32,7 +32,7 @@ export default function Faq() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <p className="poppins-regular">About us</p>
+            <p className="poppins-regular">FAQ</p>
             <p className="poppins-bold text-2xl leading-normal w-full md:w-2/5 mx-auto">
               Easy to work with us. Learn more from our {""}
               <motion.span

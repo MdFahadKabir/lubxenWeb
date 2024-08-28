@@ -3,6 +3,8 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion"; // Import Framer Motion
 import img1 from "../../../public/images/about.jpg";
+import vision_icon from "../../../public/images/vision_icon.png";
+import mission_icon from "../../../public/images/mission_icon.png";
 import signature from "../../../public/images/signature.png";
 import { GoTrophy } from "react-icons/go";
 
@@ -11,7 +13,7 @@ export default function AboutUs() {
     <div className="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16">
       <div className="flex flex-col lg:flex-row justify-between">
         <motion.div
-          className="relative w-full lg:w-1/2 mb-10 lg:mb-0"
+          className="relative w-full md:w-5/12 mb-10 md:mb-0"
           initial={{ opacity: 0, x: -50 }} // Initial animation state
           animate={{ opacity: 1, x: 0 }} // Final animation state
           transition={{ duration: 1 }} // Animation duration
@@ -22,17 +24,17 @@ export default function AboutUs() {
             width={400}
             height={400}
             priority
-            className="w-full h-auto"
+            className="w-full h-auto rounded-xl"
           />
-          <div className="absolute right-1/2 lg:-right-16 transform translate-x-1/2 lg:translate-x-0 -bottom-20   bg-white border border-white rounded-full shadow-md p-10 w-40 h-40 lg:w-40 lg:h-40 text-center">
+          {/* <div className="absolute right-1/2 lg:-right-16 transform translate-x-1/2 lg:translate-x-0 -bottom-20   bg-white border border-white rounded-full shadow-md p-10 w-40 h-40 lg:w-40 lg:h-40 text-center">
             <GoTrophy className="mx-auto text-3xl lg:text-4xl text-[#BF1D2F]" />
             <p className="leading-tight mulish-semibold">Best Awarded</p>
-          </div>
+          </div> */}
         </motion.div>
-        <div className="lg:mx-10 mx-0 lg:pb-0 pb-20"></div>
+        <div className="md:mx-10 mx-0 "></div>
 
         <motion.div
-          className="w-full lg:w-1/2 my-auto"
+          className="w-full md:w-7/12 my-auto"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
@@ -47,16 +49,33 @@ export default function AboutUs() {
             </span>
           </p>
           <div className="border-2 border-[#BF1D2F] w-16 sm:w-20 mt-2 mb-5"></div>
-          <p className="mulish-semibold text-sm  leading-normal mx-auto text-gray-500">
-            LUBXEN is an emerging lubricant manufacturing company, established
-            to represent a group of experienced oil exporters in the UAE. We are
-            at the forefront of the industry, supplying premium lubricants and
-            greases to meet the evolving demands of our clients.
+          <p className="mulish-semibold text-sm  leading-normal mx-auto text-gray-500 text-justify">
+            LUBXEN manufactures its products in the UAE and operates globally.
+            As an emerging force in the United Arab Emirates, we provide
+            top-tier lubricant solutions tailored to meet diverse needs across
+            various sectors. Whether you operate heavy machinery, drive
+            competitively, or manage a fleet of commercial vehicles, our
+            extensive range of oils and greases is designed to enhance
+            performance, extend equipment lifespan, and ensure operational
+            efficiency.
           </p>
-          <p className="mulish-semibold text-sm  leading-normal mx-auto text-gray-500 pt-3">
-            Our commitment to quality is unmatched
+          <p className="mulish-semibold text-sm  leading-normal mx-auto text-gray-500 pt-3 text-justify">
+            At LUBXEN, we position ourselves as your partner of choice,
+            delivering top-tier lubricant solutions tailored to meet your
+            specific needs. Whether you operate heavy machinery, are a rally
+            driver, a daily commuter, or work in the automotive, marine, energy,
+            or industrial sectors, our extensive range of oil and grease
+            products is designed to empower your equipment, enhance its
+            performance, and extend its lifespan. We pride ourselves on
+            providing our customers with worldclass service, along with
+            technologically advanced products that allow us to remain
+            competitive and successful in growing our footprint. Our
+            customer-centric approach gives us the flexibility to cater to the
+            unique needs of both small to medium enterprises and larger
+            corporations. We believe that every customer, regardless of size, is
+            a valuable asset to our organization and is treated as such.
           </p>
-          <div className="flex flex-col sm:flex-row pt-5 items-start">
+          {/* <div className="flex flex-col sm:flex-row pt-5 items-start">
             <Image
               src={signature}
               alt=""
@@ -73,7 +92,74 @@ export default function AboutUs() {
                 (Chairman and founder)
               </p>
             </div>
+          </div> */}
+        </motion.div>
+      </div>
+      <div className="flex flex-col md:flex-row md:justify-between mt-10">
+        <motion.div
+          className="w-full  my-auto"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <div className="flex justify-between">
+            <Image
+              src={mission_icon}
+              alt="mission_icon"
+              width={100}
+              height={100}
+              className="w-auto h-10"
+            />
+            <div className="mx-2"></div>
+            <p className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal my-auto w-full">
+              Our {}
+              <span className="text-[#BF1D2F] playfair-display-sc-bold-italic">
+                Mission
+              </span>
+            </p>
           </div>
+
+          <div className="border-2 border-[#BF1D2F] w-20  mt-2 mb-5"></div>
+          <p className="mulish-semibold text-sm  leading-normal mx-auto text-gray-500 text-justify">
+            Our mission at LUBXEN is to empower our customers by offering
+            premium-quality products at competitive prices, meeting market
+            demands, and exceeding client expectations. We strive to align our
+            operations with the highest international standards, ensuring that
+            our products deliver consistent performance and reliability..
+          </p>
+        </motion.div>
+        <div className="md:mx-10 mx-0 md:pb-0 pb-5"></div>
+        <motion.div
+          className="w-full  my-auto"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <div className="flex justify-between">
+            <Image
+              src={vision_icon}
+              alt="vision_icon"
+              width={100}
+              height={100}
+              className="w-auto h-10"
+            />
+            <div className="mx-2"></div>
+            <p className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal my-auto w-full">
+              Our {}
+              <span className="text-[#BF1D2F] playfair-display-sc-bold-italic">
+                Vision
+              </span>
+            </p>
+          </div>
+
+          <div className="border-2 border-[#BF1D2F] w-20  mt-2 mb-5"></div>
+          <p className="mulish-semibold text-sm  leading-normal mx-auto text-gray-500 text-justify">
+            Our vision is to become a global leader in the lubricant
+            manufacturing industry and a trusted, lifelong partner for our
+            customers. We are committed to providing top-quality products and
+            services while adhering to the highest Health, Safety, Security, and
+            Environmental (HSSE) practices in the oil industry.
+          </p>
         </motion.div>
       </div>
     </div>

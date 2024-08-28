@@ -72,9 +72,9 @@ export default function ContactForm({
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <h2 className="text-3xl mb-2 poppins-bold" style={{ color: textColor }}>
-          Become a{" "}
+          Connect with{" "}
           <span className="poppins-bold-italic" style={{ color: borderColor }}>
-            distributor
+            us
           </span>
         </h2>
         <p

@@ -118,7 +118,7 @@ export default function Hero({
                 Become a distributor
               </Link>
               <Link
-                href="/"
+                href="/product"
                 className="bg-white text-sm md:text-lg px-5 py-2 rounded-full text-black border border-black mulish-semibold hover:text-white hover:bg-[#BF1D2F] hover:border-[#BF1D2F] duration-700 ml-5"
               >
                 Discover More
