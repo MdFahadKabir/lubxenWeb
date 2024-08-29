@@ -63,15 +63,18 @@ export default function DistributorFrom({
   };
 
   return (
-    <div>
+    <div className="w-full my-auto">
       <motion.div
-        className="w-full p-8 rounded-3xl"
+        className="w-full py-6 px-3 md:p-8 rounded-3xl"
         style={{ backgroundColor: bgColor }}
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <h2 className="text-3xl mb-2 poppins-bold" style={{ color: textColor }}>
+        <h2
+          className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal mb-2"
+          style={{ color: textColor }}
+        >
           Become a{" "}
           <span className="poppins-bold-italic" style={{ color: borderColor }}>
             distributor
@@ -90,7 +93,7 @@ export default function DistributorFrom({
             <input
               id="from_name"
               type="text"
-              className="w-full p-2 rounded-md text-sm"
+              className="w-full p-1 md:p-2 rounded-md text-sm"
               style={{ backgroundColor: bgColor2, color: textColor }}
               placeholder="Your Name"
               value={formData.from_name}
@@ -106,7 +109,7 @@ export default function DistributorFrom({
             <input
               id="email"
               type="email"
-              className="w-full p-2 rounded-md text-sm"
+              className="w-full p-1 md:p-2 rounded-md text-sm"
               style={{ backgroundColor: bgColor2, color: textColor }}
               placeholder="Your Email"
               value={formData.email}
@@ -121,10 +124,10 @@ export default function DistributorFrom({
           >
             <textarea
               id="message"
-              className="w-full p-2 rounded-md text-sm"
+              className="w-full p-1 md:p-2 rounded-md text-sm"
               style={{ backgroundColor: bgColor2, color: textColor }}
               placeholder="Your Message"
-              rows="4"
+              rows="2"
               value={formData.message}
               onChange={handleChange}
               required
@@ -132,7 +135,7 @@ export default function DistributorFrom({
           </motion.div>
           <motion.button
             type="submit"
-            className="w-full p-2 rounded-md text-white"
+            className="w-full p-1 md:p-2 rounded-md text-white"
             style={{ backgroundColor: buttonBgColor }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

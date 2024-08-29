@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className="">
       <Hero />
-      <div className="mt-52 md:mt-20 pb-32 md:pb-14 ">
+      <div className="mt-52 md:mt-20 pb-10 md:pb-14 ">
         <AboutUs />
       </div>
       <div className="pb-5 md:pb-20 ">

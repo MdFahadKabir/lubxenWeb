@@ -11,7 +11,7 @@ const heroVariants = {
   },
 };
 
-export default function ProductHero() {
+export default function DistributorHero() {
   return (
     <motion.div
       className="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16"
@@ -27,7 +27,7 @@ export default function ProductHero() {
           transition={{ duration: 0.8, ease: "easeInOut" }}
         >
           <p className="poppins-regular text-gray-500 text-sm sm:text-lg md:text-xl lg:text-xl">
-            Products
+            Distributor
           </p>
           <motion.p
             className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal w-full md:w-3/5"
@@ -37,7 +37,7 @@ export default function ProductHero() {
           >
             We are here to serve you with our best{" "}
             <span className="text-[#BF1D2F] playfair-display-sc-bold-italic">
-              products
+              distributor
             </span>
           </motion.p>
           <motion.div
