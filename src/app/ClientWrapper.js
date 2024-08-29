@@ -4,6 +4,7 @@ import { usePathname, useSearchParams } from "next/navigation";
 import Navbar from "@/components/Shared/Navbar";
 import Footer from "@/components/Shared/Footer";
 import Loading from "./loading";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 export default function ClientWrapper({ children }) {
   const [loading, setLoading] = useState(false);
@@ -28,6 +29,14 @@ export default function ClientWrapper({ children }) {
     <>
       <Navbar />
       {children}
+      <FloatingWhatsApp
+        phoneNumber="+8801765551768" // Replace with your actual phone number
+        accountName="LUBXEN Team" // Replace with your account name
+        avatar="images/LubxenLogo.png" // Optional: Replace with a valid URL for the avatar image
+        statusMessage="Typically replies within a few Hours"
+        chatMessage="Hello! How can we help you today?"
+        allowClickAway
+      />
       <Footer />
     </>
   );
