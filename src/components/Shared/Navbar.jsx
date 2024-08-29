@@ -5,6 +5,8 @@ import Image from "next/image";
 import LubxenLogo from "../../../public/images/LubxenLogo.png";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
+import { FaGlobe } from "react-icons/fa6";
+import GoogleTranslate from "@/app/GoogleTranslate";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -78,6 +80,7 @@ const Navbar = () => {
 
   return (
     <>
+      <GoogleTranslate />
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -191,6 +194,8 @@ const Navbar = () => {
                 </a>
               </Link>
             ))}
+            {/* Google Translate Dropdown */}
+            {/* <GoogleTranslate /> */}
           </motion.div>
 
           {/* Hamburger Menu */}

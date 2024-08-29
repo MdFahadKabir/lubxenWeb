@@ -98,3 +98,68 @@
 }
 
 /* styles.css */
+/* .VIpgJd-ZVi9od-l4eHX-hSRGPd {
+  display: none;
+}
+#google_translate_element div:nth-of-type(2) {
+  display: none;
+}
+#google_translate_element select:nth-of-type(2) {
+  display: none;
+}
+
+#google_translate_element div:nth-of-type(2) .goog-te-gadget span {
+  display: none;
+  color: transparent !important;
+} */
+/* Hide unwanted elements */
+.VIpgJd-ZVi9od-l4eHX-hSRGPd {
+  display: none;
+}
+
+#google_translate_element div:nth-of-type(2) {
+  display: none;
+}
+
+#google_translate_element select:nth-of-type(2) {
+  display: none;
+}
+
+/* Hide the "দ্বারা পরিচালিত" text */
+/* #google_translate_element div {
+  display: none;
+  color: transparent !important;
+} */
+
+/* Custom Design for Google Translate Dropdown */
+#google_translate_element .goog-te-combo {
+  display: block;
+  background-color: #bf1d2f; /* Light gray background */
+  color: #ffff; /* Dark text color */
+  border: 1px solid #bf1d2f; /* Light border */
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  appearance: none; /* Remove default dropdown arrow */
+  -webkit-appearance: none; /* Remove default dropdown arrow on Safari */
+  -moz-appearance: none; /* Remove default dropdown arrow on Firefox */
+  background-image: url("https://static.vecteezy.com/system/resources/previews/022/062/579/original/planet-earth-icon-free-png.png"); /* Add your glove icon here */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px 16px; /* Adjust icon size */
+}
+
+/* Custom Hover and Focus States */
+#google_translate_element .goog-te-combo:hover,
+#google_translate_element .goog-te-combo:focus {
+  border-color: #bf1d2f; /* Darker border on hover/focus */
+}
+
+/* Positioning the Dropdown */
+#google_translate_element {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
