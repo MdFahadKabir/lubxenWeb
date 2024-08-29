@@ -37,7 +37,7 @@ export default function Testimonial() {
 
   return (
     <>
-      <div className="relative bg-cover bg-no-repeat px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16 text-center bg-testimonial_image bg-[#101010] h-screen  ">
+      <div className="relative bg-cover bg-no-repeat px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16 text-center bg-testimonial_image bg-[#101010] h-screen  md:rounded-tr-[200px] ">
         {/* Overlay */}
         {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
 
