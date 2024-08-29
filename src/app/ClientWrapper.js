@@ -35,7 +35,10 @@ export default function ClientWrapper({ children }) {
         avatar="images/LubxenLogo.png" // Optional: Replace with a valid URL for the avatar image
         statusMessage="Typically replies within a few Hours"
         chatMessage="Hello! How can we help you today?"
-        allowClickAway
+        // allowClickAway
+        allowEsc
+        notification
+        notificationSound
       />
       <Footer />
     </>
