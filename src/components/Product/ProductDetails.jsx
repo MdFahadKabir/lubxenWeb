@@ -22,10 +22,10 @@ export default function ProductDetails({
   }
   console.log(categorySlug);
   return (
-    <div className="flex flex-col lg:flex-row justify-between mt-10 md:mt-40 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16">
+    <div className="flex flex-col lg:flex-row justify-between  px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16">
       {/* Sidebar with product list */}
       <div className="w-full md:w-1/5 mb-8 lg:mb-0 ">
-        <div className="overflow-x-auto md:overflow-hidden scrollbar-none  ">
+        <div className="overflow-x-auto md:overflow-y-auto md:h-80 overflow-hidden  scrollbar-none   mb-5">
           <motion.ul
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -62,18 +62,18 @@ export default function ProductDetails({
             </p>
             <div>
               <div className="flex flex-row pb-3">
-                <FaMapLocationDot className="text-2xl text-[#BF1D2F]" />
-                <p className="mulish-semibold text-sm leading-normal text-gray-500 pl-5">
+                <FaMapLocationDot className="text-2xl text-[#BF1D2F] w-10" />
+                <p className="mulish-semibold text-sm leading-normal text-gray-500 pl-5 w-full text-justify">
                   {product.contact.location}
                 </p>
               </div>
               <div className="flex flex-row pb-3">
-                <IoMdCall className="text-2xl text-[#BF1D2F]" />
+                <IoMdCall className="text-2xl text-[#BF1D2F] w-10" />
                 <div>
                   {product.contact.contactNumber.map((contact, index) => (
                     <p
                       key={index}
-                      className="mulish-semibold text-sm leading-normal text-gray-500 pl-5"
+                      className="mulish-semibold text-sm leading-normal text-gray-500 pl-5 w-full"
                     >
                       {contact.number} {/* Access the 'number' property */}
                     </p>
@@ -81,8 +81,8 @@ export default function ProductDetails({
                 </div>
               </div>
               <div className="flex flex-row pb-3">
-                <MdOutlineSupportAgent className="text-2xl text-[#BF1D2F]" />
-                <p className="mulish-semibold text-sm leading-normal text-gray-500 pl-5">
+                <MdOutlineSupportAgent className="text-2xl text-[#BF1D2F] w-10" />
+                <p className="mulish-semibold text-sm leading-normal text-gray-500 pl-5 w-full">
                   {product.contact.email}
                 </p>
               </div>
