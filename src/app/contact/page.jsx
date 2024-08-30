@@ -7,7 +7,7 @@ import ContactInfo from "@/components/Contact/ContactInfo";
 export default function Contact() {
   return (
     <>
-      <div className="mt-5 mb-20 md:mt-40 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16">
+      <div className="mt-5 mb-20  px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16">
         <div className="pb-20">
           <ContactInfo />
         </div>

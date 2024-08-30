@@ -35,9 +35,9 @@ export default function DistributorHero() {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeInOut" }}
           >
-            We are here to serve you with our best{" "}
+            We are committed to providing you with our top{" "}
             <span className="text-[#BF1D2F] playfair-display-sc-bold-italic">
-              distributor
+              distributors.
             </span>
           </motion.p>
           <motion.div
@@ -54,11 +54,11 @@ export default function DistributorHero() {
           transition={{ duration: 0.8, ease: "easeInOut" }}
         >
           <p className="mulish-semibold text-sm  leading-normal mx-auto text-justify text-gray-500">
-            We are proud of our relationships with our customers from around the
-            world and in every industry. Over the last 15 years, we’ve been
-            helping them lower costs, improve productivity, enhance equipment
-            efficiency, and much more through our customized services to ensure
-            they meet their needs with pinpoint precision.
+            We take pride in our global customer relationships across various
+            industries. We've been dedicated to helping them reduce costs, boost
+            productivity, enhance equipment efficiency, and more through our
+            tailored services, ensuring their needs are met with precise
+            accuracy.
           </p>
         </motion.div>
       </div>

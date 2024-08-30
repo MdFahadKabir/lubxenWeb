@@ -43,9 +43,9 @@ export default function AboutUs() {
             About us
           </p>
           <p className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal">
-            We are here to increase your knowledge with{" "}
+            Empowering Your Performance with World-Class Lubricant{" "}
             <span className="text-[#BF1D2F] playfair-display-sc-bold-italic">
-              experience
+              Solutions
             </span>
           </p>
           <div className="border-2 border-[#BF1D2F] w-16 sm:w-20 mt-2 mb-5"></div>

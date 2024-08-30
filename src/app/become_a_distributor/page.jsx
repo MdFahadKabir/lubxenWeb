@@ -8,7 +8,7 @@ import DistributorHero from "@/components/Distributor/DistributorHero";
 export default function Distributor() {
   return (
     <>
-      <div className="mt-5 mb-5 md:mt-40">
+      <div className="mt-5 mb-5 ">
         <DistributorHero />
       </div>
       <div>

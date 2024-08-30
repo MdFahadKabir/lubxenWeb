@@ -25,7 +25,7 @@ export default function Hero({
 
   return (
     <>
-      <div className="relative bg-[#F5F7F9]">
+      <div className="relative bg-[#F5F7F9] md:-mt-40 -z-10">
         <div className="bg-transparent flex justify-between w-full">
           <div className="w-full md:w-2/5 lg:w-2/5 xl:w-2/5">
             <Image
@@ -57,7 +57,7 @@ export default function Hero({
               animate={{ opacity: 1 }}
               transition={{ duration: 1.2, delay: 0.2 }}
             >
-              Efficiency meets reliability
+              "Where Efficiency Fuels Your Performance
             </motion.p>
             <motion.p
               className="text-3xl md:text-5xl mulish-bold py-5"
@@ -65,7 +65,7 @@ export default function Hero({
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.4 }}
             >
-              Your energy{" "}
+              LUBXEN – Your Trusted{" "}
               <motion.span
                 className="relative inline-block "
                 initial={{ backgroundPosition: "100% 0%" }}
@@ -91,18 +91,20 @@ export default function Hero({
                   textUnderlineOffset: "0.25rem",
                 }}
               >
-                solutions
+                Energy
               </motion.span>{" "}
-              provider
+              Partner
             </motion.p>
             <motion.p
-              className="text-sm md:text-lg mulish-regular text-gray-500 pb-5"
+              className="text-sm md:text-lg mulish-regular text-gray-500 pb-5 text-justify"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.6 }}
             >
-              Whether you’re looking for high-quality gasoline or innovative
-              solutions to power your home or business, we’ve got you covered.
+              From premium lubricants to advanced solutions powering your
+              industry, home, or business, we deliver excellence at every turn.
+              When reliability is non-negotiable, LUBXEN is the name you can
+              trust to keep your world moving."
             </motion.p>
 
             <motion.div

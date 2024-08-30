@@ -66,7 +66,7 @@ export default function DistributorInfo({
   return (
     <div className="w-full my-auto">
       <div className=" shadow-inner p-5 rounded-xl shadow-[#BF1D2F]">
-        <div>
+        {/* <div>
           <motion.p
             className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal w-full md:w-3/5"
             initial={{ x: -100, opacity: 0 }}
@@ -108,14 +108,12 @@ export default function DistributorInfo({
                 transition={{ duration: 0.5, ease: "easeInOut" }}
               ></motion.div>
               <div className="relative z-10 text-center">
-                {/* Display Name */}
                 <p
                   className={`poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal poppins-bold ${textColor} mb-4`}
                 >
                   {item.name}
                 </p>
 
-                {/* Display Address with Icon */}
                 <div className="flex   mb-2">
                   {renderIcon("address")}
                   <p
@@ -125,7 +123,6 @@ export default function DistributorInfo({
                   </p>
                 </div>
 
-                {/* Display Mobile Numbers with Icon */}
                 <div className="flex flex-col  mb-2">
                   {item.mobileNumber.map((number, idx) => (
                     <div key={idx} className="flex  mb-1">
@@ -139,7 +136,6 @@ export default function DistributorInfo({
                   ))}
                 </div>
 
-                {/* Display Email with Icon */}
                 <div className="flex ">
                   {renderIcon("mail")}
                   <p
@@ -151,6 +147,25 @@ export default function DistributorInfo({
               </div>
             </motion.div>
           ))}
+        </div> */}
+        <div className="h-80  overflow-y-auto scrollbar-none justify-center flex items-center">
+          <motion.p
+            className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal w-full mx-auto text-center"
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1, ease: "easeInOut" }}
+          >
+            Comming{" "}
+            <span className="text-[#BF1D2F] playfair-display-sc-bold-italic">
+              Soon....
+            </span>
+          </motion.p>
+          {/* <motion.div
+            className="border-2 border-[#BF1D2F] w-20 mb-2"
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+          /> */}
         </div>
       </div>
     </div>

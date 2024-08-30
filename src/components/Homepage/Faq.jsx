@@ -6,6 +6,7 @@ import faq from "../../../public/images/faq-bg.png";
 import { IoIosArrowDropdown } from "react-icons/io";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import items from "@/app/data/Faq";
+import Link from "next/link";
 
 export default function Faq() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -86,7 +87,7 @@ export default function Faq() {
                           this resource on. If you want to know more..
                         </p>
                       </div>
-                      <div className="flex justify-between pb-2">
+                      <div className="flex flex-row pb-2">
                         <motion.div
                           className="w-10"
                           whileHover={{ scale: 1.2, rotate: 90 }}
@@ -94,10 +95,11 @@ export default function Faq() {
                         >
                           <MdKeyboardDoubleArrowRight className="text-2xl" />
                         </motion.div>
-                        <p className="w-full text-xs md:text-base">
-                          Open the following link into the website you'll use
-                          this resource on. If you want to know more..
-                        </p>
+                        <Link href="/product">
+                          <p className="w-full text-xs md:text-base ">
+                            If you want to know more..
+                          </p>
+                        </Link>
                       </div>
                     </div>
                   </motion.div>

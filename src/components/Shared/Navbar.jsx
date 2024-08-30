@@ -85,7 +85,7 @@ const Navbar = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className={`z-30 sticky md:fixed top-0 w-full backdrop-filter ${
+        className={` w-full backdrop-filter ${
           scrolled
             ? "backdrop-blur-lg bg-[#F5F7F9]/80 shadow-md"
             : "bg-transparent"
