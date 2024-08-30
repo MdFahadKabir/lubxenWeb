@@ -14,213 +14,112 @@ export default function Footer() {
     <>
       <div className="bg-[#191514]  ">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-4  lg:px-8 py-20">
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-20 text-white">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4 xl:grid-cols-4 gap-2 md:gap-10 text-white">
             <div>
-              <Image
-                src={LubxenLogoFooter}
-                alt="Lubxen"
-                className="w-auto h-40"
-              />
+              <Link href="/">
+                <Image
+                  src={LubxenLogoFooter}
+                  alt="Lubxen"
+                  className="w-auto h-40"
+                />
+              </Link>
               <p className="mulish-semibold text-sm  leading-normal text-white py-5 ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt.
               </p>
+            </div>
+            <div>
+              <p className="poppins-bold text-sm md:text-lg  leading-normal mt-5 md:mt-14 mb-3 md:mb-8 lg:mb-8 xl:mb-8">
+                Company
+              </p>
+              <ul>
+                <li className="flex flex-row pb-3">
+                  <MdArrowForwardIos className="text-2xl text-[#BF1D2F]" />
+                  <Link
+                    className="mulish-semibold text-sm  leading-normal text-white pl-5"
+                    href="/product"
+                  >
+                    Product
+                  </Link>
+                </li>
+                <li className="flex flex-row pb-3">
+                  <MdArrowForwardIos className="text-2xl text-[#BF1D2F]" />
+                  <Link
+                    className="mulish-semibold text-sm  leading-normal text-white pl-5"
+                    href="/blog"
+                  >
+                    Blog
+                  </Link>
+                </li>
+                <li className="flex flex-row pb-3">
+                  <MdArrowForwardIos className="text-2xl text-[#BF1D2F]" />
+                  <Link
+                    className="mulish-semibold text-sm  leading-normal text-white pl-5"
+                    href="/about"
+                  >
+                    About
+                  </Link>
+                </li>
+                <li className="flex flex-row pb-3">
+                  <MdArrowForwardIos className="text-2xl text-[#BF1D2F]" />
+                  <Link
+                    className="mulish-semibold text-sm  leading-normal text-white pl-5"
+                    href="/contact"
+                  >
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p className="poppins-bold text-sm md:text-lg  leading-normal mt-5 md:mt-14 mb-3 md:mb-8 lg:mb-8 xl:mb-8">
+                Legal & Regulatory
+              </p>
+              <ul>
+                <li className="flex flex-row pb-3">
+                  <MdArrowForwardIos className="text-2xl text-[#BF1D2F]" />
+                  <Link
+                    className="mulish-semibold text-sm  leading-normal text-white pl-5"
+                    href="/terms_&_conditions"
+                  >
+                    Terms & Conditions
+                  </Link>
+                </li>
+                <li className="flex flex-row pb-3">
+                  <MdArrowForwardIos className="text-2xl text-[#BF1D2F]" />
+                  <Link
+                    className="mulish-semibold text-sm  leading-normal text-white pl-5"
+                    href="/privecy_policy"
+                  >
+                    Privecy policy
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p className="poppins-bold text-sm md:text-lg  leading-normal mt-5 md:mt-14 mb-3 md:mb-8 lg:mb-8 xl:mb-8">
+                Get in touch
+              </p>
               <div>
                 <div className="flex flex-row pb-3">
-                  <IoMdCall className="text-2xl text-[#BF1D2F]" />
-                  <p className="mulish-semibold text-sm  leading-normal text-white pl-5">
-                    +123 (4567) 890
+                  <IoMdCall className="text-2xl text-[#BF1D2F] w-6" />
+                  <p className="mulish-semibold text-sm  leading-normal text-white pl-5 w-full">
+                    +971544997141
                   </p>
                 </div>
                 <div className="flex flex-row pb-3">
-                  <FaMailBulk className="text-2xl text-[#BF1D2F]" />
-                  <p className="mulish-semibold text-sm  leading-normal text-white pl-5">
-                    info@grabo.com
+                  <FaMailBulk className="text-2xl text-[#BF1D2F] w-6" />
+                  <p className="mulish-semibold text-sm  leading-normal text-white pl-5 w-full">
+                    contact@lubxen.com
                   </p>
                 </div>
                 <div className="flex flex-row pb-3">
-                  <FaHome className="text-2xl text-[#BF1D2F]" />
-                  <p className="mulish-semibold text-sm  leading-normal text-white pl-5 ">
-                    380 St Kilda Road, Melbourne VIC 3004, Australia
+                  <FaHome className="text-2xl text-[#BF1D2F] w-6" />
+                  <p className="mulish-semibold text-sm  leading-normal text-white text-justify pl-5 w-full">
+                    Head Office Address: Al Attar Grand Building, Plot Number
+                    -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd -
+                    Al Mankhool Dubai, UAE
                   </p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <p className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-3xl leading-normal mt-5 md:mt-28 lg:mt-28 xl:mt-28 mb-3 md:mb-8 lg:mb-8 xl:mb-8">
-                Links
-              </p>
-              <ul>
-                <li className="flex flex-row pb-3">
-                  <MdArrowForwardIos className="text-2xl text-[#BF1D2F]" />
-                  <Link
-                    className="mulish-semibold text-sm  leading-normal text-white pl-5"
-                    href="/"
-                  >
-                    Home
-                  </Link>
-                </li>
-                <li className="flex flex-row pb-3">
-                  <MdArrowForwardIos className="text-2xl text-[#BF1D2F]" />
-                  <Link
-                    className="mulish-semibold text-sm  leading-normal text-white pl-5"
-                    href="/service"
-                  >
-                    Service
-                  </Link>
-                </li>
-                <li className="flex flex-row pb-3">
-                  <MdArrowForwardIos className="text-2xl text-[#BF1D2F]" />
-                  <Link
-                    className="mulish-semibold text-sm  leading-normal text-white pl-5"
-                    href="/blog"
-                  >
-                    Blog
-                  </Link>
-                </li>
-                <li className="flex flex-row pb-3">
-                  <MdArrowForwardIos className="text-2xl text-[#BF1D2F]" />
-                  <Link
-                    className="mulish-semibold text-sm  leading-normal text-white pl-5"
-                    href="/about"
-                  >
-                    About
-                  </Link>
-                </li>
-                <li className="flex flex-row pb-3">
-                  <MdArrowForwardIos className="text-2xl text-[#BF1D2F]" />
-                  <Link
-                    className="mulish-semibold text-sm  leading-normal text-white pl-5"
-                    href="/team"
-                  >
-                    Team
-                  </Link>
-                </li>
-                <li className="flex flex-row pb-3">
-                  <MdArrowForwardIos className="text-2xl text-[#BF1D2F]" />
-                  <Link
-                    className="mulish-semibold text-sm  leading-normal text-white pl-5"
-                    href="/contact"
-                  >
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            {/* <div>
-              <p className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-3xl leading-normal mt-5 md:mt-28 lg:mt-28 xl:mt-28 mb-3 md:mb-8 lg:mb-8 xl:mb-8">
-                Links
-              </p>
-              <ul>
-                <li className="flex flex-row pb-3">
-                  <MdArrowForwardIos className="text-2xl text-[#BF1D2F]" />
-                  <Link
-                    className="mulish-semibold text-sm  leading-normal text-white pl-5"
-                    href="/"
-                  >
-                    Home
-                  </Link>
-                </li>
-                <li className="flex flex-row pb-3">
-                  <MdArrowForwardIos className="text-2xl text-[#BF1D2F]" />
-                  <Link
-                    className="mulish-semibold text-sm  leading-normal text-white pl-5"
-                    href="/service"
-                  >
-                    Service
-                  </Link>
-                </li>
-                <li className="flex flex-row pb-3">
-                  <MdArrowForwardIos className="text-2xl text-[#BF1D2F]" />
-                  <Link
-                    className="mulish-semibold text-sm  leading-normal text-white pl-5"
-                    href="/blog"
-                  >
-                    Blog
-                  </Link>
-                </li>
-                <li className="flex flex-row pb-3">
-                  <MdArrowForwardIos className="text-2xl text-[#BF1D2F]" />
-                  <Link
-                    className="mulish-semibold text-sm  leading-normal text-white pl-5"
-                    href="/about"
-                  >
-                    About
-                  </Link>
-                </li>
-                <li className="flex flex-row pb-3">
-                  <MdArrowForwardIos className="text-2xl text-[#BF1D2F]" />
-                  <Link
-                    className="mulish-semibold text-sm  leading-normal text-white pl-5"
-                    href="/team"
-                  >
-                    Team
-                  </Link>
-                </li>
-                <li className="flex flex-row pb-3">
-                  <MdArrowForwardIos className="text-2xl text-[#BF1D2F]" />
-                  <Link
-                    className="mulish-semibold text-sm  leading-normal text-white pl-5"
-                    href="/contact"
-                  >
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div> */}
-            <div>
-              <p className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-3xl leading-normal mt-5 md:mt-28 lg:mt-28 xl:mt-28 mb-3 md:mb-8 lg:mb-8 xl:mb-8">
-                Media
-              </p>
-              <div className="grid grid-cols-4 gap-6">
-                <div>
-                  <Image
-                    src={factor1}
-                    alt="factory 1"
-                    className="w-auto h-auto"
-                  />
-                </div>
-                <div>
-                  <Image
-                    src={factor1}
-                    alt="factory 1"
-                    className="w-auto h-auto"
-                  />
-                </div>
-                <div>
-                  <Image
-                    src={factor1}
-                    alt="factory 1"
-                    className="w-auto h-auto"
-                  />
-                </div>
-                <div>
-                  <Image
-                    src={factor1}
-                    alt="factory 1"
-                    className="w-auto h-auto"
-                  />
-                </div>
-                <div>
-                  <Image
-                    src={factor1}
-                    alt="factory 1"
-                    className="w-auto h-auto"
-                  />
-                </div>
-                <div>
-                  <Image
-                    src={factor1}
-                    alt="factory 1"
-                    className="w-auto h-auto"
-                  />
-                </div>
-                <div>
-                  <Image
-                    src={factor1}
-                    alt="factory 1"
-                    className="w-auto h-auto"
-                  />
                 </div>
               </div>
             </div>

@@ -6,7 +6,7 @@ export default function ExecutiveMessage() {
   return (
     <>
       <div className="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16">
-        <div className="border p-10 rounded-xl shadow-inner ">
+        <div className=" md:border md:p-10 md:rounded-xl md:shadow-inner ">
           <div className=" mb-10 text-center w-full ">
             <p className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal border-b-2 border-[#BF1D2F]  mx-auto inline-block">
               Executive Message

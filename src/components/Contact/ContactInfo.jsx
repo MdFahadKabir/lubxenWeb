@@ -7,13 +7,14 @@ import { MdOutlineSupportAgent } from "react-icons/md";
 
 export default function ContactInfo({
   data = [
-    { type: "phone", value: "(022) 253-321-456", label: "Call Us Now:" },
-    { type: "mail", value: "info@gmail.com", label: "Mail Us Now" },
+    { type: "phone", value: "+971544997141", label: "Call Us Now:" },
     {
       type: "address",
-      value: "25 King St, Mania, Australia",
-      label: "Office Address",
+      value:
+        " Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+      label: "Head Office Address",
     },
+    { type: "mail", value: "contact@lubxen.com", label: "Mail Us Now" },
   ],
   textColor = "text-[#BF1D2F]",
   textColor2 = "text-black",

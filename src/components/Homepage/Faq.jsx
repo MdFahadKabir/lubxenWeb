@@ -55,12 +55,12 @@ export default function Faq() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                   >
-                    <p className="poppins-bold text-base md:text-xl pb-2">
+                    <p className="poppins-bold text-base md:text-xl pb-4">
                       We are working with our experience
                     </p>
-                    <p className="mulish-semibold text-sm leading-normal">
+                    {/* <p className="mulish-semibold text-sm leading-normal">
                       Lorem ipsum dolor sit amet consectetur adipiscing elit.
-                    </p>
+                    </p> */}
                     <div className="w-full md:w-4/5 mt-5">
                       <div className="flex justify-between pb-2">
                         <motion.div
@@ -95,8 +95,8 @@ export default function Faq() {
                         >
                           <MdKeyboardDoubleArrowRight className="text-2xl" />
                         </motion.div>
-                        <Link href="/product">
-                          <p className="w-full text-xs md:text-base ">
+                        <Link href="/lubxen_company_profile.pdf">
+                          <p className="w-full text-xs md:text-lg text-[#BF1D2D] font-bold underline transition-transform sc hover:scale-110 duration-700">
                             If you want to know more..
                           </p>
                         </Link>
