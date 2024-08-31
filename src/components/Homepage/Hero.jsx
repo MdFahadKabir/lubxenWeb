@@ -134,43 +134,6 @@ export default function Hero({
                 Discover More
               </Link>
             </motion.div>
-            {/* <motion.div
-              className="grid grid-cols-3 gap-6"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1.6, delay: 1 }}
-            >
-              {data.map((item, index) => (
-                <motion.div
-                  key={index}
-                  className="px-6 py-10 bg-transparent"
-                  whileHover={{
-                    scale: 1.05,
-                  }}
-                  transition={{
-                    duration: 0.5,
-                    ease: "easeInOut",
-                  }}
-                >
-                  <div>
-                    <div className="flex">
-                      <CountUp
-                        start={0}
-                        end={item.count}
-                        duration={2.5}
-                        className="text-2xl sm:text-5xl md:text-4xl poppins-bold text-[#BF1D2F]"
-                      />
-                      <p className="text-base  md:text-xl poppins-bold mb-0 pb-0 pt-2 text-[#BF1D2F]">
-                        +
-                      </p>
-                    </div>
-                    <p className="mt-2 text-xs md:text-sm mulish-bold text-black">
-                      {item.label}
-                    </p>
-                  </div>
-                </motion.div>
-              ))}
-            </motion.div> */}
           </div>
           <div className="mx-10 mb-10 "></div>
           {/* Floating images */}

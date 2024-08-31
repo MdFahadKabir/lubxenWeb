@@ -21,7 +21,7 @@ const items = [
     id: 3,
     header: "What certifications do LUBXEN products have?",
     content:
-      "LUBXEN products are manufactured to meet international standards and are certified by leading industry bodies. Our lubricants are tested and approved by original equipment manufacturers (OEMs) to ensure they provide optimal performance and protection for your machinery and vehicles.",
+      "LUBXEN products are crafted to meet international standards and are certified by leading industry authorities. Our lubricants are rigorously tested and approved by original equipment manufacturers (OEMs), ensuring they deliver top performance and protection for your machinery and vehicles. Additionally, LUBXEN holds API and ISO certifications.",
   },
 ];
 

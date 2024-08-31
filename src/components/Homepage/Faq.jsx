@@ -50,7 +50,7 @@ export default function Faq() {
                 </motion.div>
                 <div className="flex flex-col md:flex-row md:justify-between mt-3 md:mt-16 w-full">
                   <motion.div
-                    className="w-full text-white text-start"
+                    className="w-full text-white text-start my-auto"
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
@@ -58,9 +58,7 @@ export default function Faq() {
                     <p className="poppins-bold text-base md:text-xl pb-4">
                       We are working with our experience
                     </p>
-                    {/* <p className="mulish-semibold text-sm leading-normal">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit.
-                    </p> */}
+
                     <div className="w-full md:w-4/5 mt-5">
                       <div className="flex justify-between pb-2">
                         <motion.div
@@ -84,22 +82,15 @@ export default function Faq() {
                         </motion.div>
                         <p className="w-full text-xs md:text-base">
                           Open the following link into the website you'll use
-                          this resource on. If you want to know more..
+                          this resource on.{" "}
+                          <span>
+                            <Link href="/lubxen_company_profile.pdf">
+                              <p className="w-full text-xs md:text-lg text-[#BF1D2D] font-bold  transition-transform sc hover:scale-110 duration-700">
+                                If you want to know more..
+                              </p>
+                            </Link>
+                          </span>
                         </p>
-                      </div>
-                      <div className="flex flex-row pb-2">
-                        <motion.div
-                          className="w-10"
-                          whileHover={{ scale: 1.2, rotate: 90 }}
-                          transition={{ duration: 0.5, ease: "easeInOut" }}
-                        >
-                          <MdKeyboardDoubleArrowRight className="text-2xl" />
-                        </motion.div>
-                        <Link href="/lubxen_company_profile.pdf">
-                          <p className="w-full text-xs md:text-lg text-[#BF1D2D] font-bold underline transition-transform sc hover:scale-110 duration-700">
-                            If you want to know more..
-                          </p>
-                        </Link>
                       </div>
                     </div>
                   </motion.div>

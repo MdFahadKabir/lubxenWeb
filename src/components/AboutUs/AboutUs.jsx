@@ -5,8 +5,6 @@ import { motion } from "framer-motion"; // Import Framer Motion
 import img1 from "../../../public/images/about.jpg";
 import vision_icon from "../../../public/images/vision_icon.png";
 import mission_icon from "../../../public/images/mission_icon.png";
-import signature from "../../../public/images/signature.png";
-import { GoTrophy } from "react-icons/go";
 
 export default function AboutUs() {
   return (
@@ -46,27 +44,27 @@ export default function AboutUs() {
           </p>
           <div className="border-2 border-[#BF1D2F] w-16 sm:w-20 mt-2 mb-5"></div>
           <p className="mulish-regular  text-sm  leading-normal mx-auto text-black text-justify">
-            LUBXEN manufactures its products in the UAE and operates globally.
-            As an emerging force in the United Arab Emirates, we provide
-            top-tier lubricant solutions tailored to meet diverse needs across
-            various sectors. Whether you operate heavy machinery, drive
-            competitively, or manage a fleet of commercial vehicles, our
-            extensive range of oils and greases is designed to enhance
-            performance, extend equipment lifespan, and ensure operational
+            LUBXEN manufactures its products in the UAE and serves a global
+            market. As a rising leader in the United Arab Emirates, we deliver
+            premium lubricant solutions tailored to meet the diverse needs of
+            various industries. Whether you're running heavy machinery,
+            competing in motorsports, or managing a fleet of commercial
+            vehicles, our extensive range of oils and greases is engineered to
+            enhance performance, extend equipment life, and ensure operational
             efficiency.
           </p>
           <p className="mulish-regular  text-sm  leading-normal mx-auto text-black pt-3 text-justify">
-            At LUBXEN, we strive to be your preferred partner, providing premium
-            lubricant solutions tailored to your unique requirements. Whether
-            you're operating heavy machinery, driving in rallies, commuting
-            daily, or working in the automotive, marine, energy, or industrial
-            sectors, our wide range of oil and grease products is designed to
-            empower your equipment, boost performance, and extend its life span.
-            We take pride in offering world-class service and cutting-edge
-            products, enabling us to stay competitive and expand our reach. Our
-            customer-focused approach allows us to adapt to the specific needs
-            of both small to medium enterprises and larger corporations,
-            treating every customer as a valuable asset, regardless of size.
+            At LUBXEN, we aim to be your go-to partner for superior lubricant
+            solutions tailored to your specific needs. From heavy machinery and
+            rally driving to daily commuting and sectors like automotive,
+            marine, energy, or industrial, our comprehensive product lineup is
+            designed to optimize your equipment’s performance and longevity. We
+            pride ourselves on delivering world-class service and
+            state-of-the-art products, which allow us to remain competitive and
+            expand our global footprint. Our customer-centric approach enables
+            us to meet the unique demands of both small to medium enterprises
+            and large corporations, treating each customer as a valued partner,
+            regardless of their size.
           </p>
         </motion.div>
       </div>
@@ -96,11 +94,11 @@ export default function AboutUs() {
 
           <div className="border-2 border-[#BF1D2F] w-20  mt-2 mb-5"></div>
           <p className="mulish-regular  text-sm  leading-normal mx-auto text-black text-justify">
-            Our mission at LUBXEN is to empower our customers by offering
+            Our mission at LUBXEN is to empower our customers by providing
             premium-quality products at competitive prices, meeting market
-            demands, and exceeding client expectations. We strive to align our
-            operations with the highest international standards, ensuring that
-            our products deliver consistent performance and reliability..
+            demands, and exceeding expectations. We are committed to aligning
+            our operations with the highest international standards, ensuring
+            our products deliver consistent performance and reliability.
           </p>
         </motion.div>
         <div className="md:mx-10 mx-0 md:pb-0 pb-5"></div>
@@ -131,9 +129,9 @@ export default function AboutUs() {
           <p className="mulish-regular  text-sm  leading-normal mx-auto text-black text-justify">
             Our vision is to become a global leader in the lubricant
             manufacturing industry and a trusted, lifelong partner for our
-            customers. We are committed to providing top-quality products and
-            services while adhering to the highest Health, Safety, Security, and
-            Environmental (HSSE) practices in the oil industry.
+            customers. We are dedicated to offering top-quality products and
+            services while upholding the highest standards of Health, Safety,
+            Security, and Environmental (HSSE) practices in the oil industry.
           </p>
         </motion.div>
       </div>

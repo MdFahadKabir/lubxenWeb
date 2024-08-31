@@ -11,7 +11,8 @@ export default function Contact() {
         <div className="pb-20">
           <ContactInfo />
         </div>
-        <div className="flex flex-col md:justify-between md:flex-row ">
+        <ContactForm />
+        {/* <div className="flex flex-col md:justify-between md:flex-row ">
           <div className="w-full">
             <ContactForm />
           </div>
@@ -21,7 +22,7 @@ export default function Contact() {
               <Map />
             </MapProvider>
           </div>
-        </div>{" "}
+        </div>{" "} */}
       </div>
     </>
   );

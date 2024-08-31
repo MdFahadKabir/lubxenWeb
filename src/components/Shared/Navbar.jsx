@@ -35,8 +35,8 @@ const Navbar = () => {
         { id: 3, name: "About us", href: "/about" },
         {
           id: 4,
-          name: "Executive Message Borad",
-          href: "/executive_message_borad",
+          name: "Executive Message Board",
+          href: "/executive_message_Board",
         },
       ],
     },

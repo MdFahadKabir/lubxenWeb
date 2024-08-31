@@ -22,8 +22,10 @@ export default function Footer() {
                 />
               </Link>
               <p className="mulish-semibold text-sm  leading-normal text-white py-5 ">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.
+                At LUBXEN, we fuel the world’s engines with cutting-edge
+                lubricant solutions. Our commitment to excellence drives us to
+                innovate and deliver products that keep your machinery running
+                smoothly. Connect with us and experience the LUBXEN difference.
               </p>
               <div className="flex flex-row">
                 <Link
