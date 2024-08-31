@@ -52,7 +52,7 @@ export default function Hero({
         >
           <div className="w-full my-auto">
             <motion.p
-              className="text-[#BF1D2F] text-sm md:text-lg mulish-bold"
+              className="text-[#BF1D2F] text-sm md:text-lg mulish-bold "
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1.2, delay: 0.2 }}
@@ -60,7 +60,7 @@ export default function Hero({
               "Where Efficiency Fuels Your Performance
             </motion.p>
             <motion.p
-              className="text-3xl md:text-5xl mulish-bold py-5"
+              className="text-3xl md:text-5xl mulish-bold py-5 md:block hidden"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.4 }}
@@ -94,6 +94,14 @@ export default function Hero({
                 Energy
               </motion.span>{" "}
               Partner
+            </motion.p>
+            <motion.p
+              className="text-3xl md:text-5xl mulish-bold py-5 block md:hidden"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.2, delay: 0.4 }}
+            >
+              LUBXEN – Your Trusted Energy Partner
             </motion.p>
             <motion.p
               className="text-sm md:text-lg mulish-regular text-black pb-5 text-justify"
