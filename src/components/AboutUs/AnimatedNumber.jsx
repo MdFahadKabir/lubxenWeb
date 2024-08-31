@@ -7,7 +7,7 @@ export default function AnimatedNumber({
   data = [
     { count: 100, label: "Total Distributor" },
     { count: 88, label: "Total Products" },
-    { count: 12, label: "Happy Clients" },
+    { count: 12, label: "Total Certificates" },
     { count: 9, label: "Team Members" },
   ],
   textColor = "text-[#BF1D2F]",

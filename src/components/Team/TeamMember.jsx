@@ -78,7 +78,7 @@ function TeamMemberCard({ member, variant }) {
           </p>
           <p
             className={`mulish-regular text-sm ${
-              variant === "orange" ? "text-white" : "text-gray-500"
+              variant === "orange" ? "text-white" : "text-black"
             }`}
           >
             {member.title}

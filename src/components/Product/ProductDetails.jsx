@@ -63,7 +63,7 @@ export default function ProductDetails({
             <div>
               <div className="flex flex-row pb-3">
                 <FaMapLocationDot className="text-2xl text-[#BF1D2F] w-10" />
-                <p className="mulish-semibold text-sm leading-normal text-gray-500 pl-5 w-full text-justify">
+                <p className="mulish-semibold text-sm leading-normal text-black pl-5 w-full text-justify">
                   {product.contact.location}
                 </p>
               </div>
@@ -73,7 +73,7 @@ export default function ProductDetails({
                   {product.contact.contactNumber.map((contact, index) => (
                     <p
                       key={index}
-                      className="mulish-semibold text-sm leading-normal text-gray-500 pl-5 w-full"
+                      className="mulish-semibold text-sm leading-normal text-black pl-5 w-full"
                     >
                       {contact.number} {/* Access the 'number' property */}
                     </p>
@@ -82,7 +82,7 @@ export default function ProductDetails({
               </div>
               <div className="flex flex-row pb-3">
                 <MdOutlineSupportAgent className="text-2xl text-[#BF1D2F] w-10" />
-                <p className="mulish-semibold text-sm leading-normal text-gray-500 pl-5 w-full">
+                <p className="mulish-semibold text-sm leading-normal text-black pl-5 w-full">
                   {product.contact.email}
                 </p>
               </div>
@@ -159,7 +159,7 @@ export default function ProductDetails({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="mulish-semibold text-sm leading-normal text-gray-500 mb-3 text-justify"
+          className="mulish-semibold text-sm leading-normal text-black mb-3 text-justify"
         >
           {product.content}
         </motion.p>
@@ -184,7 +184,7 @@ export default function ProductDetails({
                   <>
                     <div key={index} className="flex flex-row">
                       <BsCircleHalf className="text-xs text-[#BF1D2F] mt-1" />
-                      <p className="mulish-semibold text-sm leading-normal text-gray-500 pl-2 text-justify">
+                      <p className="mulish-semibold text-sm leading-normal text-black pl-2 text-justify">
                         {item.content}
                       </p>
                     </div>
@@ -212,7 +212,7 @@ export default function ProductDetails({
                   <>
                     <div key={index} className="flex flex-row">
                       <BsCircleHalf className="text-xs text-[#BF1D2F] mt-1" />
-                      <p className="mulish-semibold text-sm leading-normal text-gray-500 pl-2 text-justify">
+                      <p className="mulish-semibold text-sm leading-normal text-black pl-2 text-justify">
                         {item.content}
                       </p>
                     </div>

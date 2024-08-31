@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Alamgir_Kabir from "../../../public/images/Alamgir_Kabir.png";
+import Alamgir_Kabir from "../../../public/images/Alamgir_Kabir.jpg";
 
 export default function ExecutiveMessage() {
   return (
@@ -36,7 +36,7 @@ export default function ExecutiveMessage() {
                 testament to his vision and entrepreneurial spirit, embodying
                 the values of quality, innovation, and customer satisfaction.
               </p>
-              <p className="text-justify  mulish-semibold text-sm leading-normal text-gray-500 pt-5">
+              <p className="text-justify  mulish-semibold text-sm leading-normal text-black pt-5">
                 "At LUBXEN, we are committed to delivering products that not
                 only meet but exceed the expectations of our customers. Our goal
                 is to penetrate new markets and broaden our distri- bution

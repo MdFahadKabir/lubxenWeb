@@ -12,7 +12,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <>
-      <div className="bg-[#191514]  ">
+      <div className="bg-[#101010]  ">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-4  lg:px-8 py-20">
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4 xl:grid-cols-4 gap-2 md:gap-10 text-white">
             <div>

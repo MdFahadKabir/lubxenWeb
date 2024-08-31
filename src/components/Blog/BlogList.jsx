@@ -73,7 +73,7 @@ export default function BlogsList() {
                   ></motion.p>
                   <div className="p-4 sm:p-5 flex-1">
                     <motion.p
-                      className="mulish-regular text-sm text-gray-500"
+                      className="mulish-regular text-sm text-black"
                       variants={fadeInUp}
                     >
                       {blog.date}

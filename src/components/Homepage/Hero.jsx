@@ -96,7 +96,7 @@ export default function Hero({
               Partner
             </motion.p>
             <motion.p
-              className="text-sm md:text-lg mulish-regular text-gray-500 pb-5 text-justify"
+              className="text-sm md:text-lg mulish-regular text-black pb-5 text-justify"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.6 }}
@@ -156,7 +156,7 @@ export default function Hero({
                         +
                       </p>
                     </div>
-                    <p className="mt-2 text-xs md:text-sm mulish-bold text-gray-500">
+                    <p className="mt-2 text-xs md:text-sm mulish-bold text-black">
                       {item.label}
                     </p>
                   </div>

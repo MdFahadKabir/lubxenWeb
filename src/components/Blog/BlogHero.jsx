@@ -26,7 +26,7 @@ export default function BlogHero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
         >
-          <p className="poppins-regular text-gray-500 text-sm sm:text-lg md:text-xl lg:text-xl">
+          <p className="poppins-regular text-black text-sm sm:text-lg md:text-xl lg:text-xl">
             Blogs
           </p>
           <motion.p
@@ -53,7 +53,7 @@ export default function BlogHero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
         >
-          <p className="mulish-semibold text-sm  leading-normal mx-auto text-gray-500">
+          <p className="mulish-semibold text-sm  leading-normal mx-auto text-black">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
             possimus sint unde voluptatum? Harum ducimus sequi soluta deleniti
             culpa quod. Quasi, error ipsa? Illo placeat aliquam fugit facilis

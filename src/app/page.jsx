@@ -31,15 +31,15 @@ export default function Home() {
         <TeamHero />
         <TeamMember showBoardOnly={true} />
       </div> */}
-      <div className=" pb-10 md:pb-24 ">
+      <div className="  ">
         <Faq />
       </div>
 
-      <div className=" pb-20 ">
+      {/* <div className=" pb-20 ">
         <BlogHero />
         <BlogsList />
-      </div>
-      <div className=" pb-20 ">
+      </div> */}
+      <div className=" pb-20 bg-[#101010]">
         <OurPartners />
       </div>
     </div>

@@ -11,7 +11,7 @@ export default function TeamHero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <p className="poppins-regular text-gray-500 text-sm sm:text-lg md:text-xl lg:text-xl">
+        <p className="poppins-regular text-black text-sm sm:text-lg md:text-xl lg:text-xl">
           Team
         </p>
         <p className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal mx-auto w-full md:w-4/5 lg:w-2/5">
@@ -29,7 +29,7 @@ export default function TeamHero() {
           animate={{ width: "80px" }}
           transition={{ duration: 0.6, ease: "easeInOut" }}
         ></motion.div>
-        <p className="mulish-semibold text-sm  leading-normal text-center mx-auto text-gray-500 w-full md:w-3/4 lg:w-1/2">
+        <p className="mulish-semibold text-sm  leading-normal text-center mx-auto text-black w-full md:w-3/4 lg:w-1/2">
           Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod
           tempor incididunt ut labore et dolore magna.
         </p>

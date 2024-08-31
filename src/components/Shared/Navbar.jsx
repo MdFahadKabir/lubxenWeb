@@ -182,8 +182,8 @@ const Navbar = () => {
                 <a
                   className={`my-auto ${
                     name === "Become A Distributor"
-                      ? "text-lg text-white bg-[#BF1D2F] hover:bg-[#0A529B] duration-700 px-4 py-2 rounded-full"
-                      : "text-lg font-medium hover:scale-105 transition duration-200 relative after:absolute after:left-0 after:bottom-0 after:w-full after:h-1 after:bg-[#BF1D2F] after:scale-x-0 after:transition-transform after:duration-300"
+                      ? "text-lg text-white bg-[#BF1D2F] hover:bg-[#0A529B] duration-700 px-4 py-2 rounded-full relative before:absolute before:inset-y-[5px] before:inset-x-[45px] before:rounded-full before:border-2 before:border-[#BF1D2F] before:animate-ping before:z-[-1]"
+                      : "text-lg font-medium hover:scale-105 transition duration-200 relative after:absolute after:left-0 after:bottom-0 after:w-full after:h-1 after:bg-[#BF1D2F] after:scale-x-0 after:transition-transform after:duration-300 "
                   } ${isActive(href) ? "text-[#BF1D2F]" : "text-[#0A529B]"} ${
                     name !== "Become A Distributor"
                       ? "hover:after:scale-x-100"

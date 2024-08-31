@@ -163,3 +163,31 @@
   right: 20px;
   z-index: 1000;
 }
+@keyframes ping {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.ping-border {
+  position: relative;
+  overflow: hidden;
+}
+
+.ping-border::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(191, 29, 47, 0.5); /* Adjust color and opacity as needed */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}

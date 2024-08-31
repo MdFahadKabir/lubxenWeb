@@ -48,7 +48,7 @@ export default function BlogDetails({ blog }) {
           <div>
             <div className="flex flex-row pb-3">
               <FaMapLocationDot className="text-2xl text-[#BF1D2F]" />
-              <p className="mulish-semibold text-sm  leading-normal text-gray-500 pl-5">
+              <p className="mulish-semibold text-sm  leading-normal text-black pl-5">
                 {blog.contact.location}
               </p>
             </div>
@@ -58,7 +58,7 @@ export default function BlogDetails({ blog }) {
                 {blog.contact.contactNumber.map((contact, index) => (
                   <p
                     key={index}
-                    className="mulish-semibold text-sm  leading-normal text-gray-500 pl-5"
+                    className="mulish-semibold text-sm  leading-normal text-black pl-5"
                   >
                     {contact.number}
                   </p>
@@ -67,7 +67,7 @@ export default function BlogDetails({ blog }) {
             </div>
             <div className="flex flex-row pb-3">
               <MdOutlineSupportAgent className="text-2xl text-[#BF1D2F]" />
-              <p className="mulish-semibold text-sm  leading-normal text-gray-500 pl-5">
+              <p className="mulish-semibold text-sm  leading-normal text-black pl-5">
                 {blog.contact.email}
               </p>
             </div>
@@ -80,7 +80,7 @@ export default function BlogDetails({ blog }) {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className=" mb-2 poppins-regular text-gray-500 text-sm sm:text-lg md:text-xl lg:text-xl"
+          className=" mb-2 poppins-regular text-black text-sm sm:text-lg md:text-xl lg:text-xl"
         >
           {blog.date}
         </motion.h2>
@@ -109,7 +109,7 @@ export default function BlogDetails({ blog }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="mulish-semibold text-sm  leading-normal  text-gray-500 mb-3"
+          className="mulish-semibold text-sm  leading-normal  text-black mb-3"
         >
           {blog.content}
         </motion.p>
@@ -122,7 +122,7 @@ export default function BlogDetails({ blog }) {
           {blog.list.map((item) => (
             <div key={item.id} className="flex flex-row">
               <BsCircleHalf className="text-xs text-[#BF1D2F] mt-1" />
-              <p className="mulish-semibold text-sm  leading-normal  text-gray-500 pl-2">
+              <p className="mulish-semibold text-sm  leading-normal  text-black pl-2">
                 {item.content}
               </p>
             </div>

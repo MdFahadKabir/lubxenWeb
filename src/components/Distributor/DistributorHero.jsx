@@ -26,7 +26,7 @@ export default function DistributorHero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
         >
-          <p className="poppins-regular text-gray-500 text-sm sm:text-lg md:text-xl lg:text-xl">
+          <p className="poppins-regular text-black text-sm sm:text-lg md:text-xl lg:text-xl">
             Distributor
           </p>
           <motion.p
@@ -53,7 +53,7 @@ export default function DistributorHero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
         >
-          <p className="mulish-semibold text-sm  leading-normal mx-auto text-justify text-gray-500">
+          <p className="mulish-semibold text-sm  leading-normal mx-auto text-justify text-black">
             We take pride in our global customer relationships across various
             industries. We've been dedicated to helping them reduce costs, boost
             productivity, enhance equipment efficiency, and more through our

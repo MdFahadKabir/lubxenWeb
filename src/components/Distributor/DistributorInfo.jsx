@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { IoMdCall } from "react-icons/io";
 import { MdOutlineSupportAgent } from "react-icons/md";
+import CommingSoon from "../Shared/CommingSoon";
+import MasonryGallery from "../Shared/MasonryGallery";
 
 export default function DistributorInfo({
   data = [
@@ -149,17 +151,8 @@ export default function DistributorInfo({
           ))}
         </div> */}
         <div className="h-80  overflow-y-auto scrollbar-none justify-center flex items-center">
-          <motion.p
-            className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal w-full mx-auto text-center"
-            initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, ease: "easeInOut" }}
-          >
-            Comming{" "}
-            <span className="text-[#BF1D2F] playfair-display-sc-bold-italic">
-              Soon....
-            </span>
-          </motion.p>
+          {/* <CommingSoon /> */}
+          <MasonryGallery />
           {/* <motion.div
             className="border-2 border-[#BF1D2F] w-20 mb-2"
             initial={{ scaleX: 0 }}
