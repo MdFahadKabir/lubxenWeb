@@ -13,7 +13,7 @@ export default function Privacypoclicy() {
             </p>
           </div>
 
-          <div className="flex flex-col text-justify  mulish-semibold text-xs md:text-sm leading-normal text-black">
+          <div className="flex flex-col text-justify  mulish-regular  text-xs md:text-sm leading-normal text-black">
             <>
               <p className="text-justify mulish-semibold text-sm leading-normal text-black ">
                 Privacy Policy for LUBXEN

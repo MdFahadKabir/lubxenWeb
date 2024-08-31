@@ -23,7 +23,7 @@ export default function ExecutiveMessage() {
             </div>
             <div className="mx-5 mt-5 "></div>
             <div className="w-full my-auto">
-              <p className="text-justify mulish-semibold text-sm leading-normal ">
+              <p className="text-justify mulish-regular  text-sm leading-normal ">
                 Mohammed Alamgir Kabir, the Honorable Chairman of LUBXEN, is a
                 distinguished entrepreneur with over 40 years of extensive
                 experience in business. From his early years, Mr. Kabir has been

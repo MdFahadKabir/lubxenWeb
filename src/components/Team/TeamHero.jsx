@@ -29,7 +29,7 @@ export default function TeamHero() {
           animate={{ width: "80px" }}
           transition={{ duration: 0.6, ease: "easeInOut" }}
         ></motion.div>
-        <p className="mulish-semibold text-sm  leading-normal text-center mx-auto text-black w-full md:w-3/4 lg:w-1/2">
+        <p className="mulish-regular  text-sm  leading-normal text-center mx-auto text-black w-full md:w-3/4 lg:w-1/2">
           Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod
           tempor incididunt ut labore et dolore magna.
         </p>

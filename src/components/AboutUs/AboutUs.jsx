@@ -45,7 +45,7 @@ export default function AboutUs() {
             </span>
           </p>
           <div className="border-2 border-[#BF1D2F] w-16 sm:w-20 mt-2 mb-5"></div>
-          <p className="mulish-semibold text-sm  leading-normal mx-auto text-black text-justify">
+          <p className="mulish-regular  text-sm  leading-normal mx-auto text-black text-justify">
             LUBXEN manufactures its products in the UAE and operates globally.
             As an emerging force in the United Arab Emirates, we provide
             top-tier lubricant solutions tailored to meet diverse needs across
@@ -55,7 +55,7 @@ export default function AboutUs() {
             performance, extend equipment lifespan, and ensure operational
             efficiency.
           </p>
-          <p className="mulish-semibold text-sm  leading-normal mx-auto text-black pt-3 text-justify">
+          <p className="mulish-regular  text-sm  leading-normal mx-auto text-black pt-3 text-justify">
             At LUBXEN, we strive to be your preferred partner, providing premium
             lubricant solutions tailored to your unique requirements. Whether
             you're operating heavy machinery, driving in rallies, commuting
@@ -95,7 +95,7 @@ export default function AboutUs() {
           </div>
 
           <div className="border-2 border-[#BF1D2F] w-20  mt-2 mb-5"></div>
-          <p className="mulish-semibold text-sm  leading-normal mx-auto text-black text-justify">
+          <p className="mulish-regular  text-sm  leading-normal mx-auto text-black text-justify">
             Our mission at LUBXEN is to empower our customers by offering
             premium-quality products at competitive prices, meeting market
             demands, and exceeding client expectations. We strive to align our
@@ -128,7 +128,7 @@ export default function AboutUs() {
           </div>
 
           <div className="border-2 border-[#BF1D2F] w-20  mt-2 mb-5"></div>
-          <p className="mulish-semibold text-sm  leading-normal mx-auto text-black text-justify">
+          <p className="mulish-regular  text-sm  leading-normal mx-auto text-black text-justify">
             Our vision is to become a global leader in the lubricant
             manufacturing industry and a trusted, lifelong partner for our
             customers. We are committed to providing top-quality products and

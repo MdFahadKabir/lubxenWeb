@@ -53,7 +53,7 @@ export default function ProductHero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
         >
-          <p className="mulish-semibold text-sm  leading-normal mx-auto text-justify text-black ">
+          <p className="mulish-regular text-sm  leading-normal mx-auto text-justify text-black ">
             We take pride in our global customer relationships across diverse
             industries. Through our tailored services, we've consistently helped
             our clients reduce costs, boost productivity, and enhance equipment

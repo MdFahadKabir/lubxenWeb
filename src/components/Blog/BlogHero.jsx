@@ -53,7 +53,7 @@ export default function BlogHero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
         >
-          <p className="mulish-semibold text-sm  leading-normal mx-auto text-black">
+          <p className="mulish-regular  text-sm  leading-normal mx-auto text-black">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
             possimus sint unde voluptatum? Harum ducimus sequi soluta deleniti
             culpa quod. Quasi, error ipsa? Illo placeat aliquam fugit facilis

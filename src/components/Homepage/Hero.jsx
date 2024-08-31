@@ -104,7 +104,7 @@ export default function Hero({
               LUBXEN – Your Trusted Energy Partner
             </motion.p>
             <motion.p
-              className="text-sm md:text-lg mulish-regular text-black pb-5 text-justify"
+              className="text-sm md:text-base mulish-regular  text-black pb-5 text-justify"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.6 }}
