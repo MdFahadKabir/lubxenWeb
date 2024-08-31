@@ -50,7 +50,7 @@ export default function Faq() {
                 </motion.div>
                 <div className="flex flex-col md:flex-row md:justify-between mt-3 md:mt-16 w-full">
                   <motion.div
-                    className="w-full text-white text-start my-auto"
+                    className="w-full  text-white text-start my-auto"
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
@@ -130,7 +130,7 @@ export default function Faq() {
                                 height: { duration: 0.6, ease: "easeInOut" },
                                 opacity: { duration: 0.4, ease: "easeInOut" },
                               }}
-                              className="overflow-hidden mulish-regular text-xs md:text-sm bg-white mulish text-black p-2 md:p-4 rounded-lg mt-2"
+                              className="overflow-hidden mulish-regular w-full text-xs md:text-sm bg-white mulish text-black p-2 md:p-4 rounded-lg mt-2 text-justify"
                             >
                               {item.content}
                             </motion.div>
