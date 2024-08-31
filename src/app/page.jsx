@@ -39,7 +39,7 @@ export default function Home() {
         <BlogHero />
         <BlogsList />
       </div> */}
-      <div className=" pb-20 bg-[#101010]">
+      <div className=" bg-[#101010]">
         <OurPartners />
       </div>
     </div>

@@ -12,16 +12,24 @@ import DistributorFrom from "../Distributor/DistributorFrom";
 
 export default function Testimonial() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 5000);
+    // Only set the interval if the slider is not hovered
+    if (!isHovered) {
+      const interval = setInterval(() => {
+        setCurrentIndex((prevIndex) =>
+          prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+        );
+      }, 15000);
 
-    return () => clearInterval(interval);
-  }, []);
+      // Clear the interval when the component is unmounted or hovered
+      return () => clearInterval(interval);
+    }
+  }, [isHovered, testimonials.length]); // Add dependencies for isHovered and testimonials.length
+
+  const handleMouseEnter = () => setIsHovered(true);
+  const handleMouseLeave = () => setIsHovered(false);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
@@ -55,7 +63,16 @@ export default function Testimonial() {
                 />
               </div>
               {/* Testimonial Slider */}
-              <div className="w-full md:w-3/6  text-white">
+              <div
+                className="w-full md:w-3/6 text-white"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
+                <div>
+                  <p className="text-start poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal -mb-10">
+                    What our board has to say
+                  </p>
+                </div>
                 <motion.div
                   className="relative mt-20 md:mt-20"
                   key={currentIndex}
@@ -65,7 +82,7 @@ export default function Testimonial() {
                   transition={{ type: "spring", stiffness: 100, damping: 20 }}
                 >
                   <FaQuoteLeft className="text-2xl sm:text-3xl md:text-4xl text-[#0189FF] absolute -top-10 md:-top-5 left-5" />
-                  <p className="p-6 sm:p-8 md:p-10 bg-[#222222] overflow-hidden text-white text-xs sm:text-sm md:text-base rounded-3xl  text-justify">
+                  <p className="p-6 sm:p-8 md:p-10 bg-[#222222] overflow-hidden text-white text-xs sm:text-sm md:text-base rounded-3xl text-justify">
                     {testimonials[currentIndex].quote}
                   </p>
                   <AiFillCaretDown className="text-3xl sm:text-4xl md:text-5xl text-[#222222] absolute -bottom-8 left-5" />

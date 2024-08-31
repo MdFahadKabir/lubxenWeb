@@ -25,7 +25,7 @@ export default function Hero({
 
   return (
     <>
-      <div className="relative bg-[#F5F7F9] md:-mt-40 -z-10">
+      <div className="relative bg-[#F5F7F9] md:-mt-40 ">
         <div className="bg-transparent flex justify-between w-full">
           <div className="w-full md:w-2/5 lg:w-2/5 xl:w-2/5">
             <Image

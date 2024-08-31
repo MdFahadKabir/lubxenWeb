@@ -4,9 +4,7 @@ import { IoMdCall } from "react-icons/io";
 import { MdArrowForwardIos } from "react-icons/md";
 import Image from "next/image";
 import LubxenLogoFooter from "../../../public/images/LubxenLogo.png";
-import factor1 from "../../../public/images/factor1.jpg";
-import factor2 from "../../../public/images/factor2.jpg";
-import factor3 from "../../../public/images/factor3.jpg";
+import { FaInstagramSquare, FaFacebookSquare } from "react-icons/fa";
 
 import Link from "next/link";
 export default function Footer() {
@@ -27,6 +25,20 @@ export default function Footer() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt.
               </p>
+              <div className="flex flex-row">
+                <Link
+                  href="https://www.facebook.com/lubxen"
+                  className="ml-3 hover:text-[#BF1D2F] duration-700 text-3xl"
+                >
+                  <FaFacebookSquare />
+                </Link>
+                <Link
+                  href="https://www.instagram.com/lubxenglobal"
+                  className="ml-3 hover:text-[#BF1D2F] duration-700 text-3xl"
+                >
+                  <FaInstagramSquare />
+                </Link>
+              </div>
             </div>
             <div>
               <p className="poppins-bold text-sm md:text-lg  leading-normal mt-5 md:mt-14 mb-3 md:mb-8 lg:mb-8 xl:mb-8">

@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 
 export default function AnimatedNumber({
   data = [
-    { count: 100, label: "Total Distributor" },
+    { count: 10, label: "Total Distributor" },
     { count: 88, label: "Total Products" },
-    { count: 12, label: "Total Certificates" },
-    { count: 9, label: "Team Members" },
+    { count: 10, label: "Total Partnership" },
+    { count: 10, label: "Team Members" },
   ],
   textColor = "text-[#BF1D2F]",
   textColor2 = "text-black",

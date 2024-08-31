@@ -26,10 +26,6 @@ export default function AboutUs() {
             priority
             className="w-full h-auto rounded-xl"
           />
-          {/* <div className="absolute right-1/2 lg:-right-16 transform translate-x-1/2 lg:translate-x-0 -bottom-20   bg-white border border-white rounded-full shadow-md p-10 w-40 h-40 lg:w-40 lg:h-40 text-center">
-            <GoTrophy className="mx-auto text-3xl lg:text-4xl text-[#BF1D2F]" />
-            <p className="leading-tight mulish-semibold">Best Awarded</p>
-          </div> */}
         </motion.div>
         <div className="md:mx-10 mx-0 "></div>
 
@@ -60,39 +56,18 @@ export default function AboutUs() {
             efficiency.
           </p>
           <p className="mulish-semibold text-sm  leading-normal mx-auto text-black pt-3 text-justify">
-            At LUBXEN, we position ourselves as your partner of choice,
-            delivering top-tier lubricant solutions tailored to meet your
-            specific needs. Whether you operate heavy machinery, are a rally
-            driver, a daily commuter, or work in the automotive, marine, energy,
-            or industrial sectors, our extensive range of oil and grease
-            products is designed to empower your equipment, enhance its
-            performance, and extend its lifespan. We pride ourselves on
-            providing our customers with worldclass service, along with
-            technologically advanced products that allow us to remain
-            competitive and successful in growing our footprint. Our
-            customer-centric approach gives us the flexibility to cater to the
-            unique needs of both small to medium enterprises and larger
-            corporations. We believe that every customer, regardless of size, is
-            a valuable asset to our organization and is treated as such.
+            At LUBXEN, we strive to be your preferred partner, providing premium
+            lubricant solutions tailored to your unique requirements. Whether
+            you're operating heavy machinery, driving in rallies, commuting
+            daily, or working in the automotive, marine, energy, or industrial
+            sectors, our wide range of oil and grease products is designed to
+            empower your equipment, boost performance, and extend its life span.
+            We take pride in offering world-class service and cutting-edge
+            products, enabling us to stay competitive and expand our reach. Our
+            customer-focused approach allows us to adapt to the specific needs
+            of both small to medium enterprises and larger corporations,
+            treating every customer as a valuable asset, regardless of size.
           </p>
-          {/* <div className="flex flex-col sm:flex-row pt-5 items-start">
-            <Image
-              src={signature}
-              alt=""
-              width={200}
-              height={50}
-              priority
-              className="w-auto h-auto"
-            />
-            <div className="my-auto sm:ml-5 mt-3 sm:mt-0">
-              <p className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal">
-                Natalia Duke
-              </p>
-              <p className="mulish-regular  text-sm  leading-normal mx-auto text-black">
-                (Chairman and founder)
-              </p>
-            </div>
-          </div> */}
         </motion.div>
       </div>
       <div className="flex flex-col md:flex-row md:justify-between mt-10">

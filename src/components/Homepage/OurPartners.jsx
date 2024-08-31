@@ -78,13 +78,13 @@ export default function OurPartners() {
           >
             {logos.map((logo, index) => (
               <SwiperSlide key={index}>
-                <div>
+                <div className="flex items-center justify-center h-64 sm:h-80 md:h-96">
                   <Image
                     width={400}
                     height={300}
                     src={logo.src}
                     alt={logo.alt}
-                    className="rounded-lg w-full h-80"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
               </SwiperSlide>
