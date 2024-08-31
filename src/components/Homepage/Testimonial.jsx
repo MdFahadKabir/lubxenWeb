@@ -21,7 +21,7 @@ export default function Testimonial() {
         setCurrentIndex((prevIndex) =>
           prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
         );
-      }, 15000);
+      }, 10000);
 
       // Clear the interval when the component is unmounted or hovered
       return () => clearInterval(interval);
