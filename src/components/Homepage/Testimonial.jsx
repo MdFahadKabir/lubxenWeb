@@ -69,7 +69,7 @@ export default function Testimonial() {
                 onMouseLeave={handleMouseLeave}
               >
                 <div>
-                  <p className="text-start poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal -mb-10 text-[#BF1D2F]">
+                  <p className=" poppins-bold text-sm sm:text-2xl md:text-2xl lg:text-2xl leading-normal -mb-16 mt-5 text-center md:text-start text-[#BF1D2F]">
                     What our board has to say
                   </p>
                 </div>
@@ -81,7 +81,7 @@ export default function Testimonial() {
                   exit={{ opacity: 0, y: -100 }}
                   transition={{ type: "spring", stiffness: 100, damping: 20 }}
                 >
-                  <FaQuoteLeft className="text-2xl sm:text-3xl md:text-4xl text-[#0189FF] absolute -top-10 md:-top-5 left-5" />
+                  <FaQuoteLeft className="text-2xl sm:text-3xl md:text-4xl text-[#0189FF] absolute -top-3 md:-top-5 left-5" />
                   <p className="p-6 sm:p-8 md:p-10 bg-[#222222] overflow-hidden text-white text-xs sm:text-sm md:text-base rounded-3xl text-justify">
                     {testimonials[currentIndex].quote}
                   </p>
