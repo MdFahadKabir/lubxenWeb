@@ -374,554 +374,554 @@ const products = [
           ],
         },
       },
-      {
-        id: 4,
-        name: "MOMENTA NANO PLUS",
-        slug: "momenta-nano-plus",
-        producttype: "automative diesel engine oil",
-        synthetic: "SYNTHETIC / SEMI SYN",
-        ow: "10W-30",
-        classification: "API: CJ-4/SN",
-        image: Lubxen1,
-        content:
-          "Momenta Nano Plus is a premium performance semi synthetic low emission heavy-duty engine oil designed for naturally aspirated and turbocharged four-stroke diesel and petrol engines in on- and off-highway and construction machinery applications. It is formulated with a range of latest technology dispersant, detergent, oxidation inhibition, anti-wear, anti-corrosion, viscosity improver and foam suppression additives and is recommended for extended drain intervals.",
+      // {
+      //   id: 4,
+      //   name: "MOMENTA NANO PLUS",
+      //   slug: "momenta-nano-plus",
+      //   producttype: "automative diesel engine oil",
+      //   synthetic: "SYNTHETIC / SEMI SYN",
+      //   ow: "10W-30",
+      //   classification: "API: CJ-4/SN",
+      //   image: Lubxen1,
+      //   content:
+      //     "Momenta Nano Plus is a premium performance semi synthetic low emission heavy-duty engine oil designed for naturally aspirated and turbocharged four-stroke diesel and petrol engines in on- and off-highway and construction machinery applications. It is formulated with a range of latest technology dispersant, detergent, oxidation inhibition, anti-wear, anti-corrosion, viscosity improver and foam suppression additives and is recommended for extended drain intervals.",
 
-        performanceLevels: [
-          {
-            id: 0,
-            content: "API CJ-4/SN ",
-          },
-          {
-            id: 1,
-            content: "ACEA E9  ",
-          },
-          {
-            id: 2,
-            content: "MB 228.31 ",
-          },
-          {
-            id: 3,
-            content: "Caterpillar ECF-3 ",
-          },
-          {
-            id: 4,
-            content: "MAN M3477/3575 ",
-          },
-          {
-            id: 5,
-            content: "VOLVO VDS-4 ",
-          },
-          {
-            id: 6,
-            content: "Renault RLD-3 ",
-          },
-          {
-            id: 7,
-            content: "DDC 93K218 ",
-          },
-          {
-            id: 8,
-            content: "Mack EO-O PP ",
-          },
-          {
-            id: 9,
-            content: "Cummins CES 20081 ",
-          },
-          {
-            id: 10,
-            content: "DEUTZ DQC III-10 LA ",
-          },
-          {
-            id: 11,
-            content: "FORD WSS-M2C171-F1",
-          },
-        ],
-        oemApprovals: [
-          {
-            id: 0,
-            content: "Volvo VDS-4 (SAE 15W-40) ",
-          },
-          {
-            id: 1,
-            content: "Mack EO-O Premium Plus (SAE 15W-40)",
-          },
-          {
-            id: 2,
-            content: "Renault VI RLD-3 (SAE 15W-40)",
-          },
-          {
-            id: 4,
-            content: "MAN M3477 (SAE 10W-40)",
-          },
-        ],
-        contact: {
-          location:
-            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
-          email: "contact@lubxen.com",
-          contactNumber: [
-            {
-              id: 0,
-              number: "+971544997141",
-            },
-          ],
-        },
-      },
-      {
-        id: 4,
-        name: "MOMENTA NANO PLUS",
-        slug: "momenta-nano-plus",
-        producttype: "automative diesel engine oil",
-        synthetic: "SEMI SYNTHETIC",
-        ow: "10W-30",
-        classification: "API: CJ-4/SN",
-        image: Lubxen1,
-        content:
-          "Momenta Nano Plus is a premium performance semi synthetic low emission heavy-duty engine oil designed for naturally aspirated and turbocharged four-stroke diesel and petrol engines in on- and off-highway and construction machinery applications. It is formulated with a range of latest technology dispersant, detergent, oxidation inhibition, anti-wear, anti-corrosion, viscosity improver and foam suppression additives and is recommended for extended drain intervals.",
+      //   performanceLevels: [
+      //     {
+      //       id: 0,
+      //       content: "API CJ-4/SN ",
+      //     },
+      //     {
+      //       id: 1,
+      //       content: "ACEA E9  ",
+      //     },
+      //     {
+      //       id: 2,
+      //       content: "MB 228.31 ",
+      //     },
+      //     {
+      //       id: 3,
+      //       content: "Caterpillar ECF-3 ",
+      //     },
+      //     {
+      //       id: 4,
+      //       content: "MAN M3477/3575 ",
+      //     },
+      //     {
+      //       id: 5,
+      //       content: "VOLVO VDS-4 ",
+      //     },
+      //     {
+      //       id: 6,
+      //       content: "Renault RLD-3 ",
+      //     },
+      //     {
+      //       id: 7,
+      //       content: "DDC 93K218 ",
+      //     },
+      //     {
+      //       id: 8,
+      //       content: "Mack EO-O PP ",
+      //     },
+      //     {
+      //       id: 9,
+      //       content: "Cummins CES 20081 ",
+      //     },
+      //     {
+      //       id: 10,
+      //       content: "DEUTZ DQC III-10 LA ",
+      //     },
+      //     {
+      //       id: 11,
+      //       content: "FORD WSS-M2C171-F1",
+      //     },
+      //   ],
+      //   oemApprovals: [
+      //     {
+      //       id: 0,
+      //       content: "Volvo VDS-4 (SAE 15W-40) ",
+      //     },
+      //     {
+      //       id: 1,
+      //       content: "Mack EO-O Premium Plus (SAE 15W-40)",
+      //     },
+      //     {
+      //       id: 2,
+      //       content: "Renault VI RLD-3 (SAE 15W-40)",
+      //     },
+      //     {
+      //       id: 4,
+      //       content: "MAN M3477 (SAE 10W-40)",
+      //     },
+      //   ],
+      //   contact: {
+      //     location:
+      //       "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+      //     email: "contact@lubxen.com",
+      //     contactNumber: [
+      //       {
+      //         id: 0,
+      //         number: "+971544997141",
+      //       },
+      //     ],
+      //   },
+      // },
+      // {
+      //   id: 4,
+      //   name: "MOMENTA NANO PLUS",
+      //   slug: "momenta-nano-plus",
+      //   producttype: "automative diesel engine oil",
+      //   synthetic: "SEMI SYNTHETIC",
+      //   ow: "10W-30",
+      //   classification: "API: CJ-4/SN",
+      //   image: Lubxen1,
+      //   content:
+      //     "Momenta Nano Plus is a premium performance semi synthetic low emission heavy-duty engine oil designed for naturally aspirated and turbocharged four-stroke diesel and petrol engines in on- and off-highway and construction machinery applications. It is formulated with a range of latest technology dispersant, detergent, oxidation inhibition, anti-wear, anti-corrosion, viscosity improver and foam suppression additives and is recommended for extended drain intervals.",
 
-        performanceLevels: [
-          {
-            id: 0,
-            content: "API CJ-4/SN ",
-          },
-          {
-            id: 1,
-            content: "ACEA E9  ",
-          },
-          {
-            id: 2,
-            content: "MB 228.31 ",
-          },
-          {
-            id: 3,
-            content: "Caterpillar ECF-3 ",
-          },
-          {
-            id: 4,
-            content: "MAN M3477/3575 ",
-          },
-          {
-            id: 5,
-            content: "VOLVO VDS-4 ",
-          },
-          {
-            id: 6,
-            content: "Renault RLD-3 ",
-          },
-          {
-            id: 7,
-            content: "DDC 93K218 ",
-          },
-          {
-            id: 8,
-            content: "Mack EO-O PP ",
-          },
-          {
-            id: 9,
-            content: "Cummins CES 20081 ",
-          },
-          {
-            id: 10,
-            content: "DEUTZ DQC III-10 LA ",
-          },
-          {
-            id: 11,
-            content: "FORD WSS-M2C171-F1",
-          },
-        ],
-        oemApprovals: [
-          {
-            id: 0,
-            content: "Volvo VDS-4 (SAE 15W-40) ",
-          },
-          {
-            id: 1,
-            content: "Mack EO-O Premium Plus (SAE 15W-40)",
-          },
-          {
-            id: 2,
-            content: "Renault VI RLD-3 (SAE 15W-40)",
-          },
-          {
-            id: 4,
-            content: "MAN M3477 (SAE 10W-40)",
-          },
-        ],
-        contact: {
-          location:
-            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
-          email: "contact@lubxen.com",
-          contactNumber: [
-            {
-              id: 0,
-              number: "+971544997141",
-            },
-          ],
-        },
-      },
-      {
-        id: 5,
-        name: "MOMENTA NANO PLUS",
-        slug: "momenta-nano-plus",
-        producttype: "automative diesel engine oil",
-        synthetic: "MINERAL",
-        ow: "",
-        classification: "API: CJ-4/SN",
-        image: Lubxen1,
-        content:
-          "Momenta Nano Plus is an advanced mineral diesel engine oil that maximises engine performance in the latest US, European and Japanese heavy-duty diesel engines including severe applications such as high loads and multi-trailer operations.",
+      //   performanceLevels: [
+      //     {
+      //       id: 0,
+      //       content: "API CJ-4/SN ",
+      //     },
+      //     {
+      //       id: 1,
+      //       content: "ACEA E9  ",
+      //     },
+      //     {
+      //       id: 2,
+      //       content: "MB 228.31 ",
+      //     },
+      //     {
+      //       id: 3,
+      //       content: "Caterpillar ECF-3 ",
+      //     },
+      //     {
+      //       id: 4,
+      //       content: "MAN M3477/3575 ",
+      //     },
+      //     {
+      //       id: 5,
+      //       content: "VOLVO VDS-4 ",
+      //     },
+      //     {
+      //       id: 6,
+      //       content: "Renault RLD-3 ",
+      //     },
+      //     {
+      //       id: 7,
+      //       content: "DDC 93K218 ",
+      //     },
+      //     {
+      //       id: 8,
+      //       content: "Mack EO-O PP ",
+      //     },
+      //     {
+      //       id: 9,
+      //       content: "Cummins CES 20081 ",
+      //     },
+      //     {
+      //       id: 10,
+      //       content: "DEUTZ DQC III-10 LA ",
+      //     },
+      //     {
+      //       id: 11,
+      //       content: "FORD WSS-M2C171-F1",
+      //     },
+      //   ],
+      //   oemApprovals: [
+      //     {
+      //       id: 0,
+      //       content: "Volvo VDS-4 (SAE 15W-40) ",
+      //     },
+      //     {
+      //       id: 1,
+      //       content: "Mack EO-O Premium Plus (SAE 15W-40)",
+      //     },
+      //     {
+      //       id: 2,
+      //       content: "Renault VI RLD-3 (SAE 15W-40)",
+      //     },
+      //     {
+      //       id: 4,
+      //       content: "MAN M3477 (SAE 10W-40)",
+      //     },
+      //   ],
+      //   contact: {
+      //     location:
+      //       "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+      //     email: "contact@lubxen.com",
+      //     contactNumber: [
+      //       {
+      //         id: 0,
+      //         number: "+971544997141",
+      //       },
+      //     ],
+      //   },
+      // },
+      // {
+      //   id: 5,
+      //   name: "MOMENTA NANO PLUS",
+      //   slug: "momenta-nano-plus",
+      //   producttype: "automative diesel engine oil",
+      //   synthetic: "MINERAL",
+      //   ow: "",
+      //   classification: "API: CJ-4/SN",
+      //   image: Lubxen1,
+      //   content:
+      //     "Momenta Nano Plus is an advanced mineral diesel engine oil that maximises engine performance in the latest US, European and Japanese heavy-duty diesel engines including severe applications such as high loads and multi-trailer operations.",
 
-        performanceLevels: [
-          {
-            id: 0,
-            content: "API CJ-4/SN ",
-          },
-          {
-            id: 1,
-            content: "ACEA E9  ",
-          },
-          {
-            id: 2,
-            content: "MB 228.31 ",
-          },
-          {
-            id: 3,
-            content: "Caterpillar ECF-3 ",
-          },
-          {
-            id: 4,
-            content: "MAN M3477/3575 ",
-          },
-          {
-            id: 5,
-            content: "VOLVO VDS-4 ",
-          },
-          {
-            id: 6,
-            content: "Renault RLD-3 ",
-          },
-          {
-            id: 7,
-            content: "DDC 93K218 ",
-          },
-          {
-            id: 8,
-            content: "Mack EO-O PP ",
-          },
-          {
-            id: 9,
-            content: "Cummins CES 20081 ",
-          },
-          {
-            id: 10,
-            content: "DEUTZ DQC III-10 LA ",
-          },
-          {
-            id: 11,
-            content: "FORD WSS-M2C171-F1",
-          },
-        ],
-        oemApprovals: [
-          {
-            id: 0,
-            content: "Volvo VDS-4 (SAE 15W-40) ",
-          },
-          {
-            id: 1,
-            content: "Mack EO-O Premium Plus (SAE 15W-40)",
-          },
-          {
-            id: 2,
-            content: "Renault VI RLD-3 (SAE 15W-40)",
-          },
-        ],
-        contact: {
-          location:
-            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
-          email: "contact@lubxen.com",
-          contactNumber: [
-            {
-              id: 0,
-              number: "+971544997141",
-            },
-          ],
-        },
-      },
-      {
-        id: 6,
-        name: "MOMENTA NANO PXHPD",
-        slug: "momenta-nano-xhpd",
-        producttype: "automative diesel engine oil",
-        synthetic: "SYNTHETIC",
-        ow: "5W-40",
-        classification: "API: CI-4",
-        image: Lubxen1,
-        content:
-          "Momenta Nano XHPD is a synthetic extra high performance diesel engine oil developed to provide outstanding lubrication for modern, high performance diesel engines operating in severe on and off-highway applications. This product has been blended with highest performance base oils which provide excellent low temperature fluidity, high temperature viscosity retention, volatility control, and fuel economy improvement. These base oils are fortified with an advanced additive system which assures superior control of oil thickening caused by soot buildup and high temperature oxidation. It is formulated to provide long oil drain intervals in modern diesel engines.",
+      //   performanceLevels: [
+      //     {
+      //       id: 0,
+      //       content: "API CJ-4/SN ",
+      //     },
+      //     {
+      //       id: 1,
+      //       content: "ACEA E9  ",
+      //     },
+      //     {
+      //       id: 2,
+      //       content: "MB 228.31 ",
+      //     },
+      //     {
+      //       id: 3,
+      //       content: "Caterpillar ECF-3 ",
+      //     },
+      //     {
+      //       id: 4,
+      //       content: "MAN M3477/3575 ",
+      //     },
+      //     {
+      //       id: 5,
+      //       content: "VOLVO VDS-4 ",
+      //     },
+      //     {
+      //       id: 6,
+      //       content: "Renault RLD-3 ",
+      //     },
+      //     {
+      //       id: 7,
+      //       content: "DDC 93K218 ",
+      //     },
+      //     {
+      //       id: 8,
+      //       content: "Mack EO-O PP ",
+      //     },
+      //     {
+      //       id: 9,
+      //       content: "Cummins CES 20081 ",
+      //     },
+      //     {
+      //       id: 10,
+      //       content: "DEUTZ DQC III-10 LA ",
+      //     },
+      //     {
+      //       id: 11,
+      //       content: "FORD WSS-M2C171-F1",
+      //     },
+      //   ],
+      //   oemApprovals: [
+      //     {
+      //       id: 0,
+      //       content: "Volvo VDS-4 (SAE 15W-40) ",
+      //     },
+      //     {
+      //       id: 1,
+      //       content: "Mack EO-O Premium Plus (SAE 15W-40)",
+      //     },
+      //     {
+      //       id: 2,
+      //       content: "Renault VI RLD-3 (SAE 15W-40)",
+      //     },
+      //   ],
+      //   contact: {
+      //     location:
+      //       "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+      //     email: "contact@lubxen.com",
+      //     contactNumber: [
+      //       {
+      //         id: 0,
+      //         number: "+971544997141",
+      //       },
+      //     ],
+      //   },
+      // },
+      // {
+      //   id: 6,
+      //   name: "MOMENTA NANO PXHPD",
+      //   slug: "momenta-nano-xhpd",
+      //   producttype: "automative diesel engine oil",
+      //   synthetic: "SYNTHETIC",
+      //   ow: "5W-40",
+      //   classification: "API: CI-4",
+      //   image: Lubxen1,
+      //   content:
+      //     "Momenta Nano XHPD is a synthetic extra high performance diesel engine oil developed to provide outstanding lubrication for modern, high performance diesel engines operating in severe on and off-highway applications. This product has been blended with highest performance base oils which provide excellent low temperature fluidity, high temperature viscosity retention, volatility control, and fuel economy improvement. These base oils are fortified with an advanced additive system which assures superior control of oil thickening caused by soot buildup and high temperature oxidation. It is formulated to provide long oil drain intervals in modern diesel engines.",
 
-        performanceLevels: [
-          {
-            id: 0,
-            content: "API CI-4 ",
-          },
-          {
-            id: 1,
-            content: "ACEA E7, E4 ",
-          },
-          {
-            id: 2,
-            content: "MB 228.5",
-          },
-          {
-            id: 3,
-            content: "MAN M3277",
-          },
-          {
-            id: 4,
-            content: "Volvo VDS-3 ",
-          },
-          {
-            id: 5,
-            content: "Scania LDF-2 ",
-          },
-          {
-            id: 6,
-            content: "MACK EO-M Plus ",
-          },
-          {
-            id: 7,
-            content: "Cummins CES 20077/78",
-          },
-          {
-            id: 8,
-            content: "Renault RXD/RLD-2",
-          },
-          {
-            id: 9,
-            content: "MTU Type 3",
-          },
-        ],
-        oemApprovals: [
-          {
-            id: 0,
-            content: "Volvo VDS-4 (SAE 15W-40) ",
-          },
-          {
-            id: 1,
-            content: "Mack EO-O Premium Plus (SAE 15W-40)",
-          },
-          {
-            id: 2,
-            content: "Renault VI RLD-3 (SAE 15W-40)",
-          },
-        ],
-        contact: {
-          location:
-            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
-          email: "contact@lubxen.com",
-          contactNumber: [
-            {
-              id: 0,
-              number: "+971544997141",
-            },
-          ],
-        },
-      },
-      {
-        id: 7,
-        name: "MOMENTA NANO LE",
-        slug: "momenta-nano-le",
-        producttype: "automative diesel engine oil",
-        synthetic: "SYNTHETIC",
-        ow: "5W-30",
-        classification: "API: CI-4",
-        image: Lubxen1,
-        content:
-          "Momenta Nano LE is synthetic extra high performance “low SAPS” diesel engine oil formulated to provide protection for highly rated diesel engines running in severe service conditions. This product meets the current heavy duty truck OEM specifications required for engines meeting the latest EU emission standard Euro VI. It is strongly recommended for EGR diesel engines fitted with after-treatment systems such as DPFs and SCR NOx reduction systems.",
+      //   performanceLevels: [
+      //     {
+      //       id: 0,
+      //       content: "API CI-4 ",
+      //     },
+      //     {
+      //       id: 1,
+      //       content: "ACEA E7, E4 ",
+      //     },
+      //     {
+      //       id: 2,
+      //       content: "MB 228.5",
+      //     },
+      //     {
+      //       id: 3,
+      //       content: "MAN M3277",
+      //     },
+      //     {
+      //       id: 4,
+      //       content: "Volvo VDS-3 ",
+      //     },
+      //     {
+      //       id: 5,
+      //       content: "Scania LDF-2 ",
+      //     },
+      //     {
+      //       id: 6,
+      //       content: "MACK EO-M Plus ",
+      //     },
+      //     {
+      //       id: 7,
+      //       content: "Cummins CES 20077/78",
+      //     },
+      //     {
+      //       id: 8,
+      //       content: "Renault RXD/RLD-2",
+      //     },
+      //     {
+      //       id: 9,
+      //       content: "MTU Type 3",
+      //     },
+      //   ],
+      //   oemApprovals: [
+      //     {
+      //       id: 0,
+      //       content: "Volvo VDS-4 (SAE 15W-40) ",
+      //     },
+      //     {
+      //       id: 1,
+      //       content: "Mack EO-O Premium Plus (SAE 15W-40)",
+      //     },
+      //     {
+      //       id: 2,
+      //       content: "Renault VI RLD-3 (SAE 15W-40)",
+      //     },
+      //   ],
+      //   contact: {
+      //     location:
+      //       "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+      //     email: "contact@lubxen.com",
+      //     contactNumber: [
+      //       {
+      //         id: 0,
+      //         number: "+971544997141",
+      //       },
+      //     ],
+      //   },
+      // },
+      // {
+      //   id: 7,
+      //   name: "MOMENTA NANO LE",
+      //   slug: "momenta-nano-le",
+      //   producttype: "automative diesel engine oil",
+      //   synthetic: "SYNTHETIC",
+      //   ow: "5W-30",
+      //   classification: "API: CI-4",
+      //   image: Lubxen1,
+      //   content:
+      //     "Momenta Nano LE is synthetic extra high performance “low SAPS” diesel engine oil formulated to provide protection for highly rated diesel engines running in severe service conditions. This product meets the current heavy duty truck OEM specifications required for engines meeting the latest EU emission standard Euro VI. It is strongly recommended for EGR diesel engines fitted with after-treatment systems such as DPFs and SCR NOx reduction systems.",
 
-        performanceLevels: [
-          {
-            id: 0,
-            content: "API CI-4 ",
-          },
-          {
-            id: 1,
-            content: "ACEA E6/E7/E9",
-          },
-          {
-            id: 2,
-            content: "MB 228.51/226.9",
-          },
-          {
-            id: 3,
-            content: "MAN M3477/M3271 ",
-          },
-          {
-            id: 4,
-            content: "Volvo VDS-4 ",
-          },
-          {
-            id: 5,
-            content: "Scania Low Ash",
-          },
-          {
-            id: 6,
-            content: "MACK EO-M PP ",
-          },
-          {
-            id: 7,
-            content: "Cummins CES 20076/77 ",
-          },
-          {
-            id: 8,
-            content: "Renault RXD/RGD/RLD-2",
-          },
-          {
-            id: 9,
-            content: "MTU Type 3.1",
-          },
-          {
-            id: 10,
-            content: "DAF",
-          },
-          {
-            id: 11,
-            content: "DEUTZ DQC IV-10 LA ",
-          },
-          {
-            id: 12,
-            content: "JASO DH-2",
-          },
-          {
-            id: 13,
-            content: "VOITH Class B",
-          },
-        ],
-        // oemApprovals: [
-        //   {
-        //     id: 0,
-        //     content: "Volvo VDS-4 (SAE 15W-40) ",
-        //   },
-        //   {
-        //     id: 1,
-        //     content: "Mack EO-O Premium Plus (SAE 15W-40)",
-        //   },
-        //   {
-        //     id: 2,
-        //     content: "Renault VI RLD-3 (SAE 15W-40)",
-        //   },
-        // ],
-        contact: {
-          location:
-            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
-          email: "contact@lubxen.com",
-          contactNumber: [
-            {
-              id: 0,
-              number: "+971544997141",
-            },
-          ],
-        },
-      },
-      {
-        id: 8,
-        name: "MOMENTA LDF3",
-        slug: "momenta-ldf3",
-        producttype: "automative diesel engine oil",
-        synthetic: "SYNTHETIC",
-        ow: "",
-        classification: "API: CF",
-        image: Lubxen1,
-        content:
-          "Momenta LDF3 is a synthetic extra high performance diesel engine oil designed to provide outstanding lubrication and protection for  modern, high performance diesel engines used in severe on and off-highway applications. It is blended using high performance base oils which are enhanced with an advanced additive system that provides long drain intervals in modern diesel engines. It is recommended for Euro VI and previous engine models of most manufacturers.",
+      //   performanceLevels: [
+      //     {
+      //       id: 0,
+      //       content: "API CI-4 ",
+      //     },
+      //     {
+      //       id: 1,
+      //       content: "ACEA E6/E7/E9",
+      //     },
+      //     {
+      //       id: 2,
+      //       content: "MB 228.51/226.9",
+      //     },
+      //     {
+      //       id: 3,
+      //       content: "MAN M3477/M3271 ",
+      //     },
+      //     {
+      //       id: 4,
+      //       content: "Volvo VDS-4 ",
+      //     },
+      //     {
+      //       id: 5,
+      //       content: "Scania Low Ash",
+      //     },
+      //     {
+      //       id: 6,
+      //       content: "MACK EO-M PP ",
+      //     },
+      //     {
+      //       id: 7,
+      //       content: "Cummins CES 20076/77 ",
+      //     },
+      //     {
+      //       id: 8,
+      //       content: "Renault RXD/RGD/RLD-2",
+      //     },
+      //     {
+      //       id: 9,
+      //       content: "MTU Type 3.1",
+      //     },
+      //     {
+      //       id: 10,
+      //       content: "DAF",
+      //     },
+      //     {
+      //       id: 11,
+      //       content: "DEUTZ DQC IV-10 LA ",
+      //     },
+      //     {
+      //       id: 12,
+      //       content: "JASO DH-2",
+      //     },
+      //     {
+      //       id: 13,
+      //       content: "VOITH Class B",
+      //     },
+      //   ],
+      //   // oemApprovals: [
+      //   //   {
+      //   //     id: 0,
+      //   //     content: "Volvo VDS-4 (SAE 15W-40) ",
+      //   //   },
+      //   //   {
+      //   //     id: 1,
+      //   //     content: "Mack EO-O Premium Plus (SAE 15W-40)",
+      //   //   },
+      //   //   {
+      //   //     id: 2,
+      //   //     content: "Renault VI RLD-3 (SAE 15W-40)",
+      //   //   },
+      //   // ],
+      //   contact: {
+      //     location:
+      //       "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+      //     email: "contact@lubxen.com",
+      //     contactNumber: [
+      //       {
+      //         id: 0,
+      //         number: "+971544997141",
+      //       },
+      //     ],
+      //   },
+      // },
+      // {
+      //   id: 8,
+      //   name: "MOMENTA LDF3",
+      //   slug: "momenta-ldf3",
+      //   producttype: "automative diesel engine oil",
+      //   synthetic: "SYNTHETIC",
+      //   ow: "",
+      //   classification: "API: CF",
+      //   image: Lubxen1,
+      //   content:
+      //     "Momenta LDF3 is a synthetic extra high performance diesel engine oil designed to provide outstanding lubrication and protection for  modern, high performance diesel engines used in severe on and off-highway applications. It is blended using high performance base oils which are enhanced with an advanced additive system that provides long drain intervals in modern diesel engines. It is recommended for Euro VI and previous engine models of most manufacturers.",
 
-        performanceLevels: [
-          {
-            id: 0,
-            content: "API CF",
-          },
-          {
-            id: 1,
-            content: "ACEA E7/E4",
-          },
-          {
-            id: 2,
-            content: "MB 228.5/235.28",
-          },
-          {
-            id: 3,
-            content: "Scania LDF-3 ",
-          },
-          {
-            id: 4,
-            content: "DAF Extended Drain ",
-          },
-          {
-            id: 5,
-            content: "MAN M 3277",
-          },
-          {
-            id: 6,
-            content: "Cummins CES 20077 ",
-          },
-          {
-            id: 7,
-            content: "Renault RLD-2/RXD",
-          },
-          {
-            id: 8,
-            content: "MTU Type 3 ",
-          },
-          {
-            id: 9,
-            content: "Mack EO-M Plus ",
-          },
-          {
-            id: 10,
-            content: "DEUTZ DQC III-10",
-          },
-          {
-            id: 11,
-            content: "Volvo VDS-3",
-          },
-          {
-            id: 12,
-            content: "FORD WSS-M2C212-A1",
-          },
-          {
-            id: 13,
-            content: "VOITH Class B ",
-          },
-          {
-            id: 14,
-            content: "IVECO",
-          },
-        ],
-        // oemApprovals: [
-        //   {
-        //     id: 0,
-        //     content: "Volvo VDS-4 (SAE 15W-40) ",
-        //   },
-        //   {
-        //     id: 1,
-        //     content: "Mack EO-O Premium Plus (SAE 15W-40)",
-        //   },
-        //   {
-        //     id: 2,
-        //     content: "Renault VI RLD-3 (SAE 15W-40)",
-        //   },
-        // ],
-        contact: {
-          location:
-            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
-          email: "contact@lubxen.com",
-          contactNumber: [
-            {
-              id: 0,
-              number: "+971544997141",
-            },
-          ],
-        },
-      },
+      //   performanceLevels: [
+      //     {
+      //       id: 0,
+      //       content: "API CF",
+      //     },
+      //     {
+      //       id: 1,
+      //       content: "ACEA E7/E4",
+      //     },
+      //     {
+      //       id: 2,
+      //       content: "MB 228.5/235.28",
+      //     },
+      //     {
+      //       id: 3,
+      //       content: "Scania LDF-3 ",
+      //     },
+      //     {
+      //       id: 4,
+      //       content: "DAF Extended Drain ",
+      //     },
+      //     {
+      //       id: 5,
+      //       content: "MAN M 3277",
+      //     },
+      //     {
+      //       id: 6,
+      //       content: "Cummins CES 20077 ",
+      //     },
+      //     {
+      //       id: 7,
+      //       content: "Renault RLD-2/RXD",
+      //     },
+      //     {
+      //       id: 8,
+      //       content: "MTU Type 3 ",
+      //     },
+      //     {
+      //       id: 9,
+      //       content: "Mack EO-M Plus ",
+      //     },
+      //     {
+      //       id: 10,
+      //       content: "DEUTZ DQC III-10",
+      //     },
+      //     {
+      //       id: 11,
+      //       content: "Volvo VDS-3",
+      //     },
+      //     {
+      //       id: 12,
+      //       content: "FORD WSS-M2C212-A1",
+      //     },
+      //     {
+      //       id: 13,
+      //       content: "VOITH Class B ",
+      //     },
+      //     {
+      //       id: 14,
+      //       content: "IVECO",
+      //     },
+      //   ],
+      //   // oemApprovals: [
+      //   //   {
+      //   //     id: 0,
+      //   //     content: "Volvo VDS-4 (SAE 15W-40) ",
+      //   //   },
+      //   //   {
+      //   //     id: 1,
+      //   //     content: "Mack EO-O Premium Plus (SAE 15W-40)",
+      //   //   },
+      //   //   {
+      //   //     id: 2,
+      //   //     content: "Renault VI RLD-3 (SAE 15W-40)",
+      //   //   },
+      //   // ],
+      //   contact: {
+      //     location:
+      //       "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+      //     email: "contact@lubxen.com",
+      //     contactNumber: [
+      //       {
+      //         id: 0,
+      //         number: "+971544997141",
+      //       },
+      //     ],
+      //   },
+      // },
       {
         id: 9,
         name: "MOMENTA NANO MAX",
