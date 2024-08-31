@@ -36,7 +36,7 @@ const Navbar = () => {
         {
           id: 4,
           name: "Executive Message Board",
-          href: "/executive_message_Board",
+          href: "/executive_message_board",
         },
       ],
     },
