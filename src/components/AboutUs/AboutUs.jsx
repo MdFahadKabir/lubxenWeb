@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion"; // Import Framer Motion
-import img1 from "../../../public/images/about.jpg";
+import img1 from "../../../public/images/car3.jpg";
 import vision_icon from "../../../public/images/vision_icon.png";
 import mission_icon from "../../../public/images/mission_icon.png";
 
