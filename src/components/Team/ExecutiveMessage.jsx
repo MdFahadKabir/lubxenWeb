@@ -14,12 +14,18 @@ export default function ExecutiveMessage() {
           </div>
 
           <div className="flex flex-col md:flex-row md:justify-between">
-            <div className="w-full md:w-2/5">
+            <div className="w-full md:w-1/5">
               <Image
                 src={Alamgir_Kabir}
                 alt="Alamgir_kabir"
                 className="w-auto h-auto rounded-xl"
               />
+              <p className="poppins-bold text-lg sm:text-base md:text-base lg:text-base leading-normal">
+                Mohammed Alamgir Kabir
+              </p>
+              <p className="text-justify mulish-regular  text-sm leading-normal">
+                Chairman of LUBXEN
+              </p>
             </div>
             <div className="mx-5 mt-5 "></div>
             <div className="w-full my-auto">
