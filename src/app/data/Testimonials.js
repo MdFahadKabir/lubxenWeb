@@ -6,7 +6,7 @@ const testimonials = [
   {
     id: 0,
     quote:
-      "Graduating from UNSW Australia, Vice Chairman of Lubxen, Mohammed Shadman Kabir provides modern vision to the company. He believes Lubxen is a game changer and with the level of vision, quality and opportunity the brand provides Lubxen will be users and distributors ultimate choice",
+      "Graduating from UNSW Australia, Mohammed Shadman Kabir provides modern vision to the company. He believes Lubxen is a game changer and with the level of vision, quality and opportunity the brand provides Lubxen will be users and distributors ultimate choice",
     name: "Mohammed Shadman Kabir",
     designation: "Vice Chairman of Lubxen",
     image: Mohammed_Shadman_Kabir,
