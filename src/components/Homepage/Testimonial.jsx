@@ -82,7 +82,7 @@ export default function Testimonial() {
                   transition={{ type: "spring", stiffness: 100, damping: 20 }}
                 >
                   <FaQuoteLeft className="text-2xl sm:text-3xl md:text-4xl text-[#0189FF] absolute -top-3 md:-top-5 left-5" />
-                  <p className="p-6 sm:p-8 md:p-10 bg-[#222222] overflow-hidden text-white text-xs sm:text-sm md:text-base rounded-3xl text-justify">
+                  <p className="p-6 sm:p-8 md:p-10 bg-[#222222] overflow-hidden text-white text-xs sm:text-sm md:text-base rounded-3xl text-start">
                     {testimonials[currentIndex].quote}
                   </p>
                   <AiFillCaretDown className="text-3xl sm:text-4xl md:text-5xl text-[#222222] absolute -bottom-8 left-5" />
