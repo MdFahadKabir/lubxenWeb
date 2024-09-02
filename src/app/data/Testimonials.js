@@ -6,7 +6,7 @@ const testimonials = [
   {
     id: 0,
     quote:
-      "Graduating from UNSW Australia, Mohammed Shadman Kabir provides modern vision to the company. He believes Lubxen is a game changer and with the level of vision, quality and opportunity the brand provides Lubxen will be users and distributors ultimate choice",
+      "Graduating from UNSW Australia, Mohammed Shadman Kabir provides modern vision to the company. He believes Lubxen is a game changer and with the level of vision, quality and opportunity the brand provides Lubxen will be users and distributors ultimate choice.",
     name: "Mohammed Shadman Kabir",
     designation: "Vice Chairman of Lubxen",
     image: Mohammed_Shadman_Kabir,
@@ -22,7 +22,7 @@ const testimonials = [
   {
     id: 2,
     quote:
-      "Shyed Emran Karim is Lubxen’ foreign Director. Mr Karim’ has a massive experience about the manufacturing and trading industry. “Lubxen is here for a revolution. The brand is dedicated to upholding the highest level of customer service, product quality and companionship with all our distributors",
+      "Shyed Emran Karim is Lubxen’ foreign Director. Mr Karim’ has a massive experience about the manufacturing and trading industry. “Lubxen is here for a revolution. The brand is dedicated to upholding the highest level of customer service, product quality and companionship with all our distributors.",
     name: "Shyed Emran Karim",
     designation: "Director of Lubxen",
     image: Shyed_Emran_Karim,
