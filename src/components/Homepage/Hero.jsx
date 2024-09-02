@@ -4,10 +4,10 @@ import Image from "next/image";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
 import heroImage from "../../../public/images/bgimg.png";
-import gola1 from "../../../public/images/lubxen_product1.jpeg";
-import gola2 from "../../../public/images/lubxen_product2.jpeg";
-import gola3 from "../../../public/images/lubxen_product3.jpeg";
-import gola4 from "../../../public/images/lubxen_product4.jpeg";
+import lubxen_product1 from "../../../public/images/lubxen_product1.jpeg";
+import lubxen_product2 from "../../../public/images/lubxen_product2.jpeg";
+import lubxen_product3 from "../../../public/images/lubxen_product3.jpeg";
+import lubxen_product4 from "../../../public/images/lubxen_product4.jpeg";
 import Link from "next/link";
 
 export default function Hero({
@@ -143,7 +143,12 @@ export default function Hero({
           {/* Floating images */}
           <div className="w-full my-auto">
             <div className="grid grid-cols-2 gap-6">
-              {[gola1, gola2, gola3, gola4].map((image, index) => (
+              {[
+                lubxen_product1,
+                lubxen_product2,
+                lubxen_product3,
+                lubxen_product4,
+              ].map((image, index) => (
                 <motion.div
                   key={index}
                   className={`me-auto ${
@@ -156,7 +161,7 @@ export default function Hero({
                 >
                   <Image
                     src={image}
-                    alt={`gola${index + 1}`}
+                    alt={`lubxen_product${index + 1}`}
                     className="w-auto h-auto rounded-2xl"
                   />
                 </motion.div>
