@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function AnimatedNumber({
   data = [
     { count: 10, label: "Total Distributor" },
-    { count: 88, label: "Total Products" },
+    { count: 191, label: "Total Products" },
     { count: 10, label: "Total Partnership" },
     { count: 10, label: "Team Members" },
   ],
