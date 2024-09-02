@@ -11,7 +11,7 @@ export default function AboutUs() {
     <div className="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16">
       <div className="flex flex-col lg:flex-row justify-between">
         <motion.div
-          className="relative w-full md:w-5/12 mb-10 md:my-auto"
+          className="relative w-full md:w-6/12 mb-10 md:my-auto"
           initial={{ opacity: 0, x: -50 }} // Initial animation state
           animate={{ opacity: 1, x: 0 }} // Final animation state
           transition={{ duration: 1 }} // Animation duration
@@ -28,7 +28,7 @@ export default function AboutUs() {
         <div className="md:mx-10 mx-0 "></div>
 
         <motion.div
-          className="w-full md:w-7/12 my-auto"
+          className="w-full md:w-6/12 my-auto"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
