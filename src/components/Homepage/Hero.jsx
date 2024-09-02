@@ -4,10 +4,10 @@ import Image from "next/image";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
 import heroImage from "../../../public/images/bgimg.png";
-import gola1 from "../../../public/images/oil4.png";
-import gola2 from "../../../public/images/oil2.png";
-import gola3 from "../../../public/images/oil6.png";
-import gola4 from "../../../public/images/gola4.png";
+import gola1 from "../../../public/images/lubxen_product1.jpeg";
+import gola2 from "../../../public/images/lubxen_product2.jpeg";
+import gola3 from "../../../public/images/lubxen_product3.jpeg";
+import gola4 from "../../../public/images/lubxen_product4.jpeg";
 import Link from "next/link";
 
 export default function Hero({
