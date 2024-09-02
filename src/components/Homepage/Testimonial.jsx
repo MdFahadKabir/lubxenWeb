@@ -70,7 +70,7 @@ export default function Testimonial() {
               >
                 <div>
                   <p className=" poppins-bold text-lg sm:text-2xl md:text-3xl lg:text-2xl leading-normal -mb-16 mt-5 text-center md:text-start text-[#BF1D2F]">
-                    What our board has to say
+                    What of Lubxen board has to say
                   </p>
                 </div>
                 <motion.div

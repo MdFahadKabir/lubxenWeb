@@ -101,7 +101,11 @@ export default function Hero({
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.4 }}
             >
-              LUBXEN – Your Trusted Energy Partner
+              LUBXEN – Your Trusted{" "}
+              <motion.span className="relative inline-block text-[#BF1D2F]">
+                Energy
+              </motion.span>{" "}
+              Partner
             </motion.p>
             <motion.p
               className="text-sm md:text-base mulish-regular  text-black pb-5 text-justify"
