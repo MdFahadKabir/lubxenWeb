@@ -4,9 +4,9 @@ import Image from "next/image";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
 import heroImage from "../../../public/images/bgimg.png";
-import gola1 from "../../../public/images/gola1.png";
-import gola2 from "../../../public/images/gola2.png";
-import gola3 from "../../../public/images/gola3.png";
+import gola1 from "../../../public/images/oil4.png";
+import gola2 from "../../../public/images/oil2.png";
+import gola3 from "../../../public/images/oil6.png";
 import gola4 from "../../../public/images/gola4.png";
 import Link from "next/link";
 
@@ -59,7 +59,7 @@ export default function Hero({
             >
               "Where Efficiency Fuels Your Performance
             </motion.p>
-            <motion.p
+            {/* <motion.p
               className="text-3xl md:text-5xl mulish-bold py-5 md:block hidden"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -94,9 +94,9 @@ export default function Hero({
                 Energy
               </motion.span>{" "}
               Partner
-            </motion.p>
+            </motion.p> */}
             <motion.p
-              className="text-3xl md:text-5xl mulish-bold py-5 block md:hidden"
+              className="text-3xl md:text-5xl mulish-bold py-5 "
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.4 }}

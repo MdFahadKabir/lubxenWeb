@@ -13,8 +13,9 @@ export default function ContactForm({
   const [formData, setFormData] = useState({
     to_name: "Md Fahad Kabir",
     from_name: "",
-    message: "",
     email: "",
+    mobile: "",
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -34,15 +35,16 @@ export default function ContactForm({
 
     emailjs
       .send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, // Use environment variable
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, // Use environment variable
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         {
           to_name: formData.to_name,
           from_name: formData.from_name,
-          message: formData.message,
           email: formData.email,
+          mobile: formData.mobile,
+          message: formData.message,
         },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY // Use environment variable
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
       .then(
         (response) => {
@@ -52,6 +54,7 @@ export default function ContactForm({
             to_name: "Md Fahad Kabir",
             from_name: "",
             email: "",
+            mobile: "",
             message: "",
           });
         },
@@ -61,20 +64,22 @@ export default function ContactForm({
         }
       );
   };
-
   return (
-    <div>
+    <div className="w-full my-auto">
       <motion.div
-        className="w-full p-8 rounded-3xl"
+        className="w-full py-6 px-3 md:p-8 rounded-3xl"
         style={{ backgroundColor: bgColor }}
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <h2 className="text-3xl mb-2 poppins-bold" style={{ color: textColor }}>
-          Connect with{" "}
+        <h2
+          className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal mb-2"
+          style={{ color: textColor }}
+        >
+          Become a{" "}
           <span className="poppins-bold-italic" style={{ color: borderColor }}>
-            us
+            distributor
           </span>
         </h2>
         <p
@@ -90,7 +95,7 @@ export default function ContactForm({
             <input
               id="from_name"
               type="text"
-              className="w-full p-2 rounded-md text-sm"
+              className="w-full p-1 md:p-2 rounded-md text-sm"
               style={{ backgroundColor: bgColor2, color: textColor }}
               placeholder="Your Name"
               value={formData.from_name}
@@ -106,7 +111,7 @@ export default function ContactForm({
             <input
               id="email"
               type="email"
-              className="w-full p-2 rounded-md text-sm"
+              className="w-full p-1 md:p-2 rounded-md text-sm"
               style={{ backgroundColor: bgColor2, color: textColor }}
               placeholder="Your Email"
               value={formData.email}
@@ -119,12 +124,28 @@ export default function ContactForm({
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
+            <input
+              id="mobile"
+              type="tel"
+              className="w-full p-1 md:p-2 rounded-md text-sm"
+              style={{ backgroundColor: bgColor2, color: textColor }}
+              placeholder="Your Mobile Number"
+              value={formData.mobile}
+              onChange={handleChange}
+              required
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
+          >
             <textarea
               id="message"
-              className="w-full p-2 rounded-md text-sm"
+              className="w-full p-1 md:p-2 rounded-md text-sm"
               style={{ backgroundColor: bgColor2, color: textColor }}
               placeholder="Your Message"
-              rows="4"
+              rows="2"
               value={formData.message}
               onChange={handleChange}
               required
@@ -132,7 +153,7 @@ export default function ContactForm({
           </motion.div>
           <motion.button
             type="submit"
-            className="w-full p-2 rounded-md text-white"
+            className="w-full p-1 md:p-2 rounded-md text-white"
             style={{ backgroundColor: buttonBgColor }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

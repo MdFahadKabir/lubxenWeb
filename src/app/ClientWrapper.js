@@ -30,7 +30,7 @@ export default function ClientWrapper({ children }) {
       <Navbar />
       {children}
       <FloatingWhatsApp
-        phoneNumber="+8801765551768" // Replace with your actual phone number
+        phoneNumber="+971544997141" // Replace with your actual phone number
         accountName="LUBXEN Team" // Replace with your account name
         avatar="images/LubxenLogo.png" // Optional: Replace with a valid URL for the avatar image
         statusMessage="Typically replies within a few Hours"

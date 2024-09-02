@@ -69,7 +69,7 @@ export default function Testimonial() {
                 onMouseLeave={handleMouseLeave}
               >
                 <div>
-                  <p className=" poppins-bold text-sm sm:text-2xl md:text-2xl lg:text-2xl leading-normal -mb-16 mt-5 text-center md:text-start text-[#BF1D2F]">
+                  <p className=" poppins-bold text-lg sm:text-2xl md:text-3xl lg:text-2xl leading-normal -mb-16 mt-5 text-center md:text-start text-[#BF1D2F]">
                     What our board has to say
                   </p>
                 </div>

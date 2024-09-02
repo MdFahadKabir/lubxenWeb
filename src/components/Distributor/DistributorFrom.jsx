@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
-export default function DistributorFrom({
+export default function DistributorForm({
   bgColor = "#EEF1F5",
   bgColor2 = "#FFFFFF",
   borderColor = "#BF1D2F",
@@ -13,8 +13,9 @@ export default function DistributorFrom({
   const [formData, setFormData] = useState({
     to_name: "Md Fahad Kabir",
     from_name: "",
-    message: "",
     email: "",
+    mobile: "",
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -34,15 +35,16 @@ export default function DistributorFrom({
 
     emailjs
       .send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, // Use environment variable
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, // Use environment variable
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         {
           to_name: formData.to_name,
           from_name: formData.from_name,
-          message: formData.message,
           email: formData.email,
+          mobile: formData.mobile,
+          message: formData.message,
         },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY // Use environment variable
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
       .then(
         (response) => {
@@ -52,6 +54,7 @@ export default function DistributorFrom({
             to_name: "Md Fahad Kabir",
             from_name: "",
             email: "",
+            mobile: "",
             message: "",
           });
         },
@@ -121,6 +124,22 @@ export default function DistributorFrom({
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
+          >
+            <input
+              id="mobile"
+              type="tel"
+              className="w-full p-1 md:p-2 rounded-md text-sm"
+              style={{ backgroundColor: bgColor2, color: textColor }}
+              placeholder="Your Mobile Number"
+              value={formData.mobile}
+              onChange={handleChange}
+              required
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
           >
             <textarea
               id="message"

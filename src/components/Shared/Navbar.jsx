@@ -81,7 +81,7 @@ const Navbar = () => {
   return (
     <>
       <div className="z-40 relative">
-        <GoogleTranslate />
+        {/* <GoogleTranslate /> */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

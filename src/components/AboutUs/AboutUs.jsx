@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion"; // Import Framer Motion
-import img1 from "../../../public/images/car3.jpg";
+import oil from "../../../public/images/oil10.jpeg";
 import vision_icon from "../../../public/images/vision_icon.png";
 import mission_icon from "../../../public/images/mission_icon.png";
 
@@ -11,18 +11,18 @@ export default function AboutUs() {
     <div className="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16">
       <div className="flex flex-col lg:flex-row justify-between">
         <motion.div
-          className="relative w-full md:w-5/12 mb-10 md:mb-0"
+          className="relative w-full md:w-5/12 mb-10 md:my-auto"
           initial={{ opacity: 0, x: -50 }} // Initial animation state
           animate={{ opacity: 1, x: 0 }} // Final animation state
           transition={{ duration: 1 }} // Animation duration
         >
           <Image
-            src={img1}
-            alt=""
+            src={oil}
+            alt="lubxen-oil.jpg"
             width={400}
             height={400}
             priority
-            className="w-full h-auto rounded-xl"
+            className="w-full h-auto rounded-xl "
           />
         </motion.div>
         <div className="md:mx-10 mx-0 "></div>
