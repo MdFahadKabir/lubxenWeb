@@ -84,10 +84,11 @@ export default function Faq() {
                           Open the following link into the website you'll use
                           this resource on.{" "}
                           <span>
-                            <Link href="/lubxen_company_profile.pdf">
-                              <p className="w-full text-xs md:text-lg text-[#BF1D2D] font-bold  transition-transform sc hover:scale-110 duration-700">
-                                If you want to know more..
-                              </p>
+                            <Link
+                              href="/lubxen_company_profile.pdf"
+                              className="w-full text-xs md:text-lg text-[#BF1D2D] font-bold  transition-transform sc hover:scale-110 duration-700"
+                            >
+                              If you want to know more..
                             </Link>
                           </span>
                         </p>

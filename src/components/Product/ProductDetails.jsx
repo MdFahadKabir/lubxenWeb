@@ -17,7 +17,7 @@ export default function ProductDetails({
   if (!product || !categoryProducts) {
     return <p>Product details not available</p>;
   }
-  console.log(categorySlug);
+
   return (
     <div className="flex flex-col lg:flex-row justify-between  px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16">
       {/* Sidebar with product list */}
@@ -186,7 +186,7 @@ export default function ProductDetails({
                 transition={{ duration: 0.5 }}
                 className="poppins-bold text-xs sm:text-sm md:text-sm lg:text-sm leading-normal mb-2 uppercase"
               >
-                Highlight:
+                Highlight :
               </motion.p>
               {product.highlight.map((item, index) => (
                 <div key={index} className="flex flex-row">
@@ -199,40 +199,12 @@ export default function ProductDetails({
             </motion.div>
           </div>
         )}
-        <div className="flex flex-col md:flex-row md:justify-between">
-          <div className="flex flex-col md:flex-row md:justify-between">
-            {/* Render Performance Levels if available */}
 
-            {product.performanceLevels &&
-              product.performanceLevels.length > 0 && (
-                <div className="w-full">
-                  <motion.div
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.5, delay: 0.2 }}
-                    className="mb-5"
-                  >
-                    <motion.p
-                      initial={{ opacity: 0, y: -20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5 }}
-                      className="poppins-bold text-xs sm:text-sm md:text-sm lg:text-sm leading-normal mb-2 uppercase"
-                    >
-                      Performance Levels (Meets & Exceeds):
-                    </motion.p>
-                    {product.performanceLevels.map((item, index) => (
-                      <div key={index} className="flex flex-row">
-                        <BsCircleHalf className="text-xs text-[#BF1D2F] mt-1" />
-                        <p className="mulish-regular text-sm leading-normal text-black pl-2 text-justify">
-                          {item.content}
-                        </p>
-                      </div>
-                    ))}
-                  </motion.div>
-                </div>
-              )}
-            {/* Render OEM Approvals if available */}
-            {product.oemApprovals && product.oemApprovals.length > 0 && (
+        <div className="flex flex-col md:flex-row md:justify-between">
+          {/* Render Performance Levels if available */}
+
+          {product.performanceLevels &&
+            product.performanceLevels.length > 0 && (
               <div className="w-full">
                 <motion.div
                   initial={{ opacity: 0, x: -20 }}
@@ -246,9 +218,9 @@ export default function ProductDetails({
                     transition={{ duration: 0.5 }}
                     className="poppins-bold text-xs sm:text-sm md:text-sm lg:text-sm leading-normal mb-2 uppercase"
                   >
-                    OEM Approvals:
+                    Performance Levels (Meets & Exceeds):
                   </motion.p>
-                  {product.oemApprovals.map((item, index) => (
+                  {product.performanceLevels.map((item, index) => (
                     <div key={index} className="flex flex-row">
                       <BsCircleHalf className="text-xs text-[#BF1D2F] mt-1" />
                       <p className="mulish-regular text-sm leading-normal text-black pl-2 text-justify">
@@ -259,35 +231,118 @@ export default function ProductDetails({
                 </motion.div>
               </div>
             )}
-            {/* Render NLGI Grades if available */}
-            {product.nlgiGrades && product.nlgiGrades.length > 0 && (
-              <div className="w-full">
-                <motion.div
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                  className="mb-5"
+          {/* Render OEM Approvals if available */}
+          {product.oemApprovals && product.oemApprovals.length > 0 && (
+            <div className="w-full">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="mb-5"
+              >
+                <motion.p
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 }}
+                  className="poppins-bold text-xs sm:text-sm md:text-sm lg:text-sm leading-normal mb-2 uppercase"
                 >
-                  <motion.p
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
-                    className="poppins-bold text-xs sm:text-sm md:text-sm lg:text-sm leading-normal mb-2 uppercase"
-                  >
-                    NLGI Grades:
-                  </motion.p>
-                  {product.nlgiGrades.map((item, index) => (
-                    <div key={index} className="flex flex-row">
-                      <BsCircleHalf className="text-xs text-[#BF1D2F] mt-1" />
-                      <p className="mulish-regular text-sm leading-normal text-black pl-2 text-justify">
-                        {item.content}
-                      </p>
-                    </div>
-                  ))}
-                </motion.div>
-              </div>
-            )}
-          </div>
+                  OEM Approvals:
+                </motion.p>
+                {product.oemApprovals.map((item, index) => (
+                  <div key={index} className="flex flex-row">
+                    <BsCircleHalf className="text-xs text-[#BF1D2F] mt-1" />
+                    <p className="mulish-regular text-sm leading-normal text-black pl-2 text-justify">
+                      {item.content}
+                    </p>
+                  </div>
+                ))}
+              </motion.div>
+            </div>
+          )}
+          {/* Render NLGI Grades if available */}
+          {product.nlgiGrades && product.nlgiGrades.length > 0 && (
+            <div className="w-full">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="mb-5"
+              >
+                <motion.p
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 }}
+                  className="poppins-bold text-xs sm:text-sm md:text-sm lg:text-sm leading-normal mb-2 uppercase"
+                >
+                  NLGI Grades :
+                </motion.p>
+                {product.nlgiGrades.map((item, index) => (
+                  <div key={index} className="flex flex-row">
+                    <BsCircleHalf className="text-xs text-[#BF1D2F] mt-1" />
+                    <p className="mulish-regular text-sm leading-normal text-black pl-2 text-justify">
+                      {item.content}
+                    </p>
+                  </div>
+                ))}
+              </motion.div>
+            </div>
+          )}
+          {/* Render industryApproval if available */}
+          {product.industryApproval && product.industryApproval.length > 0 && (
+            <div className="w-full">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="mb-5"
+              >
+                <motion.p
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 }}
+                  className="poppins-bold text-xs sm:text-sm md:text-sm lg:text-sm leading-normal mb-2 uppercase"
+                >
+                  Industry Approval :
+                </motion.p>
+                {product.industryApproval.map((item, index) => (
+                  <div key={index} className="flex flex-row">
+                    <BsCircleHalf className="text-xs text-[#BF1D2F] mt-1" />
+                    <p className="mulish-regular text-sm leading-normal text-black pl-2 text-justify">
+                      {item.content}
+                    </p>
+                  </div>
+                ))}
+              </motion.div>
+            </div>
+          )}
+          {/* Render application if available */}
+          {product.application && product.application.length > 0 && (
+            <div className="w-full">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="mb-5"
+              >
+                <motion.p
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 }}
+                  className="poppins-bold text-xs sm:text-sm md:text-sm lg:text-sm leading-normal mb-2 uppercase"
+                >
+                  Application :
+                </motion.p>
+                {product.application.map((item, index) => (
+                  <div key={index} className="flex flex-row">
+                    <BsCircleHalf className="text-xs text-[#BF1D2F] mt-1" />
+                    <p className="mulish-regular text-sm leading-normal text-black pl-2 text-justify">
+                      {item.content}
+                    </p>
+                  </div>
+                ))}
+              </motion.div>
+            </div>
+          )}
         </div>
       </div>
     </div>

@@ -27,8 +27,8 @@ const ProductsSwiper = () => {
           autoplay={{ delay: 3000 }}
         >
           {products.map((product) =>
-            product.items.map((item) => (
-              <SwiperSlide key={item.id}>
+            product.items.map((item, index) => (
+              <SwiperSlide key={index}>
                 <Link href={`/product/${product.categorySlug}/${item.slug}`}>
                   <motion.div
                     whileHover={{ scale: 1.05 }}

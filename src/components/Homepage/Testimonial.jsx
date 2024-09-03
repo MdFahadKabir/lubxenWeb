@@ -85,9 +85,9 @@ export default function Testimonial() {
                   <p className="p-6 sm:p-8 md:p-10 bg-[#222222] overflow-hidden text-white text-xs sm:text-sm md:text-base rounded-3xl text-start">
                     {testimonials[currentIndex].quote}
                   </p>
-                  <AiFillCaretDown className="text-3xl sm:text-4xl md:text-5xl text-[#222222] absolute -bottom-8 left-5" />
+                  <AiFillCaretDown className="text-3xl sm:text-4xl md:text-5xl text-[#222222] absolute -bottom-5 md:-bottom-8 left-5" />
                   <motion.div
-                    className="flex justify-between absolute -bottom-24 left-0"
+                    className="flex justify-between absolute -bottom-20 md:-bottom-24 left-0"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.5 }}

@@ -87,16 +87,13 @@ const products = [
           },
         ],
         contact: {
-          location: "3111 West",
-          email: "support@financ.com",
+          location:
+            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+          email: "contact@lubxen.com",
           contactNumber: [
             {
               id: 0,
-              number: "1-982-782-5297",
-            },
-            {
-              id: 1,
-              number: "1-982-782-5297",
+              number: "+971544997141",
             },
           ],
         },
@@ -190,16 +187,13 @@ const products = [
           },
         ],
         contact: {
-          location: "3111 West",
-          email: "support@financ.com",
+          location:
+            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+          email: "contact@lubxen.com",
           contactNumber: [
             {
               id: 0,
-              number: "1-982-782-5297",
-            },
-            {
-              id: 1,
-              number: "1-982-782-5297",
+              number: "+971544997141",
             },
           ],
         },
@@ -275,16 +269,13 @@ const products = [
           },
         ],
         contact: {
-          location: "3111 West",
-          email: "support@financ.com",
+          location:
+            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+          email: "contact@lubxen.com",
           contactNumber: [
             {
               id: 0,
-              number: "1-982-782-5297",
-            },
-            {
-              id: 1,
-              number: "1-982-782-5297",
+              number: "+971544997141",
             },
           ],
         },
@@ -357,16 +348,107 @@ const products = [
           },
         ],
         contact: {
-          location: "3111 West",
-          email: "support@financ.com",
+          location:
+            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+          email: "contact@lubxen.com",
           contactNumber: [
             {
               id: 0,
-              number: "1-982-782-5297",
+              number: "+971544997141",
             },
+          ],
+        },
+      },
+      {
+        id: 1,
+        name: "VECTOR HD",
+        slug: "vector-hd",
+        producttype: "Industrial Gear Oil (Synthetic)",
+        viscosityGrade: "Viscosity Grade : ISO VG 68",
+        classification: "EP/PAO",
+        image: img1,
+        productDescription:
+          "Vector HD are synthetic PAO-based gear oils designed to provide superior protection in industrial gear systems. They contain an advanced additive system that offers excellent protection against scuffing and a high level of resistance against micro-pitting fatigue. These oils are suitable for a wide range of applications, including reduction gearboxes, direct drives, angle drives, chain drives, gear couplings, hoist/winch gearboxes, screw feeder gearboxes, travel gearboxes, swing gearboxes, turret heads, workheads, and centralized circulation systems.",
+        performanceLevels: [
+          {
+            id: 0,
+            content: "US STEEL 224",
+          },
+          {
+            id: 1,
+            content: "AGMA 250.04",
+          },
+          {
+            id: 2,
+            content: "DAVID BROWN TABLE E 2E-9E",
+          },
+        ],
+
+        highlight: [
+          {
+            id: 0,
+            content: "Synthetic PAO-Based Gear Oil",
+          },
+          {
+            id: 1,
+            content: "Outstanding Protection for Industrial Gear Systems",
+          },
+          {
+            id: 2,
+            content: "High Resistance to Micro Pitting Fatigue",
+          },
+        ],
+        contact: {
+          location:
+            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+          email: "contact@lubxen.com",
+          contactNumber: [
             {
-              id: 1,
-              number: "1-982-782-5297",
+              id: 0,
+              number: "+971544997141",
+            },
+          ],
+        },
+      },
+      {
+        id: 2,
+        name: "COMPROL SYN",
+        slug: "comprol-syn",
+        producttype: "Industrial Gear Oil (Synthetic)",
+        viscosityGrade: "Viscosity Grade : ISO VG 32",
+        classification: "Compressor Oil",
+        image: img1,
+        productDescription:
+          "Comprol SYN is a synthetic air compressor lubricant formulated with premium PAO base fluids and a high-performance additive package. It provides excellent thermal and oxidation stability, a high viscosity index, a high flash point, a low pour point, and outstanding hydrolytic stability. Comprol SYN is suitable for use in single and multistage rotary screw compressors, vane compressors, reciprocating compressor crankcases and cylinders, vacuum pumps, and other compressor applications",
+        performanceLevels: [
+          {
+            id: 0,
+            content: "DIN 51506 VDL",
+          },
+        ],
+
+        highlight: [
+          {
+            id: 0,
+            content: "Synthetic Air Compressor Lubricant",
+          },
+          {
+            id: 1,
+            content: "Excellent Thermal and Oxidation Stability",
+          },
+          {
+            id: 2,
+            content: "High Viscosity Index and Low Pour Point",
+          },
+        ],
+        contact: {
+          location:
+            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+          email: "contact@lubxen.com",
+          contactNumber: [
+            {
+              id: 0,
+              number: "+971544997141",
             },
           ],
         },
@@ -383,7 +465,7 @@ const products = [
         name: "FRICTO CALCIUM",
         slug: "fricto-calcium",
         producttype: "Calcium Grease (Mineral)",
-        viscosityGrade: "NLGI Grade: 2",
+        viscosityGrade: "NLGI Grade : 2",
         classification: "CALCIUM GREASE",
         image: img1,
         productDescription:
@@ -414,16 +496,103 @@ const products = [
           },
         ],
         contact: {
-          location: "3111 West",
-          email: "support@financ.com",
+          location:
+            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+          email: "contact@lubxen.com",
           contactNumber: [
             {
               id: 0,
-              number: "1-982-782-5297",
+              number: "+971544997141",
             },
+          ],
+        },
+      },
+      {
+        id: 1,
+        name: "OPTIMUS BENTONITE",
+        slug: "optimus-bentonite",
+        producttype: "Bentonite Grease (Mineral)",
+        viscosityGrade: "NLGI Grade : 2",
+        classification: "BENTONITE",
+        image: img1,
+        productDescription:
+          "Optimus Bentonite grease is a premium-quality, non-melting grease designed for use in plain and anti-friction bearings subjected to elevated temperatures. It maintains stable consistency across a wide temperature range and is recommended for use in industrial ball, roller, and plain bearings where extremely high temperatures and heavy loads occur. This grease is particularly useful in applications where melting or dripping of grease could cause damage, such as overhead conveyor bearings in high-temperature environments.",
+
+        highlight: [
+          {
+            id: 0,
+            content: "Non-Melting Grease",
+          },
+          {
+            id: 1,
+            content: "Stable Consistency Across Temperature Range",
+          },
+          {
+            id: 2,
+            content: "Recommended for High-Temperature Applications",
+          },
+        ],
+        nlgiGrades: [
+          {
+            id: 0,
+            content: "DIN 51502 KH2R-20",
+          },
+          {
+            id: 1,
+            content: "ISO 6743-93 L-XBEHA2",
+          },
+        ],
+        contact: {
+          location:
+            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+          email: "contact@lubxen.com",
+          contactNumber: [
             {
-              id: 1,
-              number: "1-982-782-5297",
+              id: 0,
+              number: "+971544997141",
+            },
+          ],
+        },
+      },
+      {
+        id: 2,
+        name: "OPTIMUS MOLY EP",
+        slug: "optimus-moly-ep",
+        producttype: "Molybdenum Grease (Mineral)",
+        viscosityGrade: "NLGI Grade : 2",
+        classification: "MOLYBDENUM",
+        image: img1,
+        productDescription:
+          "Optimus Moly EP is a premium-quality, multi-purpose molybdenum disulfide extreme pressure (EP) grease designed for general industrial applications. It contains an EP additive and molybdenum disulfide (MoS2), which enhances anti-friction properties under boundary lubrication conditions. The grease is water-resistant, exhibits excellent oxidation and mechanical stability, and protects against corrosion.",
+
+        highlight: [
+          {
+            id: 0,
+            content: "Multi-Purpose Grease",
+          },
+          {
+            id: 1,
+            content: "Extreme Pressure (EP) Additive",
+          },
+          {
+            id: 2,
+            content: "Water Resistant and Corrosion Protection",
+          },
+        ],
+        nlgiGrades: [
+          {
+            id: 0,
+            content: "NLGI 2",
+          },
+        ],
+        contact: {
+          location:
+            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+          email: "contact@lubxen.com",
+          contactNumber: [
+            {
+              id: 0,
+              number: "+971544997141",
             },
           ],
         },
@@ -482,16 +651,123 @@ const products = [
         ],
 
         contact: {
-          location: "3111 West",
-          email: "support@financ.com",
+          location:
+            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+          email: "contact@lubxen.com",
           contactNumber: [
             {
               id: 0,
-              number: "1-982-782-5297",
+              number: "+971544997141",
             },
+          ],
+        },
+      },
+      {
+        id: 1,
+        name: "LUBREX MARINE FC-W",
+        slug: "lubrex-marine-fc-w",
+        producttype: "Marine Outboard Engine Oil (Mineral)",
+        viscosityGrade: "SAE Grade : 5W-30",
+        classification: "NMMA FC-W",
+        image: img1,
+        productDescription:
+          "Marine FC-W is a high-performance engine oil designed for four-stroke outboard engines. It meets the performance requirements of the NMMA (National Marine Manufacturers Association) FC-W oil standard, maintaining peak engine performance and reliability. This oil provides outstanding wear and corrosion protection, minimizes deposits, and reduces oil consumption, thus extending engine life.",
+        performanceLevels: [
+          {
+            id: 0,
+            content: "NMMA FC-W",
+          },
+        ],
+
+        highlight: [
+          {
+            id: 0,
+            content: "High-Performance Four-Stroke Engine Oil",
+          },
+          {
+            id: 1,
+            content: "Outstanding Wear and Corrosion Protection",
+          },
+          {
+            id: 2,
+            content: "Extends Engine Life by Reducing Oil Consumption",
+          },
+        ],
+
+        contact: {
+          location:
+            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+          email: "contact@lubxen.com",
+          contactNumber: [
             {
-              id: 1,
-              number: "1-982-782-5297",
+              id: 0,
+              number: "+971544997141",
+            },
+          ],
+        },
+      },
+      {
+        id: 2,
+        name: "LUBREX MARINE 2040 & 2030",
+        slug: "lubrex-marine-2040-%26-2030",
+        producttype: "Trunk Piston Engine Oil (Mineral)",
+        viscosityGrade: "SAE Grade : SAE 30",
+        classification: "TPEO",
+        image: img1,
+        productDescription:
+          "Lubrex Marine 2030 and 2040 are high-performance trunk piston engine oils designed for medium-speed marine and industrial-type trunk piston engines operating on low sulfur distillate fuel. These oils are blended using solvent-refined, high viscosity index paraffinic mineral base oils, with chemical additives providing effective alkalinity, wear resistance, detergency, and dispersancy.",
+        performanceLevels: [
+          {
+            id: 0,
+            content: "API: CF",
+          },
+        ],
+        oemApprovals: [
+          {
+            id: 0,
+            content: "MAN",
+          },
+          {
+            id: 1,
+            content: "Mak / Caterpillar",
+          },
+          {
+            id: 2,
+            content: "Wartsila",
+          },
+          {
+            id: 3,
+            content: "Yanmar",
+          },
+          {
+            id: 4,
+            content: "Daihatsu",
+          },
+        ],
+
+        highlight: [
+          {
+            id: 0,
+            content: "High-Performance Trunk Piston Engine Oil",
+          },
+          {
+            id: 1,
+            content: "Effective Wear Resistance and Detergency",
+          },
+          {
+            id: 2,
+            content: "Suitable for Low Sulfur Distillate Fuel Engines",
+          },
+        ],
+
+        contact: {
+          location:
+            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+          email: "contact@lubxen.com",
+          contactNumber: [
+            {
+              id: 0,
+              number: "+971544997141",
             },
           ],
         },
@@ -580,16 +856,121 @@ const products = [
         ],
 
         contact: {
-          location: "3111 West",
-          email: "support@financ.com",
+          location:
+            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+          email: "contact@lubxen.com",
           contactNumber: [
             {
               id: 0,
-              number: "1-982-782-5297",
+              number: "+971544997141",
             },
+          ],
+        },
+      },
+      {
+        id: 1,
+        name: "OPTIMUS TORQUE HFC",
+        slug: "optimus-torque-hfc",
+        producttype: "Fire-Resistant Hydraulic Oil (Mineral)",
+        viscosityGrade: "ISO VG Grade : 46",
+        classification: "Fire Resistant Hydraulic Oil",
+        image: img1,
+        productDescription:
+          "Optimus Torque HFC is a fire-resistant hydraulic fluid utilizing water glycol technology. It is designed to provide improved fire resistance while protecting equipment under severe service conditions. This fluid is particularly suitable for hydraulic systems using vane, gear, and piston hydraulic pumps in steel, aluminum, and die-casting industries. It offers enhanced corrosion resistance, seal compatibility, and excellent pump lubrication, helping to extend equipment service life.",
+        performanceLevels: [
+          {
+            id: 0,
+            content: "ISO L-HFC (ISO/DIS 12922)",
+          },
+          {
+            id: 1,
+            content: "FM Global Standard 6930",
+          },
+        ],
+
+        highlight: [
+          {
+            id: 0,
+            content: "Water Glycol-Based Hydraulic Fluid",
+          },
+          {
+            id: 1,
+            content: "Improved Fire Resistance",
+          },
+          {
+            id: 2,
+            content: "Enhanced Corrosion Resistance and Seal Compatibility",
+          },
+        ],
+
+        contact: {
+          location:
+            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+          email: "contact@lubxen.com",
+          contactNumber: [
             {
-              id: 1,
-              number: "1-982-782-5297",
+              id: 0,
+              number: "+971544997141",
+            },
+          ],
+        },
+      },
+      {
+        id: 2,
+        name: "OPTIMUS QUENCHING OIL 46",
+        slug: "optimus-quenching-oil-46",
+        producttype: "Heat Treatment Oil (Mineral)",
+        viscosityGrade: "ISO VG Grade : 46",
+        classification: "Heat Treatment Oil",
+        image: img1,
+        productDescription:
+          "Optimus Quenching Oil 46 is a high-performance heat treatment oil that provides fast and uniform cooling of metal parts during the quenching process. It is formulated with selected base oils and additives to ensure high oxidation and thermal stability. This oil is suitable for a wide range of quenching applications, offering excellent heat transfer properties and reducing the risk of distortion and cracking during the quenching process.",
+        performanceLevels: [
+          {
+            id: 0,
+            content: "ISO VG 46",
+          },
+          {
+            id: 1,
+            content: "DIN 51524, Part 2",
+          },
+          {
+            id: 2,
+            content: "AGMA 9005-E02",
+          },
+          {
+            id: 3,
+            content: "ASTM D 445",
+          },
+          {
+            id: 4,
+            content: "VICKERS I-286-S, M-2950-S",
+          },
+        ],
+
+        highlight: [
+          {
+            id: 0,
+            content: "High-Performance Quenching Oil",
+          },
+          {
+            id: 1,
+            content: "Fast and Uniform Cooling",
+          },
+          {
+            id: 2,
+            content: "Oxidation and Thermal Stability",
+          },
+        ],
+
+        contact: {
+          location:
+            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+          email: "contact@lubxen.com",
+          contactNumber: [
+            {
+              id: 0,
+              number: "+971544997141",
             },
           ],
         },
@@ -599,7 +980,7 @@ const products = [
   {
     id: 5,
     productcategory: "ENGINE CARE & FUEL ADDITIVES",
-    categorySlug: "engine-care-&-fuel-additives",
+    categorySlug: "engine-care-%26-fuel-additives",
     items: [
       {
         id: 0,
@@ -639,16 +1020,99 @@ const products = [
         ],
 
         contact: {
-          location: "3111 West",
-          email: "support@financ.com",
+          location:
+            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+          email: "contact@lubxen.com",
           contactNumber: [
             {
               id: 0,
-              number: "1-982-782-5297",
+              number: "+971544997141",
             },
+          ],
+        },
+      },
+      {
+        id: 1,
+        name: "RADIATOR STOP LEAK",
+        slug: "radiator-stop-leak",
+        producttype: "Coolant System Leak Sealant",
+        image: img1,
+        productDescription:
+          "Radiator Stop Leak is a safe and efficient solution for sealing leaks in the coolant system. When added to coolant, it flows through the leak points and plugs them quickly and completely. As the coolant flows through the hole in the system, particles build up around the hole until it is fully sealed, preventing further leakage.",
+        application: [
+          {
+            id: 0,
+            content: "Safe for use in engine systems using antifreeze.",
+          },
+        ],
+
+        highlight: [
+          {
+            id: 0,
+            content:
+              "Provides temporary leak-stop protection for radiators and cooling systems",
+          },
+          {
+            id: 1,
+            content: "Compatible with most types of Antifreeze",
+          },
+          {
+            id: 2,
+            content: "Quickly and completely plugs coolant system leaks",
+          },
+        ],
+
+        contact: {
+          location:
+            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+          email: "contact@lubxen.com",
+          contactNumber: [
             {
-              id: 1,
-              number: "1-982-782-5297",
+              id: 0,
+              number: "+971544997141",
+            },
+          ],
+        },
+      },
+      {
+        id: 1,
+        name: "COOLING SYSTEM CLEANER",
+        slug: "cooling-system-cleaner",
+        producttype: "Coolant System Leak Sealant",
+        image: img1,
+        productDescription:
+          "Cooling System Cleaner is designed to remove built-up scale and harsh mineral deposits from the coolant system. It effectively cleans heat transfer surfaces and removes corrosion products, such as rust and scale, to restore proper cooling capacity in the system. This cleaner helps promote more efficient heat transfer and improves coolant circulation.",
+        application: [
+          {
+            id: 0,
+            content: "Safe for use in engine systems using antifreeze.",
+          },
+        ],
+
+        highlight: [
+          {
+            id: 0,
+            content: "Removes scale deposits and tough residues",
+          },
+          {
+            id: 1,
+            content:
+              "Cleans heat transfer surfaces to improve cooling efficiency",
+          },
+          {
+            id: 2,
+            content: "Compatible with most types of Antifreeze",
+          },
+        ],
+
+        contact: {
+          location:
+            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+          email: "contact@lubxen.com",
+          contactNumber: [
+            {
+              id: 0,
+              number: "+971544997141",
             },
           ],
         },
@@ -726,16 +1190,16 @@ export default products;
 //         },
 //       ],
 //       contact: {
-//         location: "3111 West",
-//         email: "support@financ.com",
+//         location: "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+//         email: "contact@lubxen.com",
 //         contactNumber: [
 //           {
 //             id: 0,
-//             number: "1-982-782-5297",
+//             number: "+971544997141",
 //           },
 //           {
 //             id: 1,
-//             number: "1-982-782-5297",
+//             number: "+971544997141",
 //           },
 //         ],
 //       },
