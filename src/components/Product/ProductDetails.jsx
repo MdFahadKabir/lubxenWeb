@@ -22,7 +22,7 @@ export default function ProductDetails({
     <div className="flex flex-col lg:flex-row justify-between  px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16">
       {/* Sidebar with product list */}
       <div className="w-full md:w-1/5 mb-8 lg:mb-0 ">
-        <div className="overflow-x-auto md:overflow-y-auto md:h-80 overflow-hidden  scrollbar-none   mb-5">
+        <div className="overflow-x-auto md:overflow-y-auto md:h-48 overflow-hidden  scrollbar-none   mb-5">
           <motion.ul
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -172,6 +172,33 @@ export default function ProductDetails({
         >
           {product.productDescription}
         </motion.p>
+        {product.highlight && product.highlight.length > 0 && (
+          <div className="w-full">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="mb-5"
+            >
+              <motion.p
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className="poppins-bold text-xs sm:text-sm md:text-sm lg:text-sm leading-normal mb-2 uppercase"
+              >
+                Highlight:
+              </motion.p>
+              {product.highlight.map((item, index) => (
+                <div key={index} className="flex flex-row">
+                  <BsCircleHalf className="text-xs text-[#BF1D2F] mt-1" />
+                  <p className="mulish-regular text-sm leading-normal text-black pl-2 text-justify">
+                    {item.content}
+                  </p>
+                </div>
+              ))}
+            </motion.div>
+          </div>
+        )}
         <div className="flex flex-col md:flex-row md:justify-between">
           <div className="flex flex-col md:flex-row md:justify-between">
             {/* Render Performance Levels if available */}

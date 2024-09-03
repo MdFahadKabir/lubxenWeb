@@ -72,7 +72,7 @@ const products = [
             content: "MB-Approval 228.51 (SAE 10W-40)",
           },
         ],
-        Highlight: [
+        highlight: [
           {
             id: 0,
             content: "Low SAPS Heavy-Duty Oil",
@@ -84,6 +84,194 @@ const products = [
           {
             id: 2,
             content: "Suitable for EGR, DPF, DOC, SCR-AdBlue Systems",
+          },
+        ],
+        contact: {
+          location: "3111 West",
+          email: "support@financ.com",
+          contactNumber: [
+            {
+              id: 0,
+              number: "1-982-782-5297",
+            },
+            {
+              id: 1,
+              number: "1-982-782-5297",
+            },
+          ],
+        },
+      },
+      {
+        id: 1,
+        name: "MOMENTA NANO PLUS",
+        slug: "momenta-platinum-plus",
+        producttype: "Diesel Engine Oil (Mineral)",
+        viscosityGrade: "Viscosity Grade : 15W-40",
+        classification: "API CJ-4/SN",
+        image: img1,
+        productDescription:
+          "Momenta Nano Plus is a high-performance mineral diesel engine oil designed to optimize engine performance in the latest US, European, and Japanese heavy-duty diesel engines, even under severe conditions such as high loads and multi-trailer operations.",
+        performanceLevels: [
+          {
+            id: 0,
+            content: "API CJ-4/SN",
+          },
+          {
+            id: 1,
+            content: "ACEA E9",
+          },
+          {
+            id: 2,
+            content: "MB 228.31",
+          },
+          {
+            id: 3,
+            content: "Caterpillar ECF-3",
+          },
+          {
+            id: 4,
+            content: "MAN M3477/3575",
+          },
+          {
+            id: 5,
+            content: "VOLVO VDS-4",
+          },
+          {
+            id: 6,
+            content: "Renault RLD-3",
+          },
+          {
+            id: 7,
+            content: "DDC 93K218",
+          },
+          {
+            id: 8,
+            content: "Mack EO-O PP",
+          },
+          {
+            id: 9,
+            content: "Cummins CES 20081",
+          },
+          {
+            id: 10,
+            content: "DEUTZ DQC III-10 LA",
+          },
+          {
+            id: 11,
+            content: "FORD WSS-M2C171-F1",
+          },
+        ],
+        oemApprovals: [
+          {
+            id: 0,
+            content: "Volvo VDS-4 (SAE 15W-40)",
+          },
+          {
+            id: 1,
+            content: "Mack EO-O Premium Plus (SAE 15W-40)",
+          },
+          {
+            id: 2,
+            content: "Renault VI RLD-3 (SAE 15W-40)",
+          },
+        ],
+        highlight: [
+          {
+            id: 0,
+            content: "Advanced Mineral Diesel Engine Oil",
+          },
+          {
+            id: 1,
+            content: "Maximizes Engine Performance in Heavy-Duty Applications",
+          },
+          {
+            id: 2,
+            content: "Suitable for Severe Conditions",
+          },
+        ],
+        contact: {
+          location: "3111 West",
+          email: "support@financ.com",
+          contactNumber: [
+            {
+              id: 0,
+              number: "1-982-782-5297",
+            },
+            {
+              id: 1,
+              number: "1-982-782-5297",
+            },
+          ],
+        },
+      },
+      {
+        id: 2,
+        name: "MOMENTA NANO MAX",
+        slug: "momenta-platinum-max",
+        producttype: "Diesel Engine Oil (Fully Synthetic)",
+        viscosityGrade: "Viscosity Grade : 10W-40",
+        classification: "API CI-4 Plus/SL",
+        image: img1,
+        productDescription:
+          "Momenta Nano Max is a fully synthetic heavy-duty engine oil that provides excellent lubrication for modern diesel and gasoline engines operating under severe conditions. It is formulated with state-of-the-art additives and synthetic base oils, meeting current API and OEM requirements for volatility and oxidation resistance. Momenta Nano Max is compliant with API CI-4 Plus standards, offering improved oxidation stability, soot control, roller follower wear limits, and reduced aeration.",
+        performanceLevels: [
+          {
+            id: 0,
+            content: "API CI-4 Plus/SL",
+          },
+          {
+            id: 1,
+            content: "ACEA E7",
+          },
+          {
+            id: 2,
+            content: "MB 228.3",
+          },
+          {
+            id: 3,
+            content: "MAN M3275",
+          },
+          {
+            id: 4,
+            content: "MIL-PRF-2104G",
+          },
+          {
+            id: 5,
+            content: "Renault RLD-3",
+          },
+          {
+            id: 6,
+            content: "Caterpillar ECF 1a, ECF 2, ECF 3",
+          },
+          {
+            id: 7,
+            content: "Volvo VDS-4",
+          },
+          {
+            id: 8,
+            content: "Deutz DQC I-10",
+          },
+          {
+            id: 9,
+            content: "MACK EO-N Premium Plus",
+          },
+          {
+            id: 10,
+            content: "Cummins CES 20081",
+          },
+        ],
+        highlight: [
+          {
+            id: 0,
+            content: "Fully Synthetic Heavy-Duty Engine Oil",
+          },
+          {
+            id: 1,
+            content: "Excellent Lubrication in Severe Conditions",
+          },
+          {
+            id: 2,
+            content: "Designed for Both Diesel and Gasoline Engines",
           },
         ],
         contact: {
@@ -153,7 +341,7 @@ const products = [
           },
         ],
 
-        Highlight: [
+        highlight: [
           {
             id: 0,
             content: "High-Performance Multipurpose Gear Lubricant",
@@ -185,7 +373,6 @@ const products = [
       },
     ],
   },
-
   {
     id: 2,
     productcategory: "GREASES",
@@ -202,7 +389,7 @@ const products = [
         productDescription:
           "Fricto Calcium grease consists of refined paraffinic base stock, calcium-based thickener, and a special additive package. It offers excellent water resistance and is suitable for lubricating machine elements operating in conditions where water ingress cannot be avoided. This grease provides protection against rust, corrosion, wear, and has an outstanding ability to resist water washout.",
 
-        Highlight: [
+        highlight: [
           {
             id: 0,
             content: "Good Water Resistance",
@@ -279,7 +466,7 @@ const products = [
           },
         ],
 
-        Highlight: [
+        highlight: [
           {
             id: 0,
             content: "Premium Performance Two-Stroke Oil",
@@ -377,7 +564,7 @@ const products = [
           },
         ],
 
-        Highlight: [
+        highlight: [
           {
             id: 0,
             content: "Specifically Designed for Steam and Gas Turbines",
@@ -434,7 +621,7 @@ const products = [
           },
         ],
 
-        Highlight: [
+        highlight: [
           {
             id: 0,
             content:
@@ -523,7 +710,7 @@ export default products;
 //         },
 //       ],
 
-//       Highlight: [
+//       highlight: [
 //         {
 //           id: 0,
 //           content: "High-Performance Multipurpose Gear Lubricant",
