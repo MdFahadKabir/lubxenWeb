@@ -12,9 +12,9 @@ export default function Loading() {
               id="mobilOilGradient"
               gradientTransform="rotate(90)"
             >
-              <stop offset="0%" stopColor="#002F6C" /> {/* Mobil Blue */}
-              <stop offset="50%" stopColor="#FF0000" /> {/* Mobil Red */}
-              <stop offset="100%" stopColor="#002F6C" /> {/* Mobil Blue */}
+              <stop offset="0%" stopColor="#BF1D2F" /> {/* Mobil Blue */}
+              <stop offset="50%" stopColor="#BF1D2F" /> {/* Mobil Red */}
+              <stop offset="100%" stopColor="#BF1D2F" /> {/* Mobil Blue */}
             </linearGradient>
             <pattern
               id="wave"

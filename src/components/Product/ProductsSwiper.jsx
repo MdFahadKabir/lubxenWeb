@@ -72,21 +72,21 @@ const ProductsSwiper = () => {
                           >
                             Product Type : {item.producttype.substring(0, 100)}
                           </motion.p>
-                          <motion.p
+                          {/* <motion.p
                             className="mulish-regular text-sm text-white mt-2 px-3"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.9, ease: "easeInOut" }}
                           >
                             {item.synthetic.substring(0, 100)}
-                          </motion.p>
-                          <motion.p
+                          </motion.p> */}
+                          {/* <motion.p
                             className="mulish-regular text-sm text-white mt-2 px-3"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.9, ease: "easeInOut" }}
                           >
-                            OW : {item.ow.substring(0, 100)}
+                            {item.viscosityGrade.substring(0, 100)}
                           </motion.p>
                           <motion.p
                             className="mulish-regular text-sm text-white mt-2 px-3"
@@ -96,7 +96,29 @@ const ProductsSwiper = () => {
                           >
                             Classification :{" "}
                             {item.classification.substring(0, 100)}
-                          </motion.p>
+                          </motion.p> */}
+                          {item.viscosityGrade && (
+                            <motion.p
+                              className="mulish-regular text-sm text-white mt-2 px-3"
+                              initial={{ opacity: 0 }}
+                              animate={{ opacity: 1 }}
+                              transition={{ duration: 0.9, ease: "easeInOut" }}
+                            >
+                              {item.viscosityGrade.substring(0, 100)}
+                            </motion.p>
+                          )}
+
+                          {item.classification && (
+                            <motion.p
+                              className="mulish-regular text-sm text-white mt-2 px-3"
+                              initial={{ opacity: 0 }}
+                              animate={{ opacity: 1 }}
+                              transition={{ duration: 0.9, ease: "easeInOut" }}
+                            >
+                              Classification:{" "}
+                              {item.classification.substring(0, 100)}
+                            </motion.p>
+                          )}
                           <motion.p
                             className="text-[#BF1D2F] px-3 pt-2 mulish-semibold"
                             whileHover={{ scale: 1.1 }}
