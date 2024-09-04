@@ -1,4 +1,9 @@
 import img1 from "../../../public/images/1.jpg";
+import calcium from "../../../public/images/calcium.jpeg";
+import moly_ep from "../../../public/images/moly_ep.jpeg";
+import bentonite from "../../../public/images/bentonite.jpeg";
+import vector_hd from "../../../public/images/vector_hd.jpeg";
+import comprol from "../../../public/images/comprol.jpeg";
 
 const products = [
   {
@@ -366,7 +371,7 @@ const products = [
         producttype: "Industrial Gear Oil (Synthetic)",
         viscosityGrade: "Viscosity Grade : ISO VG 68",
         classification: "EP/PAO",
-        image: img1,
+        image: vector_hd,
         productDescription:
           "Vector HD are synthetic PAO-based gear oils designed to provide superior protection in industrial gear systems. They contain an advanced additive system that offers excellent protection against scuffing and a high level of resistance against micro-pitting fatigue. These oils are suitable for a wide range of applications, including reduction gearboxes, direct drives, angle drives, chain drives, gear couplings, hoist/winch gearboxes, screw feeder gearboxes, travel gearboxes, swing gearboxes, turret heads, workheads, and centralized circulation systems.",
         performanceLevels: [
@@ -417,7 +422,7 @@ const products = [
         producttype: "Industrial Gear Oil (Synthetic)",
         viscosityGrade: "Viscosity Grade : ISO VG 32",
         classification: "Compressor Oil",
-        image: img1,
+        image: comprol,
         productDescription:
           "Comprol SYN is a synthetic air compressor lubricant formulated with premium PAO base fluids and a high-performance additive package. It provides excellent thermal and oxidation stability, a high viscosity index, a high flash point, a low pour point, and outstanding hydrolytic stability. Comprol SYN is suitable for use in single and multistage rotary screw compressors, vane compressors, reciprocating compressor crankcases and cylinders, vacuum pumps, and other compressor applications",
         performanceLevels: [
@@ -467,7 +472,7 @@ const products = [
         producttype: "Calcium Grease (Mineral)",
         viscosityGrade: "NLGI Grade : 2",
         classification: "CALCIUM GREASE",
-        image: img1,
+        image: calcium,
         productDescription:
           "Fricto Calcium grease consists of refined paraffinic base stock, calcium-based thickener, and a special additive package. It offers excellent water resistance and is suitable for lubricating machine elements operating in conditions where water ingress cannot be avoided. This grease provides protection against rust, corrosion, wear, and has an outstanding ability to resist water washout.",
 
@@ -514,7 +519,7 @@ const products = [
         producttype: "Bentonite Grease (Mineral)",
         viscosityGrade: "NLGI Grade : 2",
         classification: "BENTONITE",
-        image: img1,
+        image: bentonite,
         productDescription:
           "Optimus Bentonite grease is a premium-quality, non-melting grease designed for use in plain and anti-friction bearings subjected to elevated temperatures. It maintains stable consistency across a wide temperature range and is recommended for use in industrial ball, roller, and plain bearings where extremely high temperatures and heavy loads occur. This grease is particularly useful in applications where melting or dripping of grease could cause damage, such as overhead conveyor bearings in high-temperature environments.",
 
@@ -561,7 +566,7 @@ const products = [
         producttype: "Molybdenum Grease (Mineral)",
         viscosityGrade: "NLGI Grade : 2",
         classification: "MOLYBDENUM",
-        image: img1,
+        image: moly_ep,
         productDescription:
           "Optimus Moly EP is a premium-quality, multi-purpose molybdenum disulfide extreme pressure (EP) grease designed for general industrial applications. It contains an EP additive and molybdenum disulfide (MoS2), which enhances anti-friction properties under boundary lubrication conditions. The grease is water-resistant, exhibits excellent oxidation and mechanical stability, and protects against corrosion.",
 
