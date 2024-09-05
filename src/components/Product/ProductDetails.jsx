@@ -175,6 +175,7 @@ export default function ProductDetails({
               </div>
             )}
           </div>
+          <div className="mx-5"></div>
           <div className="w-full">
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}

@@ -8,6 +8,7 @@ import lubxen_product1 from "../../../public/images/lubxen_product1.jpeg";
 import lubxen_product2 from "../../../public/images/lubxen_product2.jpeg";
 import lubxen_product3 from "../../../public/images/lubxen_product3.jpeg";
 import lubxen_product4 from "../../../public/images/lubxen_product4.jpeg";
+import lubxen_product from "../../../public/images/lubxen_hero.jpeg";
 import Link from "next/link";
 
 export default function Hero({
@@ -142,7 +143,7 @@ export default function Hero({
           <div className="mx-10 mb-10 "></div>
           {/* Floating images */}
           <div className="w-full my-auto">
-            <div className="grid grid-cols-2 gap-6">
+            {/* <div className="grid grid-cols-2 gap-6">
               {[
                 lubxen_product1,
                 lubxen_product2,
@@ -166,7 +167,19 @@ export default function Hero({
                   />
                 </motion.div>
               ))}
-            </div>
+            </div> */}
+            <motion.div
+              initial="rest"
+              whileHover="hover"
+              animate="rest"
+              variants={floatAnimation}
+            >
+              <Image
+                src={lubxen_product}
+                alt="Lubxez hero"
+                className="w-auto h-auto rounded-2xl"
+              />
+            </motion.div>
           </div>
         </motion.div>
       </div>

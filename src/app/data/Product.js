@@ -1,9 +1,22 @@
-import img1 from "../../../public/images/1.jpg";
-import calcium from "../../../public/images/calcium.jpeg";
-import moly_ep from "../../../public/images/moly_ep.jpeg";
-import bentonite from "../../../public/images/bentonite.jpeg";
-import vector_hd from "../../../public/images/vector_hd.jpeg";
-import comprol from "../../../public/images/comprol.jpeg";
+import img1 from "../../../public/images/lubxen_hero.jpeg";
+import calcium_sulfonate_grease from "../../../public/images/lubxen_hero.jpeg";
+import fuel_system_cleaner from "../../../public/images/lubxen_hero.jpeg";
+import radiator_coolant from "../../../public/images/lubxen_hero.jpeg";
+import transmission_treatment from "../../../public/images/lubxen_hero.jpeg";
+import turbine_oil from "../../../public/images/lubxen_hero.jpeg";
+import heat_transfer_oil from "../../../public/images/lubxen_hero.jpeg";
+import fire_resistant_hydraulic_fluid from "../../../public/images/lubxen_hero.jpeg";
+import drivemax_cvt from "../../../public/images/product/drivemax_cvt.jpeg";
+import dune_pro_mx_race from "../../../public/images/product/dune_pro_mx_race.jpeg";
+import velocity_nano from "../../../public/images/product/velocity_nano.jpeg";
+import torque_hvlp from "../../../public/images/product/torque_hvlp.jpeg";
+import vector_hd from "../../../public/images/product/vector_hd.jpeg";
+import comprol from "../../../public/images/product/comprol.jpeg";
+import moly_ep_grease from "../../../public/images/product/moly_ep_grease.jpeg";
+import bentonite_grease from "../../../public/images/product/bentonite_grease.jpeg";
+import marine_gear_oil from "../../../public/images/product/marine_gear_oil.jpeg";
+import marine_engine_oil from "../../../public/images/product/marine_engine_oil.jpeg";
+import marine_2t_oil from "../../../public/images/product/marine_2t_oil.jpeg";
 
 const products = [
   {
@@ -13,82 +26,51 @@ const products = [
     items: [
       {
         id: 0,
-        name: "MOMENTA PLATINUM",
-        slug: "momenta-platinum",
-        producttype: "Automotive Diesel Engine Oil (Synthetic)",
-        viscosityGrade: "Viscosity Grade : 0W-30",
-        classification: "API CK-4/SN2",
-        image: img1,
+        name: "DRIVEMAX CVT",
+        slug: "drivemax-cvt",
+        producttype:
+          "Continuously Variable Transmission (CVT) Fluid (Synthetic)",
+        viscosityGrade: "Viscosity Grade : N/A",
+        classification: "CVT",
+        image: drivemax_cvt,
         productDescription:
-          "Momenta Platinum is a low SAPS heavy-duty engine oil designed to extend engine life in severe on and off-highway applications. It delivers outstanding performance in modern high-output, low-emission engines, and is particularly effective in vehicles fitted with EGR, DPF, DOC, and SCR-AdBlue NOx reduction systems. The oil's exceptional low-temperature fluidity ensures maximum engine protection and longevity. Suitable for on-road vehicles meeting Euro VI and off-road vehicles meeting Euro IV stage emission norms.",
+          "DRIVEMAX CVT is formulated to provide smooth and consistent performance in Continuously Variable Transmissions (CVT). This fluid is engineered to prevent belt slippage, reduce wear, and ensure a long transmission life, especially in electric and hybrid vehicles.",
         performanceLevels: [
           {
             id: 0,
-            content: "API CK-4/SN",
+            content: "API GL-5",
           },
           {
             id: 1,
-            content: "ACEA E6/E7/E9-16",
-          },
-          {
-            id: 2,
-            content: "Mack EOS-4.5",
-          },
-          {
-            id: 3,
-            content: "Caterpillar ECF-3",
-          },
-          {
-            id: 4,
-            content: "Deutz DQC IV-18 LA",
-          },
-          {
-            id: 5,
-            content: "MAN M3677/M3777",
-          },
-          {
-            id: 6,
-            content: "Volvo VDS-4.5",
-          },
-          {
-            id: 7,
-            content: "Renault RLD-4",
-          },
-          {
-            id: 8,
-            content: "DDC 93K222",
-          },
-          {
-            id: 9,
-            content: "Cummins CES 20086",
-          },
-          {
-            id: 10,
-            content: "Scania Low Ash / LDF-4",
-          },
-          {
-            id: 11,
-            content: "MTU Type 3.1",
+            content: "ACEA C3",
           },
         ],
         oemApprovals: [
           {
             id: 0,
-            content: "MB-Approval 228.51 (SAE 10W-40)",
+            content: "Honda HCF-2",
+          },
+          {
+            id: 1,
+            content: "Nissan NS-2",
+          },
+          {
+            id: 2,
+            content: "Toyota TC",
           },
         ],
         highlight: [
           {
             id: 0,
-            content: "Low SAPS Heavy-Duty Oil",
+            content: "Designed for belt and chain CVTs",
           },
           {
             id: 1,
-            content: "Supports Modern High-Output, Low-Emission Engines",
+            content: "Provides superior wear protection",
           },
           {
             id: 2,
-            content: "Suitable for EGR, DPF, DOC, SCR-AdBlue Systems",
+            content: "Enhances transmission longevity",
           },
         ],
         contact: {
@@ -105,90 +87,50 @@ const products = [
       },
       {
         id: 1,
-        name: "MOMENTA NANO PLUS",
-        slug: "momenta-platinum-plus",
-        producttype: "Diesel Engine Oil (Mineral)",
-        viscosityGrade: "Viscosity Grade : 15W-40",
-        classification: "API CJ-4/SN",
-        image: img1,
+        name: "DUNE PRO MX RACE",
+        slug: "dune-pro-mx-race",
+        producttype: "Four-Stroke Motorcycle Oil (Synthetic)",
+        viscosityGrade: "Viscosity Grade : 10W-60",
+        classification: "API SN",
+        image: dune_pro_mx_race,
         productDescription:
-          "Momenta Nano Plus is a high-performance mineral diesel engine oil designed to optimize engine performance in the latest US, European, and Japanese heavy-duty diesel engines, even under severe conditions such as high loads and multi-trailer operations.",
+          "DUNE PRO MX RACE is engineered for motocross and high-performance motorbikes. It offers superior protection against wear, high heat, and harsh conditions, making it the ideal choice for racing environments. This oil provides excellent lubrication for both air and liquid-cooled engines.",
         performanceLevels: [
           {
             id: 0,
-            content: "API CJ-4/SN",
+            content: "API SN",
           },
           {
             id: 1,
-            content: "ACEA E9",
-          },
-          {
-            id: 2,
-            content: "MB 228.31",
-          },
-          {
-            id: 3,
-            content: "Caterpillar ECF-3",
-          },
-          {
-            id: 4,
-            content: "MAN M3477/3575",
-          },
-          {
-            id: 5,
-            content: "VOLVO VDS-4",
-          },
-          {
-            id: 6,
-            content: "Renault RLD-3",
-          },
-          {
-            id: 7,
-            content: "DDC 93K218",
-          },
-          {
-            id: 8,
-            content: "Mack EO-O PP",
-          },
-          {
-            id: 9,
-            content: "Cummins CES 20081",
-          },
-          {
-            id: 10,
-            content: "DEUTZ DQC III-10 LA",
-          },
-          {
-            id: 11,
-            content: "FORD WSS-M2C171-F1",
+            content: "JASO MA2",
           },
         ],
         oemApprovals: [
           {
             id: 0,
-            content: "Volvo VDS-4 (SAE 15W-40)",
+            content: "Yamaha",
           },
           {
             id: 1,
-            content: "Mack EO-O Premium Plus (SAE 15W-40)",
+            content: "Honda",
           },
           {
             id: 2,
-            content: "Renault VI RLD-3 (SAE 15W-40)",
+            content: "KTM",
           },
         ],
         highlight: [
           {
             id: 0,
-            content: "Advanced Mineral Diesel Engine Oil",
+            content: "High-performance 4-stroke motorcycle oil",
           },
           {
             id: 1,
-            content: "Maximizes Engine Performance in Heavy-Duty Applications",
+            content: "Provides excellent wear protection",
           },
           {
             id: 2,
-            content: "Suitable for Severe Conditions",
+            content: "Ensures smooth clutch operation",
           },
         ],
         contact: {
@@ -205,58 +147,36 @@ const products = [
       },
       {
         id: 2,
-        name: "MOMENTA NANO MAX",
-        slug: "momenta-platinum-max",
+        name: "VELOCITY NANO",
+        slug: "velocity-nano",
         producttype: "Diesel Engine Oil (Fully Synthetic)",
         viscosityGrade: "Viscosity Grade : 10W-40",
         classification: "API CI-4 Plus/SL",
-        image: img1,
+        image: velocity_nano,
         productDescription:
-          "Momenta Nano Max is a fully synthetic heavy-duty engine oil that provides excellent lubrication for modern diesel and gasoline engines operating under severe conditions. It is formulated with state-of-the-art additives and synthetic base oils, meeting current API and OEM requirements for volatility and oxidation resistance. Momenta Nano Max is compliant with API CI-4 Plus standards, offering improved oxidation stability, soot control, roller follower wear limits, and reduced aeration.",
+          "VELOCITY NANO is designed for modern high-performance passenger cars and light trucks. Its fully synthetic formulation provides exceptional protection in high temperatures and under extreme driving conditions, offering enhanced fuel efficiency and superior wear protection.",
         performanceLevels: [
           {
             id: 0,
-            content: "API CI-4 Plus/SL",
+            content: "API SN",
           },
           {
             id: 1,
-            content: "ACEA E7",
+            content: "ACEA A3/B4",
+          },
+        ],
+        oemApprovals: [
+          {
+            id: 0,
+            content: "MB 229.3",
+          },
+          {
+            id: 1,
+            content: "VW 502 00/505 00",
           },
           {
             id: 2,
-            content: "MB 228.3",
-          },
-          {
-            id: 3,
-            content: "MAN M3275",
-          },
-          {
-            id: 4,
-            content: "MIL-PRF-2104G",
-          },
-          {
-            id: 5,
-            content: "Renault RLD-3",
-          },
-          {
-            id: 6,
-            content: "Caterpillar ECF 1a, ECF 2, ECF 3",
-          },
-          {
-            id: 7,
-            content: "Volvo VDS-4",
-          },
-          {
-            id: 8,
-            content: "Deutz DQC I-10",
-          },
-          {
-            id: 9,
-            content: "MACK EO-N Premium Plus",
-          },
-          {
-            id: 10,
-            content: "Cummins CES 20081",
+            content: "BMW Longlife-01",
           },
         ],
         highlight: [
@@ -294,62 +214,46 @@ const products = [
     items: [
       {
         id: 0,
-        name: "VECTOR EP",
-        slug: "vector-ep",
-        producttype: "Industrial Gear Oil (Mineral)",
-        viscosityGrade: "Viscosity Grade : ISO VG 68",
-        classification: "EP",
-        image: img1,
+        name: "TORQUE HVLP",
+        slug: "torque-hvlp",
+        producttype: "Hydraulic Oil (Synthetic)",
+        viscosityGrade: "Viscosity Grade : ISO VG 32, 46, 68",
+        classification: "HVLP",
+        image: torque_hvlp,
         productDescription:
-          "Vector EP gear lubricants are high-performance, multipurpose mineral oil-based lubricants designed for the lubrication of various industrial gear systems, including spur, helical, straight, and spiral bevel types. These oils operate effectively under severe conditions and across a wide range of speeds, loads, and temperatures. They provide outstanding wear protection and excellent thermal stability.",
+          "TORQUE HVLP is a premium synthetic hydraulic oil designed to handle high loads in industrial hydraulic systems. With exceptional thermal stability and long-lasting oxidation resistance, it helps optimize the performance of hydraulic machinery while reducing maintenance costs.",
         performanceLevels: [
           {
             id: 0,
-            content: "DIN 51517 Part 3 CLP",
+            content: "DIN 51524 Part 3 HVLP",
           },
           {
             id: 1,
-            content: "ISO 12925-1:1996 CKD",
-          },
-          {
-            id: 2,
-            content: "AIST 224/US STEEL 224",
-          },
-          {
-            id: 3,
-            content: "ANSI/AGMA 9004-D95/9005-E02",
-          },
-          {
-            id: 4,
-            content: "DAVID BROWN S1.53.101",
-          },
-          {
-            id: 5,
-            content: "GM LS 2 EP GEAR OIL",
-          },
-          {
-            id: 6,
-            content: "FIVES CINCINNATI MACHINE GEAR",
-          },
-          {
-            id: 7,
-            content: "FLENDER",
+            content: "ISO 6743-4 HV",
           },
         ],
-
+        oemApprovals: [
+          {
+            id: 0,
+            content: "Bosch Rexroth",
+          },
+          {
+            id: 1,
+            content: "Parker Denison",
+          },
+        ],
         highlight: [
           {
             id: 0,
-            content: "High-Performance Multipurpose Gear Lubricant",
+            content: "Superior high-temperature performance",
           },
           {
             id: 1,
-            content: "Designed for Industrial Gear Systems",
+            content: "Excellent oxidation stability",
           },
           {
             id: 2,
-            content:
-              "Suitable for Spur, Helical, Straight, and Spiral Bevel Gears",
+            content: "Long service life",
           },
         ],
         contact: {
@@ -373,34 +277,36 @@ const products = [
         classification: "EP/PAO",
         image: vector_hd,
         productDescription:
-          "Vector HD are synthetic PAO-based gear oils designed to provide superior protection in industrial gear systems. They contain an advanced additive system that offers excellent protection against scuffing and a high level of resistance against micro-pitting fatigue. These oils are suitable for a wide range of applications, including reduction gearboxes, direct drives, angle drives, chain drives, gear couplings, hoist/winch gearboxes, screw feeder gearboxes, travel gearboxes, swing gearboxes, turret heads, workheads, and centralized circulation systems.",
+          "VECTOR HD is a high-performance synthetic gear oil designed for industrial gearboxes. Its advanced formulation provides exceptional protection against wear and micro-pitting fatigue, ensuring reliable performance in high-load industrial applications.",
         performanceLevels: [
           {
             id: 0,
-            content: "US STEEL 224",
+            content: "DIN 51517 Part 3 CLP",
           },
           {
             id: 1,
-            content: "AGMA 250.04",
+            content: "ISO 12925-1 CKD",
+          },
+        ],
+        oemApprovals: [
+          {
+            id: 0,
+            content: "Flender",
           },
           {
-            id: 2,
-            content: "DAVID BROWN TABLE E 2E-9E",
+            id: 1,
+            content: "SEW-Eurodrive",
           },
         ],
 
         highlight: [
           {
             id: 0,
-            content: "Synthetic PAO-Based Gear Oil",
+            content: "Outstanding protection for gear systems",
           },
           {
             id: 1,
-            content: "Outstanding Protection for Industrial Gear Systems",
-          },
-          {
-            id: 2,
-            content: "High Resistance to Micro Pitting Fatigue",
+            content: "High resistance to wear and micro-pitting",
           },
         ],
         contact: {
@@ -417,33 +323,38 @@ const products = [
       },
       {
         id: 2,
-        name: "COMPROL SYN",
-        slug: "comprol-syn",
-        producttype: "Industrial Gear Oil (Synthetic)",
-        viscosityGrade: "Viscosity Grade : ISO VG 32",
+        name: "COMPROL",
+        slug: "comprol",
+        producttype: "Compressor Oil (Synthetic)",
+        viscosityGrade: "Viscosity Grade : ISO VG 32, 46, 68",
         classification: "Compressor Oil",
         image: comprol,
         productDescription:
-          "Comprol SYN is a synthetic air compressor lubricant formulated with premium PAO base fluids and a high-performance additive package. It provides excellent thermal and oxidation stability, a high viscosity index, a high flash point, a low pour point, and outstanding hydrolytic stability. Comprol SYN is suitable for use in single and multistage rotary screw compressors, vane compressors, reciprocating compressor crankcases and cylinders, vacuum pumps, and other compressor applications",
+          "COMPROL is a high-quality synthetic compressor oil designed for industrial air compressors. It offers excellent thermal and oxidation stability, minimizing wear and helping to extend the service life of compressors operating under heavy loads.",
         performanceLevels: [
           {
             id: 0,
             content: "DIN 51506 VDL",
           },
         ],
-
-        highlight: [
+        oemApprovals: [
           {
             id: 0,
-            content: "Synthetic Air Compressor Lubricant",
+            content: "Atlas Copco",
           },
           {
             id: 1,
-            content: "Excellent Thermal and Oxidation Stability",
+            content: "Ingersoll Rand",
+          },
+        ],
+        highlight: [
+          {
+            id: 0,
+            content: "Optimized for rotary screw compressors",
           },
           {
-            id: 2,
-            content: "High Viscosity Index and Low Pour Point",
+            id: 1,
+            content: "Reduces wear and extends service life",
           },
         ],
         contact: {
@@ -467,27 +378,39 @@ const products = [
     items: [
       {
         id: 0,
-        name: "FRICTO CALCIUM",
-        slug: "fricto-calcium",
-        producttype: "Calcium Grease (Mineral)",
+        name: "CALCIUM SULFONATE GREASE",
+        slug: "calcium-sulfonate-grease",
+        producttype: "Grease (Synthetic)",
         viscosityGrade: "NLGI Grade : 2",
-        classification: "CALCIUM GREASE",
-        image: calcium,
+        classification: "Calcium Sulfonate",
+        image: calcium_sulfonate_grease,
         productDescription:
-          "Fricto Calcium grease consists of refined paraffinic base stock, calcium-based thickener, and a special additive package. It offers excellent water resistance and is suitable for lubricating machine elements operating in conditions where water ingress cannot be avoided. This grease provides protection against rust, corrosion, wear, and has an outstanding ability to resist water washout.",
+          "CALCIUM SULFONATE GREASE is specially formulated for heavy-duty industrial and marine applications. It provides excellent protection in high-load environments, with superior rust and corrosion resistance, making it ideal for equipment operating in harsh conditions.",
 
         highlight: [
           {
             id: 0,
-            content: "Good Water Resistance",
+            content: "High load-carrying capacity",
           },
           {
             id: 1,
-            content: "Protects Against Rust and Corrosion",
+            content: "Excellent rust and corrosion protection",
+          },
+        ],
+        performanceLevels: [
+          {
+            id: 0,
+            content: "DIN 51825 KP2K-30",
+          },
+        ],
+        oemApprovals: [
+          {
+            id: 0,
+            content: "Caterpillar",
           },
           {
-            id: 2,
-            content: "Resistant to Water Washout",
+            id: 1,
+            content: "John Deere",
           },
         ],
         nlgiGrades: [
@@ -513,38 +436,40 @@ const products = [
         },
       },
       {
-        id: 1,
-        name: "OPTIMUS BENTONITE",
-        slug: "optimus-bentonite",
-        producttype: "Bentonite Grease (Mineral)",
+        id: 0,
+        name: "BENTONITE GREASE",
+        slug: "bentonite-grease",
+        producttype: "Grease (Synthetic)",
         viscosityGrade: "NLGI Grade : 2",
         classification: "BENTONITE",
-        image: bentonite,
+        image: bentonite_grease,
         productDescription:
-          "Optimus Bentonite grease is a premium-quality, non-melting grease designed for use in plain and anti-friction bearings subjected to elevated temperatures. It maintains stable consistency across a wide temperature range and is recommended for use in industrial ball, roller, and plain bearings where extremely high temperatures and heavy loads occur. This grease is particularly useful in applications where melting or dripping of grease could cause damage, such as overhead conveyor bearings in high-temperature environments.",
+          "BENTONITE GREASE is formulated for industrial applications where high temperatures are encountered. Its non-melting, high-temperature stable formulation makes it ideal for lubricating bearings and other critical components in extreme environments.",
 
         highlight: [
           {
             id: 0,
-            content: "Non-Melting Grease",
+            content: "High-temperature stability",
           },
           {
             id: 1,
-            content: "Stable Consistency Across Temperature Range",
-          },
-          {
-            id: 2,
-            content: "Recommended for High-Temperature Applications",
+            content: "Non-melting formula",
           },
         ],
-        nlgiGrades: [
+        performanceLevels: [
           {
             id: 0,
-            content: "DIN 51502 KH2R-20",
+            content: "DIN 51502 K2N-20",
+          },
+        ],
+        oemApprovals: [
+          {
+            id: 0,
+            content: "SKF",
           },
           {
             id: 1,
-            content: "ISO 6743-93 L-XBEHA2",
+            content: "NSK",
           },
         ],
         contact: {
@@ -560,34 +485,40 @@ const products = [
         },
       },
       {
-        id: 2,
-        name: "OPTIMUS MOLY EP",
-        slug: "optimus-moly-ep",
-        producttype: "Molybdenum Grease (Mineral)",
+        id: 1,
+        name: "MOLY EP GREASE",
+        slug: "moly-ep-grease",
+        producttype: "Molybdenum Disulfide Grease (Synthetic)",
         viscosityGrade: "NLGI Grade : 2",
-        classification: "MOLYBDENUM",
-        image: moly_ep,
+        classification: "EP Grease",
+        image: moly_ep_grease,
         productDescription:
-          "Optimus Moly EP is a premium-quality, multi-purpose molybdenum disulfide extreme pressure (EP) grease designed for general industrial applications. It contains an EP additive and molybdenum disulfide (MoS2), which enhances anti-friction properties under boundary lubrication conditions. The grease is water-resistant, exhibits excellent oxidation and mechanical stability, and protects against corrosion.",
+          "MOLY EP GREASE provides long-lasting protection for high-load applications. It contains molybdenum disulfide to ensure superior performance under extreme pressure and high-temperature conditions, making it suitable for industrial and mining equipment.",
 
         highlight: [
           {
             id: 0,
-            content: "Multi-Purpose Grease",
+            content: "Extreme pressure protection",
           },
           {
             id: 1,
-            content: "Extreme Pressure (EP) Additive",
-          },
-          {
-            id: 2,
-            content: "Water Resistant and Corrosion Protection",
+            content: "Excellent mechanical stability",
           },
         ],
-        nlgiGrades: [
+        performanceLevels: [
           {
             id: 0,
-            content: "NLGI 2",
+            content: "DIN 51502 KPF2N-30",
+          },
+        ],
+        oemApprovals: [
+          {
+            id: 0,
+            content: "Komatsu",
+          },
+          {
+            id: 1,
+            content: "Volvo",
           },
         ],
         contact: {
@@ -611,32 +542,28 @@ const products = [
     items: [
       {
         id: 0,
-        name: "MARINE 2T PLUS",
-        slug: "marine-2t-plus",
-        producttype: "Marine Outboard Engine Oil (Mineral)",
-        viscosityGrade: "SAE Grade : SAE 20",
-        classification: "NMMA TC-W3",
-        image: img1,
+        name: "MARINE GEAR OIL",
+        slug: "marine-gear-oil",
+        producttype: "Marine Gear Oil (Synthetic)",
+        viscosityGrade: "Viscosity Grade : SAE 75W-90",
+        classification: "API GL-5",
+        image: marine_gear_oil,
         productDescription:
-          "Marine 2T Plus is a premium performance, two-stroke marine outboard engine oil formulated with a special ashless additive system. It is pre-diluted with a high flash point solvent to facilitate mixing with petrol at all temperatures. Designed for engines requiring NMMA TC-W3 performance lubricants, it operates effectively in all service conditions and may be used at manufacturer-recommended fuel/oil ratios from 11:1 to 100:1.",
+          "MARINE GEAR OIL is designed for marine gearboxes, offering superior protection against corrosion in saltwater environments. Its high load-carrying capabilities and wear resistance ensure reliable performance in marine applications.",
         performanceLevels: [
           {
             id: 0,
-            content: "NMMA TC-W3",
+            content: "API GL-5",
+          },
+        ],
+        oemApprovals: [
+          {
+            id: 0,
+            content: "Mercury Marine",
           },
           {
             id: 1,
-            content: "API TC",
-          },
-          {
-            id: 2,
-            content: "JASO FB",
-          },
-        ],
-        industryApproval: [
-          {
-            id: 0,
-            content: "NMMA TC-W3",
+            content: "Yamaha",
           },
         ],
 
@@ -669,18 +596,32 @@ const products = [
       },
       {
         id: 1,
-        name: "LUBREX MARINE FC-W",
-        slug: "lubrex-marine-fc-w",
-        producttype: "Marine Outboard Engine Oil (Mineral)",
-        viscosityGrade: "SAE Grade : 5W-30",
-        classification: "NMMA FC-W",
-        image: img1,
+        name: "MARINE ENGINE OIL",
+        slug: "marine-engine-oil",
+        producttype: "Marine Engine Oil (Synthetic)",
+        viscosityGrade: "Viscosity Grade : SAE 15W-40",
+        classification: "API CI-4",
+        image: marine_engine_oil,
         productDescription:
-          "Marine FC-W is a high-performance engine oil designed for four-stroke outboard engines. It meets the performance requirements of the NMMA (National Marine Manufacturers Association) FC-W oil standard, maintaining peak engine performance and reliability. This oil provides outstanding wear and corrosion protection, minimizes deposits, and reduces oil consumption, thus extending engine life.",
+          "MARINE ENGINE OIL is specifically designed for high-speed marine engines. Its synthetic formulation ensures protection against wear, oxidation, and corrosion, delivering outstanding performance in extreme marine environments.",
         performanceLevels: [
           {
             id: 0,
-            content: "NMMA FC-W",
+            content: "API CI-4",
+          },
+          {
+            id: 1,
+            content: "ACEA E7",
+          },
+        ],
+        oemApprovals: [
+          {
+            id: 0,
+            content: "Caterpillar",
+          },
+          {
+            id: 1,
+            content: "MAN",
           },
         ],
 
@@ -713,55 +654,39 @@ const products = [
       },
       {
         id: 2,
-        name: "LUBREX MARINE 2040 & 2030",
-        slug: "lubrex-marine-2040-%26-2030",
-        producttype: "Trunk Piston Engine Oil (Mineral)",
-        viscosityGrade: "SAE Grade : SAE 30",
-        classification: "TPEO",
-        image: img1,
+        name: "MARINE 2T OIL",
+        slug: "marine-2t-oil",
+        producttype: "Two-Stroke Marine Engine Oil (Synthetic)",
+        viscosityGrade: "Viscosity Grade: N/A",
+        classification: "NMMA TC-W3",
+        image: marine_2t_oil,
         productDescription:
           "Lubrex Marine 2030 and 2040 are high-performance trunk piston engine oils designed for medium-speed marine and industrial-type trunk piston engines operating on low sulfur distillate fuel. These oils are blended using solvent-refined, high viscosity index paraffinic mineral base oils, with chemical additives providing effective alkalinity, wear resistance, detergency, and dispersancy.",
         performanceLevels: [
           {
             id: 0,
-            content: "API: CF",
+            content: "NMMA TC-W3",
           },
         ],
         oemApprovals: [
           {
             id: 0,
-            content: "MAN",
+            content: "Evinrude",
           },
           {
             id: 1,
-            content: "Mak / Caterpillar",
-          },
-          {
-            id: 2,
-            content: "Wartsila",
-          },
-          {
-            id: 3,
-            content: "Yanmar",
-          },
-          {
-            id: 4,
-            content: "Daihatsu",
+            content: "Johnson",
           },
         ],
 
         highlight: [
           {
             id: 0,
-            content: "High-Performance Trunk Piston Engine Oil",
+            content: "Ashless formulation for clean engine operation",
           },
           {
             id: 1,
-            content: "Effective Wear Resistance and Detergency",
-          },
-          {
-            id: 2,
-            content: "Suitable for Low Sulfur Distillate Fuel Engines",
+            content: "Reduces engine deposits and wear",
           },
         ],
 
@@ -786,77 +711,40 @@ const products = [
     items: [
       {
         id: 0,
-        name: "OPTIMUS TURBINE OIL",
-        slug: "optimus-turbine-oil",
-        producttype: "Turbine Oil (Mineral)",
-        viscosityGrade: "ISO VG Grade : 32",
+        name: "TURBINE OIL",
+        slug: "turbine-oil",
+        producttype: "Turbine Oil (Synthetic)",
+        viscosityGrade: "Viscosity Grade : ISO VG 32, 46",
         classification: "Turbine Oil",
-        image: img1,
+        image: turbine_oil,
         productDescription:
-          "Optimus Turbine Oil is a lubricant specifically designed for use in steam and gas turbine applications. Formulated with high-quality base oil and a selected additive package, it offers excellent oxidation stability and corrosion protection along with good demulsibility, anti-foaming, and air release properties",
+          "TURBINE OIL is designed for steam and gas turbines. It provides excellent thermal stability and long-term protection against oxidation, rust, and corrosion, ensuring the reliability and efficiency of turbine systems.",
         performanceLevels: [
           {
             id: 0,
-            content: "DIN 51515, part 1 (L-TD)",
+            content: "DIN 51515 L-TD/L-TG",
+          },
+        ],
+        oemApprovals: [
+          {
+            id: 0,
+            content: "Siemens",
           },
           {
             id: 1,
-            content: "DIN 51515, part 2 (L-TG)",
-          },
-          {
-            id: 2,
-            content: "DIN 51506 (VBL, VCL, VDL)",
-          },
-          {
-            id: 3,
-            content: "BS 489",
-          },
-          {
-            id: 4,
-            content: "ISO 8068",
-          },
-          {
-            id: 5,
-            content: "Siemens TLV 9013 04/01",
-          },
-          {
-            id: 6,
-            content: "GEK 32568 A/C",
-          },
-          {
-            id: 7,
-            content: "MIL-L-17672 D",
-          },
-          {
-            id: 8,
-            content: "CEGB 207001",
-          },
-          {
-            id: 9,
-            content: "Brown Boveri HTGD 90117",
-          },
-          {
-            id: 10,
-            content: "US STEEL 120 & 126",
-          },
-          {
-            id: 11,
-            content: "ISO / DP 6521 (DAA, DAB, DAH, DAG)",
+            content: "GE",
           },
         ],
 
         highlight: [
           {
             id: 0,
-            content: "Specifically Designed for Steam and Gas Turbines",
+            content: "Excellent oxidation stability",
           },
           {
             id: 1,
-            content: "Excellent Oxidation Stability and Corrosion Protection",
-          },
-          {
-            id: 2,
-            content: "Good Demulsibility and Anti-Foaming Properties",
+            content:
+              "Excellent Oxidation Stability and Corrosion ProtectioProtects against rust and corrosion",
           },
         ],
 
@@ -874,37 +762,39 @@ const products = [
       },
       {
         id: 1,
-        name: "OPTIMUS TORQUE HFC",
-        slug: "optimus-torque-hfc",
-        producttype: "Fire-Resistant Hydraulic Oil (Mineral)",
-        viscosityGrade: "ISO VG Grade : 46",
-        classification: "Fire Resistant Hydraulic Oil",
-        image: img1,
+        name: "HEAT TRANSFER OIL",
+        slug: "heat-transfer-oil",
+        producttype: "Heat Transfer Oil (Synthetic)",
+        viscosityGrade: "Viscosity Grade : ISO VG 32",
+        classification: "Heat Transfer Oil",
+        image: heat_transfer_oil,
         productDescription:
-          "Optimus Torque HFC is a fire-resistant hydraulic fluid utilizing water glycol technology. It is designed to provide improved fire resistance while protecting equipment under severe service conditions. This fluid is particularly suitable for hydraulic systems using vane, gear, and piston hydraulic pumps in steel, aluminum, and die-casting industries. It offers enhanced corrosion resistance, seal compatibility, and excellent pump lubrication, helping to extend equipment service life.",
+          "HEAT TRANSFER OIL is formulated for industrial heat transfer systems. Its high thermal stability ensures efficient heat transfer and reliable performance, even in high-temperature applications, preventing system breakdowns and reducing maintenance.",
         performanceLevels: [
           {
             id: 0,
-            content: "ISO L-HFC (ISO/DIS 12922)",
+            content: "ISO 6743-12 L-QB-32",
+          },
+        ],
+        oemApprovals: [
+          {
+            id: 0,
+            content: "Duratherm",
           },
           {
             id: 1,
-            content: "FM Global Standard 6930",
+            content: "Paratherm",
           },
         ],
 
         highlight: [
           {
             id: 0,
-            content: "Water Glycol-Based Hydraulic Fluid",
+            content: "High thermal stability",
           },
           {
             id: 1,
-            content: "Improved Fire Resistance",
-          },
-          {
-            id: 2,
-            content: "Enhanced Corrosion Resistance and Seal Compatibility",
+            content: "Resists thermal cracking and oxidation",
           },
         ],
 
@@ -922,49 +812,39 @@ const products = [
       },
       {
         id: 2,
-        name: "OPTIMUS QUENCHING OIL 46",
-        slug: "optimus-quenching-oil-46",
-        producttype: "Heat Treatment Oil (Mineral)",
-        viscosityGrade: "ISO VG Grade : 46",
-        classification: "Heat Treatment Oil",
-        image: img1,
+        name: "FIRE-RESISTANT HYDRAULIC FLUID",
+        slug: "fire-resistant-hydraulic-fluid",
+        producttype: "Fire-Resistant Hydraulic Fluid (Synthetic)",
+        viscosityGrade: "Viscosity Grade : ISO VG 46, 68",
+        classification: "Fire-Resistant",
+        image: fire_resistant_hydraulic_fluid,
         productDescription:
-          "Optimus Quenching Oil 46 is a high-performance heat treatment oil that provides fast and uniform cooling of metal parts during the quenching process. It is formulated with selected base oils and additives to ensure high oxidation and thermal stability. This oil is suitable for a wide range of quenching applications, offering excellent heat transfer properties and reducing the risk of distortion and cracking during the quenching process.",
+          "FIRE-RESISTANT HYDRAULIC FLUID is engineered for high-risk environments where fire resistance is essential. Its synthetic formula provides superior protection and performance under extreme conditions, ensuring the safety and longevity of hydraulic systems.",
         performanceLevels: [
           {
             id: 0,
-            content: "ISO VG 46",
+            content: "ISO L-HFC (ISO/DIS 12922)",
+          },
+        ],
+        oemApprovals: [
+          {
+            id: 0,
+            content: "Bosch Rexroth",
           },
           {
-            id: 1,
-            content: "DIN 51524, Part 2",
-          },
-          {
-            id: 2,
-            content: "AGMA 9005-E02",
-          },
-          {
-            id: 3,
-            content: "ASTM D 445",
-          },
-          {
-            id: 4,
-            content: "VICKERS I-286-S, M-2950-S",
+            id: 0,
+            content: "Eaton",
           },
         ],
 
         highlight: [
           {
             id: 0,
-            content: "High-Performance Quenching Oil",
+            content: "Excellent fire resistance",
           },
           {
             id: 1,
-            content: "Fast and Uniform Cooling",
-          },
-          {
-            id: 2,
-            content: "Oxidation and Thermal Stability",
+            content: "Enhanced corrosion protection",
           },
         ],
 
@@ -989,124 +869,171 @@ const products = [
     items: [
       {
         id: 0,
+        name: "FUEL SYSTEM CLEANER",
+        slug: "fuel-system-cleaner",
+        producttype: "Fuel Additive (Synthetic)",
+        image: fuel_system_cleaner,
+        productDescription:
+          "FUEL SYSTEM CLEANER is a high-performance synthetic additive designed to clean and protect the fuel system. It removes deposits from fuel injectors and intake valves, improving combustion efficiency and fuel economy. It helps reduce engine knock and hesitation, ensuring smoother operation for gasoline engines.",
+        performanceLevels: [
+          {
+            id: 0,
+            content: "Suitable for all gasoline engines",
+          },
+        ],
+        oemApprovals: [
+          {
+            id: 0,
+            content: "Toyota",
+          },
+          {
+            id: 1,
+            content: "Ford",
+          },
+          {
+            id: 2,
+            content: "General Motors",
+          },
+        ],
+
+        highlight: [
+          {
+            id: 0,
+            content: "Cleans fuel injectors and intake valves",
+          },
+          {
+            id: 1,
+            content: "Improves fuel economy and engine performance",
+          },
+          {
+            id: 2,
+            content: "Reduces engine knock and hesitation",
+          },
+        ],
+
+        contact: {
+          location:
+            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+          email: "contact@lubxen.com",
+          contactNumber: [
+            {
+              id: 0,
+              number: "+971544997141",
+            },
+          ],
+        },
+      },
+      {
+        id: 1,
+        name: "RADIATOR COOLANT",
+        slug: "radiator-coolant",
+        producttype: "Radiator Coolant (Synthetic)",
+        image: radiator_coolant,
+        productDescription:
+          "RADIATOR COOLANT is a synthetic coolant designed to provide long-lasting protection for the cooling system. It prevents overheating, protects against rust and corrosion, and helps maintain optimal engine temperature. This coolant is compatible with all types of antifreeze and is suitable for use in all vehicle cooling systems.",
+        performanceLevels: [
+          {
+            id: 0,
+            content: "ASTM D3306",
+          },
+          {
+            id: 1,
+            content: "ASTM D4985",
+          },
+        ],
+        oemApprovals: [
+          {
+            id: 0,
+            content: "Chrysler MS-9769",
+          },
+          {
+            id: 1,
+            content: "GM 6277M",
+          },
+          {
+            id: 2,
+            content: "Ford WSS-M97B44-D",
+          },
+        ],
+
+        highlight: [
+          {
+            id: 0,
+            content: "Prevents overheating and maintains engine temperature",
+          },
+          {
+            id: 1,
+            content: "Protects against rust, corrosion, and scale deposits",
+          },
+          {
+            id: 2,
+            content: "Compatible with all types of antifreeze",
+          },
+        ],
+
+        contact: {
+          location:
+            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+          email: "contact@lubxen.com",
+          contactNumber: [
+            {
+              id: 0,
+              number: "+971544997141",
+            },
+          ],
+        },
+      },
+      {
+        id: 1,
         name: "TRANSMISSION TREATMENT",
         slug: "transmission-treatment",
-        producttype: "Automatic Transmission Additive",
-        image: img1,
-        productDescription:
-          "Transmission Treatment is a special additive formulated to provide extra lubrication protection for automatic transmissions. It is added to the new and remaining transmission fluid left behind after a drain and refill service. This treatment helps prevent transmission shudder, shifting problems, and leaks by keeping seals soft and pliable. It also helps reduce wear, maintain proper viscosity, and resist fluid oxidation.",
-        application: [
-          {
-            id: 0,
-            content:
-              "Recommended for use in most manual and automatic transmissions.",
-          },
-          {
-            id: 1,
-            content: "Not recommended for CVT Transmissions.",
-          },
-        ],
-
-        highlight: [
-          {
-            id: 0,
-            content:
-              "Provides extra lubrication protection for automatic transmissions",
-          },
-          {
-            id: 1,
-            content:
-              "Helps prevent deposit formation, fluid breakdown, and transmission failure",
-          },
-          {
-            id: 2,
-            content: "Conditions seals and prevents leaks",
-          },
-        ],
-
-        contact: {
-          location:
-            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
-          email: "contact@lubxen.com",
-          contactNumber: [
-            {
-              id: 0,
-              number: "+971544997141",
-            },
-          ],
-        },
-      },
-      {
-        id: 1,
-        name: "RADIATOR STOP LEAK",
-        slug: "radiator-stop-leak",
         producttype: "Coolant System Leak Sealant",
-        image: img1,
+        image: transmission_treatment,
         productDescription:
-          "Radiator Stop Leak is a safe and efficient solution for sealing leaks in the coolant system. When added to coolant, it flows through the leak points and plugs them quickly and completely. As the coolant flows through the hole in the system, particles build up around the hole until it is fully sealed, preventing further leakage.",
-        application: [
+          "TRANSMISSION TREATMENT is a specially formulated synthetic additive designed to enhance the performance of automatic and manual transmissions. It reduces wear, prevents fluid breakdown, and helps prevent leaks by conditioning seals. This additive improves shifting performance, ensuring smooth and reliable transmission operation.",
+        performanceLevels: [
           {
             id: 0,
-            content: "Safe for use in engine systems using antifreeze.",
+            content: "Suitable for most automatic and manual transmissions",
+          },
+          {
+            id: 1,
+            content: "Not recommended for CVT transmissions",
           },
         ],
+        oemApprovals: [
+          {
+            id: 0,
+            content: "Ford MERCON V",
+          },
+          {
+            id: 1,
+            content: "GM DEXRON III",
+          },
+          {
+            id: 2,
+            content: "Chrysler ATF+4",
+          },
+        ],
+        // application: [
+        //   {
+        //     id: 0,
+        //     content: "Safe for use in engine systems using antifreeze.",
+        //   },
+        // ],
 
         highlight: [
           {
             id: 0,
-            content:
-              "Provides temporary leak-stop protection for radiators and cooling systems",
+            content: "Enhances transmission fluid performance",
           },
           {
             id: 1,
-            content: "Compatible with most types of Antifreeze",
+            content: "Reduces wear and prevents leaks",
           },
           {
             id: 2,
-            content: "Quickly and completely plugs coolant system leaks",
-          },
-        ],
-
-        contact: {
-          location:
-            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
-          email: "contact@lubxen.com",
-          contactNumber: [
-            {
-              id: 0,
-              number: "+971544997141",
-            },
-          ],
-        },
-      },
-      {
-        id: 1,
-        name: "COOLING SYSTEM CLEANER",
-        slug: "cooling-system-cleaner",
-        producttype: "Coolant System Leak Sealant",
-        image: img1,
-        productDescription:
-          "Cooling System Cleaner is designed to remove built-up scale and harsh mineral deposits from the coolant system. It effectively cleans heat transfer surfaces and removes corrosion products, such as rust and scale, to restore proper cooling capacity in the system. This cleaner helps promote more efficient heat transfer and improves coolant circulation.",
-        application: [
-          {
-            id: 0,
-            content: "Safe for use in engine systems using antifreeze.",
-          },
-        ],
-
-        highlight: [
-          {
-            id: 0,
-            content: "Removes scale deposits and tough residues",
-          },
-          {
-            id: 1,
-            content:
-              "Cleans heat transfer surfaces to improve cooling efficiency",
-          },
-          {
-            id: 2,
-            content: "Compatible with most types of Antifreeze",
+            content: "Improves shifting and transmission longevity",
           },
         ],
 
