@@ -85,7 +85,7 @@ export default function Faq() {
                           this resource on.{" "}
                           <span>
                             <Link
-                              href="/lubxen_company_profile.pdf"
+                              href="/product_catalog.pdf"
                               className="w-full text-xs md:text-lg text-[#BF1D2D] font-bold  transition-transform sc hover:scale-110 duration-700"
                             >
                               If you want to know more..

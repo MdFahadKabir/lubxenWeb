@@ -50,7 +50,7 @@ const Navbar = () => {
         {
           id: 7,
           name: "Download product catalogue",
-          href: "/lubxen_company_profile.pdf",
+          href: "/product_catalog.pdf",
           isDownload: true,
         },
       ],

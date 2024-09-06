@@ -191,6 +191,16 @@ export default function ProductsList() {
             ))
           )}
         </motion.div>
+
+        <div className="flex justify-center mt-10">
+          <a
+            href="/product_catalog.pdf" // PDF path in the public folder
+            download="product_catalog.pdf" // Optional: specify a custom download name
+            className="bg-[#BF1D2F] text-white py-2 px-4 rounded-full hover:bg-[#0A529B] transition-colors duration-700"
+          >
+            Download our full Product Catalog
+          </a>
+        </div>
       </motion.div>
     </>
   );

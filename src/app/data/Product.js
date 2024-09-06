@@ -1,5 +1,5 @@
 import img1 from "../../../public/images/product/lubxen.jpeg";
-import calcium_sulfonate_grease from "../../../public/images/product/base_oil.jpeg";
+import calcium_sulfonate_grease from "../../../public/images/product//calcium.jpeg";
 import fuel_system_cleaner from "../../../public/images/product/lubxen.jpeg";
 import radiator_coolant from "../../../public/images/lubxen_hero.jpeg";
 import transmission_treatment from "../../../public/images/lubxen_hero.jpeg";
@@ -17,6 +17,9 @@ import bentonite_grease from "../../../public/images/product/bentonite_grease.jp
 import marine_gear_oil from "../../../public/images/product/marine_gear_oil.jpeg";
 import marine_engine_oil from "../../../public/images/product/marine_engine_oil.jpeg";
 import marine_2t_oil from "../../../public/images/product/marine_2t_oil.jpeg";
+import engine from "../../../public/images/product/engine.jpg";
+import speciality from "../../../public/images/product/speciality.jpg";
+import base_oil from "../../../public/images/product/base_oil.jpeg";
 
 const products = [
   {
@@ -383,7 +386,7 @@ const products = [
     categorySlug: "greases",
     catContent:
       "LUBXEN provides high-performance greases that ensure smooth operation and protection against wear and corrosion. Suitable for a wide range of applications, our greases are crafted for durability and optimal performance in extreme conditions.",
-    catImage: calcium_sulfonate_grease,
+    catImage: bentonite_grease,
     items: [
       {
         id: 0,
@@ -722,7 +725,7 @@ const products = [
     categorySlug: "specialty-lubricants",
     catContent:
       "LUBXEN's specialty lubricants are tailored for unique applications, offering advanced solutions for specific industrial needs. Our innovative formulations provide long-lasting protection and performance across specialized machinery.",
-    catImage: turbine_oil,
+    catImage: speciality,
     items: [
       {
         id: 0,
@@ -883,7 +886,7 @@ const products = [
     categorySlug: "engine-care-%26-fuel-additives",
     catContent:
       "Ensure peak engine performance with LUBXEN's premium engine care and fuel additives. Designed to clean, protect, and optimize fuel systems, our products enhance efficiency and reduce emissions for a smoother ride.",
-    catImage: fuel_system_cleaner,
+    catImage: engine,
     items: [
       {
         id: 0,
@@ -1052,6 +1055,208 @@ const products = [
           {
             id: 2,
             content: "Improves shifting and transmission longevity",
+          },
+        ],
+
+        contact: {
+          location:
+            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+          email: "contact@lubxen.com",
+          contactNumber: [
+            {
+              id: 0,
+              number: "+971544997141",
+            },
+          ],
+        },
+      },
+    ],
+  },
+  {
+    id: 6,
+    productcategory: "Base Oils",
+    categorySlug: "base-oils",
+    catContent:
+      "LUBXEN's base oils are crafted to provide the essential foundation for high-quality lubricants. Produced with precision in the UAE, our base oils ensure stability, purity, and performance, forming the backbone of superior lubrication solutions worldwide.",
+    catImage: base_oil,
+    items: [
+      {
+        id: 0,
+        name: "Group I Base Oil",
+        slug: "group_i_base_oil",
+        producttype: "Solvent-Refined Base Oil",
+        classification: "General Purpose Industrial Lubricant Base",
+        image: base_oil,
+        productDescription:
+          "Group I Base Oil is a solvent-refined oil ideal for formulating general-purpose lubricants. Commonly used in applications where high-performance characteristics like oxidation resistance and low volatility are not critical, Group I Base Oils are perfect for older engines and less demanding industrial equipment. They offer excellent value for cost-sensitive operations while ensuring adequate lubrication.",
+        performanceLevels: [
+          {
+            id: 0,
+            content: "Reliable lubrication for moderate temperatures.",
+          },
+          {
+            id: 1,
+            content: "Cost-effective for general-purpose use.",
+          },
+          {
+            id: 2,
+            content:
+              "Suitable for use in industrial machinery and older vehicles.",
+          },
+          {
+            id: 3,
+            content: "Provides adequate protection against wear and oxidation.",
+          },
+        ],
+
+        highlight: [
+          {
+            id: 0,
+            content:
+              "Suitable for a wide range of industrial and automotive lubricants.",
+          },
+          {
+            id: 1,
+            content: "Ideal for less demanding applications.",
+          },
+          {
+            id: 2,
+            content:
+              "Provides reliable performance for older engines and equipment.",
+          },
+          {
+            id: 3,
+            content: "High viscosity index for moderate temperature stability.",
+          },
+        ],
+
+        contact: {
+          location:
+            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+          email: "contact@lubxen.com",
+          contactNumber: [
+            {
+              id: 0,
+              number: "+971544997141",
+            },
+          ],
+        },
+      },
+      {
+        id: 1,
+        name: "Group II Base Oil",
+        slug: "group_ii_base_oil",
+        producttype: "Hydrocracked Base Oil",
+        classification: "High-Performance Industrial Lubricant Base",
+        image: base_oil,
+        productDescription:
+          "Group II Base Oil is a high-performance, hydrocracked oil that provides superior oxidation stability and performance compared to conventional base oils. This oil is used in a variety of applications, including automotive and industrial lubricants, where high operating temperatures and extended oil life are required. It improves the efficiency and durability of lubricants in heavy-duty equipment and demanding environments.",
+        performanceLevels: [
+          {
+            id: 0,
+            content:
+              "Improved oxidation resistance for long-lasting protection.",
+          },
+          {
+            id: 1,
+            content:
+              "Enhanced thermal stability for better high-temperature performance.",
+          },
+          {
+            id: 2,
+            content:
+              "Reduced volatility, ensuring lower oil consumption and longer service life.",
+          },
+          {
+            id: 3,
+            content:
+              "Suitable for formulating advanced automotive and industrial lubricants.",
+          },
+        ],
+
+        highlight: [
+          {
+            id: 0,
+            content: "High oxidation stability.",
+          },
+          {
+            id: 1,
+            content:
+              "Suitable for a wide range of lubricants, including automotive and industrial oils.",
+          },
+          {
+            id: 2,
+            content:
+              "Provides better performance in high-temperature conditions.",
+          },
+          {
+            id: 3,
+            content:
+              "Suitable for heavy-duty applications requiring higher efficiency.",
+          },
+        ],
+
+        contact: {
+          location:
+            "Al Attar Grand Building, Plot Number -522-0, Bank Street Building - 142 Khalid Bin Al Waleed Rd - Al Mankhool Dubai, UAE",
+          email: "contact@lubxen.com",
+          contactNumber: [
+            {
+              id: 0,
+              number: "+971544997141",
+            },
+          ],
+        },
+      },
+      {
+        id: 2,
+        name: "Group III Base Oil",
+        slug: "group-iii-base-oil",
+        producttype: "Hydroisomerized Base Oil",
+        classification: "Synthetic-Like Industrial Lubricant Base",
+        image: base_oil,
+        productDescription:
+          "Group III Base Oil offers near-synthetic performance due to its hydroisomerization process, making it ideal for high-performance lubricants. This oil provides enhanced oxidation stability, superior low volatility, and excellent viscosity characteristics at extreme temperatures. It is a cost-effective alternative to full synthetics for modern high-output engines and industrial machinery operating under demanding conditions.",
+        performanceLevels: [
+          {
+            id: 0,
+            content: "Synthetic-like performance for extended drain intervals.",
+          },
+          {
+            id: 1,
+            content:
+              "Superior thermal and oxidation stability for high-performance applications.",
+          },
+          {
+            id: 2,
+            content: "Reduces oil consumption and extends equipment life.",
+          },
+          {
+            id: 3,
+            content:
+              "Ideal for use in automotive engine oils, industrial gear oils, and other high-performance lubricants.",
+          },
+        ],
+
+        highlight: [
+          {
+            id: 0,
+            content: "Provides synthetic-like performance at a lower cost.",
+          },
+          {
+            id: 1,
+            content:
+              "Excellent oxidation stability for high-temperature operations.",
+          },
+          {
+            id: 2,
+            content:
+              "Enhanced viscosity stability across a wide range of temperatures.",
+          },
+          {
+            id: 3,
+            content:
+              "Ideal for use in high-performance automotive and industrial lubricants.",
           },
         ],
 
