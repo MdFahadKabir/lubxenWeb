@@ -51,7 +51,7 @@ export default function Hero({
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
-          <div className="w-full my-auto">
+          <div className="w-full md:w-5/12 my-auto">
             <motion.p
               className="text-[#BF1D2F] text-sm md:text-lg mulish-bold "
               initial={{ opacity: 0 }}
@@ -140,9 +140,9 @@ export default function Hero({
               </Link>
             </motion.div>
           </div>
-          <div className="mx-10 mb-10 "></div>
+          {/* <div className="mx-10 mb-10 "></div> */}
           {/* Floating images */}
-          <div className="w-full my-auto">
+          <div className="w-full md:w-7/12 my-auto">
             {/* <div className="grid grid-cols-2 gap-6">
               {[
                 lubxen_product1,
@@ -177,7 +177,7 @@ export default function Hero({
               <Image
                 src={lubxen_product}
                 alt="Lubxez hero"
-                className="w-auto h-auto rounded-2xl"
+                className="w-full h-full rounded-2xl"
               />
             </motion.div>
           </div>
