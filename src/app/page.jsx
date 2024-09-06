@@ -5,6 +5,7 @@ import Faq from "@/components/Homepage/Faq";
 import Hero from "@/components/Homepage/Hero";
 import OurPartners from "@/components/Homepage/OurPartners";
 import Testimonial from "@/components/Homepage/Testimonial";
+import ProductCategory from "@/components/Product/ProductCategory";
 import ProductHero from "@/components/Product/ProductHero";
 import ProductsList from "@/components/Product/ProductsList";
 import ProductsSwiper from "@/components/Product/ProductsSwiper";
@@ -17,7 +18,7 @@ export default function Home() {
   return (
     <div className="">
       <Hero />
-      <div className="mt-52 md:mt-20 pb-10 md:pb-14 ">
+      <div className="mt-32 md:mt-20 pb-10 md:pb-14 ">
         <AboutUs />
       </div>
       <div className="pb-5 md:pb-20 ">
@@ -25,7 +26,8 @@ export default function Home() {
       </div>
       <div className=" pb-20 ">
         <ProductHero />
-        <ProductsSwiper />
+        {/* <ProductsSwiper /> */}
+        <ProductCategory />
       </div>
       {/* <div className=" pb-20 md:pb-40 ">
         <TeamHero />

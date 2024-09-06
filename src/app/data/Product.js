@@ -1,6 +1,6 @@
-import img1 from "../../../public/images/lubxen_hero.jpeg";
-import calcium_sulfonate_grease from "../../../public/images/lubxen_hero.jpeg";
-import fuel_system_cleaner from "../../../public/images/lubxen_hero.jpeg";
+import img1 from "../../../public/images/product/lubxen.jpeg";
+import calcium_sulfonate_grease from "../../../public/images/product/base_oil.jpeg";
+import fuel_system_cleaner from "../../../public/images/product/lubxen.jpeg";
 import radiator_coolant from "../../../public/images/lubxen_hero.jpeg";
 import transmission_treatment from "../../../public/images/lubxen_hero.jpeg";
 import turbine_oil from "../../../public/images/lubxen_hero.jpeg";
@@ -23,6 +23,9 @@ const products = [
     id: 0,
     productcategory: "AUTOMOTIVE LUBRICANTS",
     categorySlug: "automotive-lubricants",
+    catContent:
+      "LUBXEN's automotive lubricants are engineered to ensure optimal performance, enhanced fuel efficiency, and extended engine life. Manufactured in the UAE, our products meet global standards, offering superior protection for all vehicle types.",
+    catImage: drivemax_cvt,
     items: [
       {
         id: 0,
@@ -211,6 +214,9 @@ const products = [
     id: 1,
     productcategory: "INDUSTRIAL LUBRICANTS",
     categorySlug: "industrial-lubricants",
+    catContent:
+      "Designed to withstand the toughest industrial environments, LUBXEN's industrial lubricants deliver exceptional reliability and performance. Our advanced formulations reduce downtime and enhance equipment longevity for various industries worldwide.",
+    catImage: torque_hvlp,
     items: [
       {
         id: 0,
@@ -375,6 +381,9 @@ const products = [
     id: 2,
     productcategory: "GREASES",
     categorySlug: "greases",
+    catContent:
+      "LUBXEN provides high-performance greases that ensure smooth operation and protection against wear and corrosion. Suitable for a wide range of applications, our greases are crafted for durability and optimal performance in extreme conditions.",
+    catImage: calcium_sulfonate_grease,
     items: [
       {
         id: 0,
@@ -539,6 +548,9 @@ const products = [
     id: 3,
     productcategory: "MARINE LUBRICANTS",
     categorySlug: "marine-lubricants",
+    catContent:
+      "Our marine lubricants offer exceptional protection for engines and machinery, even in the most demanding marine environments. LUBXEN products are formulated to maintain efficiency and reliability, ensuring smooth sailing globally.",
+    catImage: marine_gear_oil,
     items: [
       {
         id: 0,
@@ -708,6 +720,9 @@ const products = [
     id: 4,
     productcategory: "SPECIALTY LUBRICANTS",
     categorySlug: "specialty-lubricants",
+    catContent:
+      "LUBXEN's specialty lubricants are tailored for unique applications, offering advanced solutions for specific industrial needs. Our innovative formulations provide long-lasting protection and performance across specialized machinery.",
+    catImage: turbine_oil,
     items: [
       {
         id: 0,
@@ -866,6 +881,9 @@ const products = [
     id: 5,
     productcategory: "ENGINE CARE & FUEL ADDITIVES",
     categorySlug: "engine-care-%26-fuel-additives",
+    catContent:
+      "Ensure peak engine performance with LUBXEN's premium engine care and fuel additives. Designed to clean, protect, and optimize fuel systems, our products enhance efficiency and reduce emissions for a smoother ride.",
+    catImage: fuel_system_cleaner,
     items: [
       {
         id: 0,

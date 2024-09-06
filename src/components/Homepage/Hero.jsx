@@ -8,7 +8,7 @@ import lubxen_product1 from "../../../public/images/lubxen_product1.jpeg";
 import lubxen_product2 from "../../../public/images/lubxen_product2.jpeg";
 import lubxen_product3 from "../../../public/images/lubxen_product3.jpeg";
 import lubxen_product4 from "../../../public/images/lubxen_product4.jpeg";
-import lubxen_product from "../../../public/images/lubxen_hero.jpeg";
+import lubxen_product from "../../../public/images/lubxen_web_banner.png";
 import Link from "next/link";
 
 export default function Hero({
@@ -26,7 +26,7 @@ export default function Hero({
 
   return (
     <>
-      <div className="relative bg-[#F5F7F9] md:-mt-40 ">
+      <div className="relative bg-[#F5F7F9] md:-mt-80 ">
         <div className="bg-transparent flex justify-between w-full">
           <div className="w-full md:w-2/5 lg:w-2/5 xl:w-2/5">
             <Image
@@ -46,7 +46,7 @@ export default function Hero({
           </div>
         </div>
         <motion.div
-          className="flex flex-col md:flex-row md:justify-between w-full absolute inset-y-10 md:inset-y-56 px-4 sm:px-6 md:px-8 lg:px-20 xl:px-40"
+          className="flex flex-col md:flex-row md:justify-between w-full absolute inset-y-10 md:inset-y-96 px-4 sm:px-6 md:px-8 lg:px-20 xl:px-40"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
