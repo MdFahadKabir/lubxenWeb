@@ -109,7 +109,7 @@ export default function Faq() {
                           whileHover={{ scale: 1.02 }}
                           transition={{ duration: 0.3, ease: "easeInOut" }}
                         >
-                          <p className="poppins-semibold text-sm md:text-base ">
+                          <p className="poppins-semibold text-sm md:text-base text-start ">
                             {item.header}
                           </p>
                           <motion.div
@@ -131,7 +131,7 @@ export default function Faq() {
                                 height: { duration: 0.6, ease: "easeInOut" },
                                 opacity: { duration: 0.4, ease: "easeInOut" },
                               }}
-                              className="overflow-hidden mulish-regular w-full text-xs md:text-sm bg-white mulish text-black p-2 md:p-4 rounded-lg mt-2 text-justify"
+                              className="overflow-hidden mulish-regular w-full text-xs md:text-sm bg-white mulish text-black p-2 md:p-4 rounded-lg mt-2 text-start"
                             >
                               {item.content}
                             </motion.div>
