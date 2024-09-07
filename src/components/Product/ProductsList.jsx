@@ -207,7 +207,7 @@ export default function ProductsList() {
               download="product_catalog.pdf"
               className="bg-white text-sm md:text-lg px-5 py-2 rounded-full text-black border border-black mulish-semibold hover:text-white hover:bg-[#BF1D2F] hover:border-[#BF1D2F] duration-700 "
             >
-              Download Product Catalogue
+              Download Base Oil Catalogue
             </a>
           </div>
         </div>

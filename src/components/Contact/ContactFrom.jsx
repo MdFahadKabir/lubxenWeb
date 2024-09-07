@@ -79,7 +79,7 @@ export default function ContactForm({
         >
           Contact with{" "}
           <span className="poppins-bold-italic" style={{ color: borderColor }}>
-            us
+            Us
           </span>
         </h2>
         <p
