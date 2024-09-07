@@ -1,23 +1,12 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import CountUp from "react-countup";
 import { motion } from "framer-motion";
 import heroImage from "../../../public/images/bgimg.png";
-import lubxen_product1 from "../../../public/images/lubxen_product1.jpeg";
-import lubxen_product2 from "../../../public/images/lubxen_product2.jpeg";
-import lubxen_product3 from "../../../public/images/lubxen_product3.jpeg";
-import lubxen_product4 from "../../../public/images/lubxen_product4.jpeg";
 import lubxen_product from "../../../public/images/lubxen_web_banner.png";
 import Link from "next/link";
-
-export default function Hero({
-  data = [
-    { count: 20, label: "Years on market" },
-    { count: 30, label: "Big projects" },
-    { count: 60, label: "Trusted partners" },
-  ],
-}) {
+import { FaFileDownload } from "react-icons/fa";
+export default function Hero() {
   // Floating animation variants
   const floatAnimation = {
     rest: { y: 0, transition: { type: "spring", stiffness: 50 } },
@@ -60,42 +49,7 @@ export default function Hero({
             >
               "Where Efficiency Fuels Your Performance
             </motion.p>
-            {/* <motion.p
-              className="text-3xl md:text-5xl mulish-bold py-5 md:block hidden"
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.2, delay: 0.4 }}
-            >
-              LUBXEN – Your Trusted{" "}
-              <motion.span
-                className="relative inline-block "
-                initial={{ backgroundPosition: "100% 0%" }}
-                whileHover={{
-                  backgroundPosition: "0% 100%",
-                }}
-                transition={{
-                  duration: 0.5,
-                  ease: "easeInOut",
-                }}
-                style={{
-                  backgroundImage:
-                    "linear-gradient(to top, #BF1D2F 50%, #ffffff 50%), linear-gradient(to right, #ff0000, #ff9900)", // Bottom half red, top half white
-                  backgroundSize: "100% 200%, 100% 200%", // First gradient for background, second for text color
-                  backgroundRepeat: "no-repeat",
-                  padding: "0 0.25rem",
-                  WebkitBackgroundClip: "text", // Ensures the gradient applies to the text
-                  WebkitTextFillColor: "transparent", // Makes the text color transparent to show the gradient
-                  backgroundClip: "text",
-                  textDecoration: "underline", // Add underline to the text
-                  textDecorationColor: "#BF1D2F", // Underline color matches the background color
-                  textDecorationThickness: "2px", // Thickness of the underline
-                  textUnderlineOffset: "0.25rem",
-                }}
-              >
-                Energy
-              </motion.span>{" "}
-              Partner
-            </motion.p> */}
+
             <motion.p
               className="text-3xl md:text-5xl mulish-bold py-5 "
               initial={{ opacity: 0, y: 10 }}
@@ -139,35 +93,48 @@ export default function Hero({
                 Discover More
               </Link>
             </motion.div>
-          </div>
-          {/* <div className="mx-10 mb-10 "></div> */}
-          {/* Floating images */}
-          <div className="w-full md:w-7/12 my-auto">
-            {/* <div className="grid grid-cols-2 gap-6">
-              {[
-                lubxen_product1,
-                lubxen_product2,
-                lubxen_product3,
-                lubxen_product4,
-              ].map((image, index) => (
-                <motion.div
-                  key={index}
-                  className={`me-auto ${
-                    index === 1 ? "mt-10" : index === 2 ? "-mt-12" : "-mt-2"
-                  }`}
-                  initial="rest"
-                  whileHover="hover"
-                  animate="rest"
-                  variants={floatAnimation}
-                >
-                  <Image
-                    src={image}
-                    alt={`lubxen_product${index + 1}`}
-                    className="w-auto h-auto rounded-2xl"
-                  />
-                </motion.div>
-              ))}
+            {/* <div className="hidden md:block">
+              <motion.div
+                className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mx-auto md:mt-10 "
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1.4, delay: 0.8 }}
+              >
+                <div>
+                  <a
+                    href="/product_catalog.pdf"
+                    download="product_catalog.pdf"
+                    className="bg-[#BF1D2F] text-sm md:text-lg px-5 py-2 rounded-full text-white border border-[#BF1D2F] mulish-semibold hover:text-[#BF1D2F] hover:bg-white hover:border-black duration-700 flex justify-between "
+                  >
+                    <p>Corporate Profile</p>{" "}
+                    <FaFileDownload className="text-sm my-auto" />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="/product_catalog.pdf"
+                    download="product_catalog.pdf"
+                    className="bg-white text-sm md:text-lg px-5 py-2 rounded-full text-black border border-black mulish-semibold hover:text-white hover:bg-[#BF1D2F] hover:border-[#BF1D2F] duration-700 flex justify-between "
+                  >
+                    <p>Product Catalog</p>{" "}
+                    <FaFileDownload className="text-sm my-auto" />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="/product_catalog.pdf"
+                    download="product_catalog.pdf"
+                    className="bg-white text-sm md:text-lg px-5 py-2 rounded-full text-black border border-black mulish-semibold hover:text-white hover:bg-[#BF1D2F] hover:border-[#BF1D2F] duration-700 flex justify-between "
+                  >
+                    <p>Base Oil Catalog</p>{" "}
+                    <FaFileDownload className="text-sm my-auto" />
+                  </a>
+                </div>
+              </motion.div>
             </div> */}
+          </div>
+
+          <div className="w-full md:w-7/12 my-auto">
             <motion.div
               initial="rest"
               whileHover="hover"
@@ -179,6 +146,45 @@ export default function Hero({
                 alt="Lubxez hero"
                 className="w-full h-full rounded-2xl"
               />
+            </motion.div>
+          </div>
+          <div className="block md:hidden">
+            <motion.div
+              className="grid grid-cols-2 md:grid-cols-3 gap-1 w-full mx-auto -mt-5 md:mt-10 "
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1.4, delay: 0.8 }}
+            >
+              <div>
+                <a
+                  href="/product_catalog.pdf"
+                  download="product_catalog.pdf"
+                  className="bg-[#BF1D2F] text-sm md:text-lg px-5 py-2 rounded-full text-white border border-[#BF1D2F] mulish-semibold hover:text-[#BF1D2F] hover:bg-white hover:border-black duration-700 flex justify-between "
+                >
+                  <p>Corporate Profile</p>{" "}
+                  <FaFileDownload className="text-xs my-auto" />
+                </a>
+              </div>
+              <div>
+                <a
+                  href="/product_catalog.pdf"
+                  download="product_catalog.pdf"
+                  className="bg-white text-sm md:text-lg px-5 py-2 rounded-full text-black border border-black mulish-semibold hover:text-white hover:bg-[#BF1D2F] hover:border-[#BF1D2F] duration-700 flex justify-between "
+                >
+                  <p>Product Catalog</p>{" "}
+                  <FaFileDownload className="text-xs my-auto" />
+                </a>
+              </div>
+              <div>
+                <a
+                  href="/product_catalog.pdf"
+                  download="product_catalog.pdf"
+                  className="bg-white text-sm md:text-lg px-5 py-2 rounded-full text-black border border-black mulish-semibold hover:text-white hover:bg-[#BF1D2F] hover:border-[#BF1D2F] duration-700 flex justify-between "
+                >
+                  <p>Base Oil Catalog</p>{" "}
+                  <FaFileDownload className="text-xs my-auto" />
+                </a>
+              </div>
             </motion.div>
           </div>
         </motion.div>

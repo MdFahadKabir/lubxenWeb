@@ -5,6 +5,7 @@ import { motion } from "framer-motion"; // Import Framer Motion
 import oil from "../../../public/images/oil10.jpeg";
 import vision_icon from "../../../public/images/vision_icon.png";
 import mission_icon from "../../../public/images/mission_icon.png";
+import { FaFileDownload } from "react-icons/fa";
 
 export default function AboutUs() {
   return (
@@ -66,6 +67,16 @@ export default function AboutUs() {
             and large corporations, treating each customer as a valued partner,
             regardless of their size.
           </p>
+          <div className=" mt-10 inline-block">
+            <a
+              href="/product_catalog.pdf" // PDF path in the public folder
+              download="product_catalog.pdf" // Optional: specify a custom download name
+              className="bg-[#BF1D2F] text-white py-2 px-4 rounded-full hover:bg-[#0A529B] transition-colors duration-700 flex flex-row"
+            >
+              <p>Download our Company Profile</p>{" "}
+              <FaFileDownload className="text-xs my-auto ml-5" />
+            </a>
+          </div>
         </motion.div>
       </div>
       <div className="flex flex-col md:flex-row md:justify-between mt-10">
