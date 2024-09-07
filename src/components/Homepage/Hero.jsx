@@ -150,7 +150,7 @@ export default function Hero() {
           </div>
           <div className="block md:hidden">
             <motion.div
-              className="grid grid-cols-2 md:grid-cols-3 gap-1 w-full mx-auto -mt-5 md:mt-10 "
+              className="grid grid-cols-2 md:grid-cols-3 gap-1 w-full mx-auto -mt-2 md:mt-10 "
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1.4, delay: 0.8 }}
@@ -175,11 +175,11 @@ export default function Hero() {
                   <FaFileDownload className="text-xs my-auto" />
                 </a>
               </div>
-              <div>
+              <div className="col-span-2 px-20">
                 <a
                   href="/product_catalog.pdf"
                   download="product_catalog.pdf"
-                  className="bg-white text-sm md:text-lg px-5 py-2 rounded-full text-black border border-black mulish-semibold hover:text-white hover:bg-[#BF1D2F] hover:border-[#BF1D2F] duration-700 flex justify-between "
+                  className="bg-white text-sm md:text-lg px-5 py-2 rounded-full text-black border border-black mulish-semibold hover:text-white hover:bg-[#BF1D2F] hover:border-[#BF1D2F] duration-700 flex justify-between mx-auto"
                 >
                   <p>Base Oil Catalog</p>{" "}
                   <FaFileDownload className="text-xs my-auto" />
