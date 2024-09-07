@@ -75,7 +75,7 @@ export default function DistributorForm({
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <h2
-          className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal mb-2"
+          className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal mb-2 text-center"
           style={{ color: textColor }}
         >
           Become a{" "}
@@ -84,7 +84,7 @@ export default function DistributorForm({
           </span>
         </h2>
         <p
-          className="border-2 inline-block px-10 mb-4"
+          className="border-2 w-20 px-10 mb-4  mx-auto"
           style={{ borderColor: borderColor }}
         ></p>
         <form className="space-y-4" onSubmit={handleSubmit}>

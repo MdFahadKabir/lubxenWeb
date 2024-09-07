@@ -2,42 +2,42 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 export default function CommingSoon() {
-  useEffect(() => {
-    // Set the date we're counting down to (adjust the date and time)
-    const countDownDate = new Date("Sep 30, 2024 00:00:00").getTime();
+  // useEffect(() => {
+  //   // Set the date we're counting down to (adjust the date and time)
+  //   const countDownDate = new Date("Sep 30, 2024 00:00:00").getTime();
 
-    // Update the countdown every 1 second
-    const intervalId = setInterval(() => {
-      // Get the current date and time
-      const now = new Date().getTime();
+  //   // Update the countdown every 1 second
+  //   const intervalId = setInterval(() => {
+  //     // Get the current date and time
+  //     const now = new Date().getTime();
 
-      // Calculate the time remaining
-      const distance = countDownDate - now;
+  //     // Calculate the time remaining
+  //     const distance = countDownDate - now;
 
-      // Calculate days, hours, minutes, and seconds
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  //     // Calculate days, hours, minutes, and seconds
+  //     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  //     const hours = Math.floor(
+  //       (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  //     );
+  //     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  //     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      // Display the countdown in the HTML
-      document.getElementById("days").innerHTML = days + " D";
-      document.getElementById("hours").innerHTML = hours + " H";
-      document.getElementById("minutes").innerHTML = minutes + " M";
-      document.getElementById("seconds").innerHTML = seconds + " S";
+  //     // Display the countdown in the HTML
+  //     document.getElementById("days").innerHTML = days + " D";
+  //     document.getElementById("hours").innerHTML = hours + " H";
+  //     document.getElementById("minutes").innerHTML = minutes + " M";
+  //     document.getElementById("seconds").innerHTML = seconds + " S";
 
-      // If the countdown is over, display a message
-      if (distance < 0) {
-        clearInterval(intervalId);
-        document.getElementById("countdown").innerHTML = "EXPIRED";
-      }
-    }, 1000);
+  //     // If the countdown is over, display a message
+  //     if (distance < 0) {
+  //       clearInterval(intervalId);
+  //       document.getElementById("countdown").innerHTML = "EXPIRED";
+  //     }
+  //   }, 1000);
 
-    // Cleanup interval on component unmount
-    return () => clearInterval(intervalId);
-  }, []);
+  //   // Cleanup interval on component unmount
+  //   return () => clearInterval(intervalId);
+  // }, []);
   return (
     <>
       <div className="">
@@ -72,7 +72,7 @@ export default function CommingSoon() {
               >
                 Soon
               </motion.h1>
-              <motion.div
+              {/* <motion.div
                 id="countdown"
                 className="flex flex-wrap items-center justify-center text-black  text-lg sm:text-xl md:text-2xl font-extrabold mt-4"
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -83,7 +83,7 @@ export default function CommingSoon() {
                 <span id="hours" className="px-2"></span>
                 <span id="minutes" className="px-2"></span>
                 <span id="seconds" className="px-2"></span>
-              </motion.div>
+              </motion.div> */}
             </motion.div>
           </div>
         </div>

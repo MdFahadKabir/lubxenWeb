@@ -49,7 +49,13 @@ const Navbar = () => {
         { id: 6, name: "Product", href: "/product" },
         {
           id: 7,
-          name: "Download product catalogue",
+          name: "Download Product Catalogue",
+          href: "/product_catalog.pdf",
+          isDownload: true,
+        },
+        {
+          id: 8,
+          name: "Download Base Oil Catalogue",
           href: "/product_catalog.pdf",
           isDownload: true,
         },

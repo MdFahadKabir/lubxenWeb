@@ -82,56 +82,18 @@ export default function Hero() {
             >
               <Link
                 href="/become_a_distributor"
-                className="bg-[#BF1D2F] text-sm md:text-lg px-5 py-2 rounded-full text-white border border-[#BF1D2F] mulish-semibold hover:text-[#BF1D2F] hover:bg-white hover:border-black duration-700"
+                className="bg-[#BF1D2F] text-sm md:text-lg px-5 py-2 rounded-full text-white border border-[#BF1D2F] mulish-semibold hover:text-[#BF1D2F] hover:bg-white hover:border-black duration-700 text-center"
               >
                 Become a distributor
               </Link>
-              <Link
-                href="/product"
-                className="bg-white text-sm md:text-lg px-5 py-2 rounded-full text-black border border-black mulish-semibold hover:text-white hover:bg-[#BF1D2F] hover:border-[#BF1D2F] duration-700 ml-5"
+              <a
+                href="/product_catalog.pdf"
+                download="product_catalog.pdf"
+                className="bg-white text-sm md:text-lg px-5 py-2 rounded-full text-black border border-black mulish-semibold hover:text-white hover:bg-[#BF1D2F] hover:border-[#BF1D2F] duration-700 ml-5 text-center"
               >
-                Discover More
-              </Link>
+                Download Product Catalogue
+              </a>
             </motion.div>
-            {/* <div className="hidden md:block">
-              <motion.div
-                className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mx-auto md:mt-10 "
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1.4, delay: 0.8 }}
-              >
-                <div>
-                  <a
-                    href="/product_catalog.pdf"
-                    download="product_catalog.pdf"
-                    className="bg-[#BF1D2F] text-sm md:text-lg px-5 py-2 rounded-full text-white border border-[#BF1D2F] mulish-semibold hover:text-[#BF1D2F] hover:bg-white hover:border-black duration-700 flex justify-between "
-                  >
-                    <p>Corporate Profile</p>{" "}
-                    <FaFileDownload className="text-sm my-auto" />
-                  </a>
-                </div>
-                <div>
-                  <a
-                    href="/product_catalog.pdf"
-                    download="product_catalog.pdf"
-                    className="bg-white text-sm md:text-lg px-5 py-2 rounded-full text-black border border-black mulish-semibold hover:text-white hover:bg-[#BF1D2F] hover:border-[#BF1D2F] duration-700 flex justify-between "
-                  >
-                    <p>Product Catalog</p>{" "}
-                    <FaFileDownload className="text-sm my-auto" />
-                  </a>
-                </div>
-                <div>
-                  <a
-                    href="/product_catalog.pdf"
-                    download="product_catalog.pdf"
-                    className="bg-white text-sm md:text-lg px-5 py-2 rounded-full text-black border border-black mulish-semibold hover:text-white hover:bg-[#BF1D2F] hover:border-[#BF1D2F] duration-700 flex justify-between "
-                  >
-                    <p>Base Oil Catalog</p>{" "}
-                    <FaFileDownload className="text-sm my-auto" />
-                  </a>
-                </div>
-              </motion.div>
-            </div> */}
           </div>
 
           <div className="w-full md:w-7/12 my-auto">
@@ -146,45 +108,6 @@ export default function Hero() {
                 alt="Lubxez hero"
                 className="w-full h-full rounded-2xl"
               />
-            </motion.div>
-          </div>
-          <div className="block md:hidden">
-            <motion.div
-              className="grid grid-cols-2 md:grid-cols-3 gap-1 w-full mx-auto -mt-2 md:mt-10 "
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1.4, delay: 0.8 }}
-            >
-              <div>
-                <a
-                  href="/product_catalog.pdf"
-                  download="product_catalog.pdf"
-                  className="bg-[#BF1D2F] text-sm md:text-lg px-5 py-2 rounded-full text-white border border-[#BF1D2F] mulish-semibold hover:text-[#BF1D2F] hover:bg-white hover:border-black duration-700 flex justify-between "
-                >
-                  <p>Corporate Profile</p>{" "}
-                  <FaFileDownload className="text-xs my-auto" />
-                </a>
-              </div>
-              <div>
-                <a
-                  href="/product_catalog.pdf"
-                  download="product_catalog.pdf"
-                  className="bg-white text-sm md:text-lg px-5 py-2 rounded-full text-black border border-black mulish-semibold hover:text-white hover:bg-[#BF1D2F] hover:border-[#BF1D2F] duration-700 flex justify-between "
-                >
-                  <p>Product Catalog</p>{" "}
-                  <FaFileDownload className="text-xs my-auto" />
-                </a>
-              </div>
-              <div className="col-span-2 px-20">
-                <a
-                  href="/product_catalog.pdf"
-                  download="product_catalog.pdf"
-                  className="bg-white text-sm md:text-lg px-5 py-2 rounded-full text-black border border-black mulish-semibold hover:text-white hover:bg-[#BF1D2F] hover:border-[#BF1D2F] duration-700 flex justify-between mx-auto"
-                >
-                  <p>Base Oil Catalog</p>{" "}
-                  <FaFileDownload className="text-xs my-auto" />
-                </a>
-              </div>
             </motion.div>
           </div>
         </motion.div>

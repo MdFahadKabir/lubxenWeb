@@ -34,7 +34,7 @@ export default function AboutUs() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <p className="poppins-regular text-black text-sm sm:text-lg md:text-xl lg:text-xl pb-5">
+          <p className="poppins-regular text-black text-sm sm:text-lg md:text-xl lg:text-xl pb-2">
             About us
           </p>
           <p className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal">
@@ -71,7 +71,7 @@ export default function AboutUs() {
             <a
               href="/product_catalog.pdf" // PDF path in the public folder
               download="product_catalog.pdf" // Optional: specify a custom download name
-              className="bg-[#BF1D2F] text-white py-2 px-4 rounded-full hover:bg-[#0A529B] transition-colors duration-700 flex flex-row"
+              className="bg-white text-sm md:text-lg px-5 py-2 rounded-full text-black border border-black mulish-semibold hover:text-white hover:bg-[#BF1D2F] hover:border-[#BF1D2F] duration-700 flex flex-row"
             >
               <p>Download our Company Profile</p>{" "}
               <FaFileDownload className="text-xs my-auto ml-5" />

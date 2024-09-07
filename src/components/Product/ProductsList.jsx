@@ -193,13 +193,23 @@ export default function ProductsList() {
         </motion.div>
 
         <div className="flex justify-center mt-10">
-          <a
-            href="/product_catalog.pdf" // PDF path in the public folder
-            download="product_catalog.pdf" // Optional: specify a custom download name
-            className="bg-[#BF1D2F] text-white py-2 px-4 rounded-full hover:bg-[#0A529B] transition-colors duration-700"
-          >
-            Download our full Product Catalog
-          </a>
+          <div className="flex flex-col md:flex-row md:justify-between">
+            <a
+              href="/product_catalog.pdf" // PDF path in the public folder
+              download="product_catalog.pdf" // Optional: specify a custom download name
+              className="bg-[#BF1D2F] text-sm md:text-lg px-5 py-2 rounded-full text-white border border-[#BF1D2F] mulish-semibold hover:text-[#BF1D2F] hover:bg-white hover:border-black duration-700"
+            >
+              Download our full Product Catalogue
+            </a>
+            <div className="mt-3 md:mt-0 mx-5"></div>
+            <a
+              href="/product_catalog.pdf"
+              download="product_catalog.pdf"
+              className="bg-white text-sm md:text-lg px-5 py-2 rounded-full text-black border border-black mulish-semibold hover:text-white hover:bg-[#BF1D2F] hover:border-[#BF1D2F] duration-700 "
+            >
+              Download Product Catalogue
+            </a>
+          </div>
         </div>
       </motion.div>
     </>
