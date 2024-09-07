@@ -15,7 +15,6 @@ export default function Testimonial() {
   const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
-    // Only set the interval if the slider is not hovered
     if (!isHovered) {
       const interval = setInterval(() => {
         setCurrentIndex((prevIndex) =>
@@ -23,7 +22,6 @@ export default function Testimonial() {
         );
       }, 10000);
 
-      // Clear the interval when the component is unmounted or hovered
       return () => clearInterval(interval);
     }
   }, [isHovered, testimonials.length]); // Add dependencies for isHovered and testimonials.length
