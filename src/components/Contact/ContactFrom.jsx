@@ -77,9 +77,9 @@ export default function ContactForm({
           className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal mb-2"
           style={{ color: textColor }}
         >
-          Become a{" "}
+          Contact with{" "}
           <span className="poppins-bold-italic" style={{ color: borderColor }}>
-            distributor
+            us
           </span>
         </h2>
         <p
