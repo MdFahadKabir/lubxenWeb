@@ -82,16 +82,16 @@ export default function Hero() {
             >
               <Link
                 href="/become_a_distributor"
-                className="bg-[#BF1D2F] text-sm md:text-lg px-5 py-2 rounded-full text-white border border-[#BF1D2F] mulish-semibold hover:text-[#BF1D2F] hover:bg-white hover:border-black duration-700 text-center"
+                className="bg-[#BF1D2F] text-xs md:text-lg px-5 py-2 rounded-full text-white border border-[#BF1D2F] mulish-semibold hover:text-[#BF1D2F] hover:bg-white hover:border-black duration-700 "
               >
                 Become a distributor
               </Link>
               <a
                 href="/product_catalog.pdf"
                 download="product_catalog.pdf"
-                className="bg-white text-sm md:text-lg px-5 py-2 rounded-full text-black border border-black mulish-semibold hover:text-white hover:bg-[#BF1D2F] hover:border-[#BF1D2F] duration-700 ml-5 text-center"
+                className="bg-white text-xs md:text-lg px-5 py-2 rounded-full text-black border border-black mulish-semibold hover:text-white hover:bg-[#BF1D2F] hover:border-[#BF1D2F] duration-700 ml-5 "
               >
-                Download Product Catalogue
+                Product Catalogue
               </a>
             </motion.div>
           </div>

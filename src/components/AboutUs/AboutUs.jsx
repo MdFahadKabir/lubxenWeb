@@ -69,8 +69,8 @@ export default function AboutUs() {
           </p>
           <div className=" mt-10 inline-block">
             <a
-              href="/product_catalog.pdf" // PDF path in the public folder
-              download="product_catalog.pdf" // Optional: specify a custom download name
+              href="/lubxen_company_profile.pdf" // PDF path in the public folder
+              download="lubxen_company_profile.pdf" // Optional: specify a custom download name
               className="bg-white text-sm md:text-lg px-5 py-2 rounded-full text-black border border-black mulish-semibold hover:text-white hover:bg-[#BF1D2F] hover:border-[#BF1D2F] duration-700 flex flex-row"
             >
               <p>Download our Company Profile</p>{" "}
