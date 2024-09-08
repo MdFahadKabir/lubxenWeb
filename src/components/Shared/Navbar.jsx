@@ -56,7 +56,7 @@ const Navbar = () => {
         {
           id: 8,
           name: "Download Base Oil Catalogue",
-          href: "/product_catalog.pdf",
+          href: "/lubrex_base oil_catalog.pdf",
           isDownload: true,
         },
       ],
@@ -64,7 +64,6 @@ const Navbar = () => {
   ];
 
   const linksRight = [
-    // { id: 8, name: "Data Sheets", href: "/datasheets" },
     { id: 9, name: "E&A", href: "/blog" },
     { id: 10, name: "Contact Us", href: "/contact" },
     { id: 11, name: "Become A Distributor", href: "/become_a_distributor" },
@@ -206,8 +205,6 @@ const Navbar = () => {
                   </a>
                 </Link>
               ))}
-              {/* Google Translate Dropdown */}
-              {/* <GoogleTranslate /> */}
             </motion.div>
 
             {/* Hamburger Menu */}
