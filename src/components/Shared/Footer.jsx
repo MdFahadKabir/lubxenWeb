@@ -144,7 +144,9 @@ export default function Footer() {
             {" "}
             <p className="text-white mulish-regular text-sm  leading-normal">
               2024 All rights reserved by{" "}
-              <span className="text-[#BF1D2F] mulish-bold">Octoriz</span>
+              <span className="text-[#BF1D2F] mulish-bold">
+                Lubxen Global Petroleum LLC
+              </span>
             </p>
           </div>
         </div>
