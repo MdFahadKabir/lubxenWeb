@@ -90,12 +90,12 @@ export default function ProductsList() {
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="relative group w-full h-60 overflow-hidden bg-black m-auto cursor-pointer"
+                    className="relative group w-full h-60 overflow-hidden bg-[#F5F7F9] m-auto cursor-pointer"
                   >
                     <Image
                       width={400}
                       height={400}
-                      className="object-cover w-full h-full transform duration-700 bg-[#F5F7F9]"
+                      className="object-cover w-full h-full transform duration-700 bg-[#F5F7F9] "
                       src={item.image}
                       alt={item.name}
                     />
