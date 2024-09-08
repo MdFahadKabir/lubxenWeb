@@ -95,7 +95,7 @@ export default function ProductsList() {
                     <Image
                       width={400}
                       height={400}
-                      className="object-cover w-full h-full transform duration-700"
+                      className="object-cover w-full h-full transform duration-700 bg-[#F5F7F9]"
                       src={item.image}
                       alt={item.name}
                     />
