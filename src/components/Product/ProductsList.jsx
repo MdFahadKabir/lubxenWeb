@@ -129,31 +129,7 @@ export default function ProductsList() {
                           >
                             Product Type : {item.producttype.substring(0, 100)}
                           </motion.p>
-                          {/* <motion.p
-                            className="mulish-regular text-sm text-white mt-2 px-3"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ duration: 0.9, ease: "easeInOut" }}
-                          >
-                            {item.synthetic.substring(0, 100)}
-                          </motion.p> */}
-                          {/* <motion.p
-                            className="mulish-regular text-sm text-white mt-2 px-3"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ duration: 0.9, ease: "easeInOut" }}
-                          >
-                            {item.viscosityGrade.substring(0, 100)}
-                          </motion.p>
-                          <motion.p
-                            className="mulish-regular text-sm text-white mt-2 px-3"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ duration: 0.9, ease: "easeInOut" }}
-                          >
-                            Classification :{" "}
-                            {item.classification.substring(0, 100)}
-                          </motion.p> */}
+
                           {item.viscosityGrade && (
                             <motion.p
                               className="mulish-regular text-sm text-white mt-2 px-3"
