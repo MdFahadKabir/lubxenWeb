@@ -10,13 +10,22 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const pathname = usePathname();
 
   useEffect(() => {
-    const storedDarkMode = localStorage.getItem("darkMode") === "true";
-    setDarkMode(storedDarkMode);
-    document.documentElement.classList.toggle("dark", storedDarkMode);
+    const storedDarkMode = localStorage.getItem("darkMode");
+
+    if (storedDarkMode === null) {
+      // If no preference is stored, default to dark mode
+      localStorage.setItem("darkMode", "true");
+      document.documentElement.classList.add("dark");
+    } else {
+      // Apply the stored preference
+      const isDarkMode = storedDarkMode === "true";
+      setDarkMode(isDarkMode);
+      document.documentElement.classList.toggle("dark", isDarkMode);
+    }
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
