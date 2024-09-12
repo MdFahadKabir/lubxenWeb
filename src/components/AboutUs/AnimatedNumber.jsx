@@ -11,14 +11,14 @@ export default function AnimatedNumber({
     { count: 10, label: "Team Members" },
   ],
   textColor = "text-[#BF1D2F]",
-  textColor2 = "text-black",
+  textColor2 = "text-black dark:text-white",
   borderColor = "border-gray-300",
   hoverBorderColor = "#FB4F00",
-  bgColor = "bg-white",
+  bgColor = "bg-white dark:bg-transparent",
 }) {
   return (
     <div className="mx-4 sm:mx-8 md:mx-12 lg:mx-16 xl:mx-40">
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 ">
         {data.map((item, index) => (
           <motion.div
             key={index}

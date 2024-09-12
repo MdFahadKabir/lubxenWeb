@@ -8,12 +8,12 @@ export default function ExecutiveMessage() {
       <div className="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16">
         <div className=" md:border md:p-10 md:rounded-xl md:shadow-inner ">
           <div className=" mb-10 text-center w-full ">
-            <p className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal border-b-2 border-[#BF1D2F]  mx-auto inline-block">
+            <p className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal border-b-2 border-[#BF1D2F]  mx-auto inline-block dark:text-white">
               Executive Message
             </p>
           </div>
 
-          <div className="flex flex-col md:flex-row md:justify-between">
+          <div className="flex flex-col md:flex-row md:justify-between dark:text-white">
             <div className="w-full md:w-1/5">
               <Image
                 src={Alamgir_Kabir}
@@ -42,7 +42,7 @@ export default function ExecutiveMessage() {
                 testament to his vision and entrepreneurial spirit, embodying
                 the values of quality, innovation, and customer satisfaction.
               </p>
-              <p className="text-justify  mulish-semibold text-sm leading-normal text-black pt-5">
+              <p className="text-justify  mulish-semibold text-sm leading-normal text-black dark:text-white pt-5">
                 "At LUBXEN, we are committed to delivering products that not
                 only meet but exceed the expectations of our customers. Our goal
                 is to penetrate new markets and broaden our distri- bution

@@ -1,20 +1,22 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
+import { FaBars, FaTimes, FaChevronDown, FaMoon, FaSun } from "react-icons/fa";
 import Image from "next/image";
 import LubxenLogo from "../../../public/images/LubxenLogo.png";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
-import { FaGlobe } from "react-icons/fa6";
-import GoogleTranslate from "@/app/GoogleTranslate";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [darkMode, setDarkMode] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
+    const storedDarkMode = localStorage.getItem("darkMode") === "true";
+    setDarkMode(storedDarkMode);
+    document.documentElement.classList.toggle("dark", storedDarkMode);
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
@@ -24,6 +26,12 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const toggleDarkMode = () => {
+    const newDarkMode = !darkMode;
+    setDarkMode(newDarkMode);
+    localStorage.setItem("darkMode", newDarkMode);
+    document.documentElement.classList.toggle("dark", newDarkMode);
+  };
 
   const linksLeft = [
     { id: 1, name: "Home", href: "/" },
@@ -93,8 +101,8 @@ const Navbar = () => {
           transition={{ duration: 0.5 }}
           className={` w-full backdrop-filter ${
             scrolled
-              ? "backdrop-blur-lg bg-[#F5F7F9]/80 shadow-md"
-              : "bg-transparent"
+              ? "backdrop-blur-lg bg-[#F5F7F9]/80 dark:bg-black/80 md:dark:bg-black shadow-md"
+              : "bg-[#F5F7F9]/80 md:bg-transparent dark:bg-black md:dark:bg-black"
           }`}
         >
           <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-3 lg:px-8">
@@ -118,7 +126,7 @@ const Navbar = () => {
                         className={`text-lg font-medium cursor-pointer hover:scale-105 transition duration-200 flex flex-row ${
                           isActive("/company")
                             ? "text-[#BF1D2F]"
-                            : "text-[#0A529B]"
+                            : "text-[#0A529B] dark:text-white"
                         }`}
                       >
                         <p>{name}</p>
@@ -195,7 +203,11 @@ const Navbar = () => {
                       name === "Become A Distributor"
                         ? "text-lg text-white bg-[#BF1D2F] hover:bg-[#0A529B] duration-700 px-4 py-2 rounded-full relative before:absolute before:inset-y-[5px] before:inset-x-[45px] before:rounded-full before:border-2 before:border-[#BF1D2F] before:animate-ping before:z-[-1]"
                         : "text-lg font-medium hover:scale-105 transition duration-200 relative after:absolute after:left-0 after:bottom-0 after:w-full after:h-1 after:bg-[#BF1D2F] after:scale-x-0 after:transition-transform after:duration-300 "
-                    } ${isActive(href) ? "text-[#BF1D2F]" : "text-[#0A529B]"} ${
+                    } ${
+                      isActive(href)
+                        ? "text-[#BF1D2F]"
+                        : "text-[#0A529B] dark:text-white"
+                    } ${
                       name !== "Become A Distributor"
                         ? "hover:after:scale-x-100"
                         : ""
@@ -205,6 +217,13 @@ const Navbar = () => {
                   </a>
                 </Link>
               ))}
+              {/* Dark mode toggle button */}
+              <button
+                onClick={toggleDarkMode}
+                className="text-2xl text-[#BF1D2F] dark:text-[#0A529B] transition-colors duration-300"
+              >
+                {darkMode ? <FaSun className="dark:text-white" /> : <FaMoon />}
+              </button>
             </motion.div>
 
             {/* Hamburger Menu */}
@@ -303,6 +322,14 @@ const Navbar = () => {
                     </Link>
                   </li>
                 ))}
+                <li className="px-4 py-6 text-base w-full">
+                  <button
+                    onClick={toggleDarkMode}
+                    className="text-2xl text-white dark:text-gray-200"
+                  >
+                    {darkMode ? <FaSun /> : <FaMoon />}
+                  </button>
+                </li>
               </motion.ul>
             )}
           </div>

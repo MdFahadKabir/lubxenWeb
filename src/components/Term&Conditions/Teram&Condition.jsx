@@ -8,14 +8,14 @@ export default function TeramCondition() {
       <div className="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16">
         <div className=" md:border md:p-10 md:rounded-xl md:shadow-inner ">
           <div className=" mb-10 text-center w-full ">
-            <p className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal border-b-2 border-[#BF1D2F]  mx-auto inline-block">
+            <p className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal border-b-2 border-[#BF1D2F]  mx-auto inline-block dark:text-white">
               Terms & Conditions
             </p>
           </div>
 
-          <div className="flex flex-col text-justify  mulish-regular  text-xs md:text-sm leading-normal text-black">
+          <div className="flex flex-col text-justify  mulish-regular  text-xs md:text-sm leading-normal text-black dark:text-white">
             <>
-              <p className="text-justify mulish-semibold text-sm leading-normal text-black ">
+              <p className="text-justify mulish-semibold text-sm leading-normal text-black dark:text-white ">
                 Welcome to LUBXEN
               </p>
               <p className=" pt-5">
@@ -51,7 +51,7 @@ export default function TeramCondition() {
               </p>
             </>
             <>
-              <p className="text-justify mulish-semibold text-sm leading-normal text-black ">
+              <p className="text-justify mulish-semibold text-sm leading-normal text-black dark:text-white ">
                 Cookies
               </p>
               <p className=" pt-5 mb-5">
@@ -65,7 +65,7 @@ export default function TeramCondition() {
               </p>
             </>
             <>
-              <p className="text-justify mulish-semibold text-sm leading-normal text-black ">
+              <p className="text-justify mulish-semibold text-sm leading-normal text-black dark:text-white ">
                 License
               </p>
               <p className=" pt-5">
@@ -174,7 +174,7 @@ export default function TeramCondition() {
               </p>
             </>
             <>
-              <p className="text-justify mulish-semibold text-sm leading-normal text-black ">
+              <p className="text-justify mulish-semibold text-sm leading-normal text-black dark:text-white ">
                 Hyperlinking to our Content
               </p>
 
@@ -324,13 +324,14 @@ export default function TeramCondition() {
                 </p>
               </div>
               <p className=" pt-2 mb-5">
-                No use of <span className="text-black">Lubxen’s</span> logo or
-                other artwork will be allowed for linking absent a trademark
-                license agreement.
+                No use of{" "}
+                <span className="text-black dark:text-white">Lubxen’s</span>{" "}
+                logo or other artwork will be allowed for linking absent a
+                trademark license agreement.
               </p>
             </>
             <>
-              <p className="text-justify mulish-semibold text-sm leading-normal text-black ">
+              <p className="text-justify mulish-semibold text-sm leading-normal text-black dark:text-white ">
                 I Frames
               </p>
               <p className=" pt-5 mb-5">
@@ -340,7 +341,7 @@ export default function TeramCondition() {
               </p>
             </>
             <>
-              <p className="text-justify mulish-semibold text-sm leading-normal text-black ">
+              <p className="text-justify mulish-semibold text-sm leading-normal text-black dark:text-white ">
                 Content Liability
               </p>
               <p className=" pt-5 mb-5">
@@ -353,7 +354,7 @@ export default function TeramCondition() {
               </p>
             </>
             <>
-              <p className="text-justify mulish-semibold text-sm leading-normal text-black ">
+              <p className="text-justify mulish-semibold text-sm leading-normal text-black dark:text-white ">
                 Your Privacy
               </p>
               <Link href="/privecy_policy">
@@ -363,7 +364,7 @@ export default function TeramCondition() {
               </Link>
             </>
             <>
-              <p className="text-justify mulish-semibold text-sm leading-normal text-black ">
+              <p className="text-justify mulish-semibold text-sm leading-normal text-black dark:text-white ">
                 Reservation of Rights
               </p>
               <p className=" pt-5 mb-5">
@@ -377,7 +378,7 @@ export default function TeramCondition() {
               </p>
             </>
             <>
-              <p className="text-justify mulish-semibold text-sm leading-normal text-black ">
+              <p className="text-justify mulish-semibold text-sm leading-normal text-black dark:text-white ">
                 Removal of links from our website
               </p>
               <p className=" pt-5 mb-5">
@@ -392,7 +393,7 @@ export default function TeramCondition() {
               </p>
             </>
             <>
-              <p className="text-justify mulish-semibold text-sm leading-normal text-black ">
+              <p className="text-justify mulish-semibold text-sm leading-normal text-black dark:text-white ">
                 Disclaimer
               </p>
               <p className=" pt-5">

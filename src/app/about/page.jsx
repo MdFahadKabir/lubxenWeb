@@ -5,13 +5,10 @@ import React from "react";
 export default function page() {
   return (
     <>
-      <div className="mt-5 mb-20 ">
-        <div className="pb-20 md:pb-20">
-          <AboutUs />
-        </div>
-        <div>
-          <AnimatedNumber />
-        </div>
+      <div className="bg-transparent dark:bg-gradient-to-b dark:from-black dark:to-[#101010] py-10">
+        <AboutUs />
+        <div className="py-5"></div>
+        <AnimatedNumber />
       </div>
     </>
   );

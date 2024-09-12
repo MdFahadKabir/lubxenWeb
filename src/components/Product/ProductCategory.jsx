@@ -57,7 +57,7 @@ export default function ProductCategory() {
         return (
           <motion.div
             key={category.categorySlug}
-            className="relative group overflow-hidden bg-[#F5F7F9] p-4 rounded-lg shadow-md"
+            className="relative group overflow-hidden bg-[#F5F7F9] dark:bg-[#222222] p-4 rounded-lg shadow-md"
             variants={itemVariants} // Animation for each category card
             whileHover={{ scale: 1.02 }} // Scale slightly on hover for the entire card
           >
@@ -77,7 +77,7 @@ export default function ProductCategory() {
 
             {/* Category Name and Description */}
             <motion.div
-              className="text-black"
+              className="text-black dark:text-white"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}

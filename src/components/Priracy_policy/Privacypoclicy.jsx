@@ -8,14 +8,14 @@ export default function Privacypoclicy() {
       <div className="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16">
         <div className=" md:border md:p-10 md:rounded-xl md:shadow-inner ">
           <div className=" mb-10 text-center w-full ">
-            <p className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal border-b-2 border-[#BF1D2F]  mx-auto inline-block">
+            <p className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal border-b-2 border-[#BF1D2F]  mx-auto inline-block dark:text-white">
               Privacy Policy
             </p>
           </div>
 
-          <div className="flex flex-col text-justify  mulish-regular  text-xs md:text-sm leading-normal text-black">
+          <div className="flex flex-col text-justify  mulish-regular  text-xs md:text-sm leading-normal text-black dark:text-white ">
             <>
-              <p className="text-justify mulish-semibold text-sm leading-normal text-black ">
+              <p className="text-justify mulish-semibold text-sm leading-normal text-black dark:text-white ">
                 Privacy Policy for LUBXEN
               </p>
               <p className=" pt-5">
@@ -41,7 +41,7 @@ export default function Privacypoclicy() {
               </p>
             </>
             <>
-              <p className="text-justify mulish-semibold text-sm leading-normal text-black ">
+              <p className="text-justify mulish-semibold text-sm leading-normal text-black dark:text-white ">
                 Consent
               </p>
               <p className=" pt-5 mb-5">
@@ -50,7 +50,7 @@ export default function Privacypoclicy() {
               </p>
             </>
             <>
-              <p className="text-justify mulish-semibold text-sm leading-normal text-black ">
+              <p className="text-justify mulish-semibold text-sm leading-normal text-black dark:text-white ">
                 Information We Collect
               </p>
               <p className=" pt-5">
@@ -72,7 +72,7 @@ export default function Privacypoclicy() {
               </p>
             </>
             <>
-              <p className="text-justify mulish-semibold text-sm leading-normal text-black ">
+              <p className="text-justify mulish-semibold text-sm leading-normal text-black dark:text-white ">
                 How We Use Your Information
               </p>
               <p className=" pt-5">
@@ -141,31 +141,31 @@ export default function Privacypoclicy() {
               </div>
 
               <p className=" pt-2 mb-5">
-                <span className="text-black">Lubxen</span> follows a standard
-                procedure of using log files. These files log visitors when they
-                visit websites. All hosting companies do this and a part of
-                hosting services’ analytics. The information collected by log
-                files include internet protocol (IP) addresses, browser type,
-                Internet Service Provider (ISP), date and time stamp,
-                referring/exit pages, and possibly the number of clicks. These
-                are not linked to any information that is personally
+                <span className="text-black dark:text-white">Lubxen</span>{" "}
+                follows a standard procedure of using log files. These files log
+                visitors when they visit websites. All hosting companies do this
+                and a part of hosting services’ analytics. The information
+                collected by log files include internet protocol (IP) addresses,
+                browser type, Internet Service Provider (ISP), date and time
+                stamp, referring/exit pages, and possibly the number of clicks.
+                These are not linked to any information that is personally
                 identifiable. The purpose of the information is for analysing
                 trends, administering the site, tracking users’ movement on the
                 website, and gathering demographic information.
               </p>
             </>
             <>
-              <p className="text-justify mulish-semibold text-sm leading-normal text-black ">
+              <p className="text-justify mulish-semibold text-sm leading-normal text-black dark:text-white ">
                 Cookies and Web Beacons
               </p>
               <p className=" pt-5">
                 Like any other website,{" "}
-                <span className="text-black">Lubxen</span> uses ‘cookies’. These
-                cookies are used to store information including visitors’
-                preferences, and the pages on the website that the visitor
-                accessed or visited. The information is used to optimize the
-                users’ experience by customizing our web page content based on
-                visitors’ browser type and/or other information.
+                <span className="text-black dark:text-white">Lubxen</span> uses
+                ‘cookies’. These cookies are used to store information including
+                visitors’ preferences, and the pages on the website that the
+                visitor accessed or visited. The information is used to optimize
+                the users’ experience by customizing our web page content based
+                on visitors’ browser type and/or other information.
               </p>
               <p className=" pt-2">
                 For more general information on cookies, please read “What Are
@@ -175,36 +175,37 @@ export default function Privacypoclicy() {
               <p className=" pt-2 ">
                 You may consult this list to find the Privacy Policy for each of
                 the advertising partners of{" "}
-                <span className="text-black">Lubxen</span>
+                <span className="text-black dark:text-white">Lubxen</span>
               </p>
               <p className=" pt-2 ">
                 Third-party ad servers or ad networks uses technologies like
                 cookies, JavaScript, or Web Beacons that are used in their
                 respective advertisements and links that appear on{" "}
-                <span className="text-black">Lubxen</span>, which are sent
-                directly to users’ browser. They automatically receive your IP
-                address when this occurs. These technologies are used to measure
-                the effectiveness of their advertising campaigns and/or to
-                personalise the advertising content that you see on websites
-                that you visit.
+                <span className="text-black dark:text-white">Lubxen</span>,
+                which are sent directly to users’ browser. They automatically
+                receive your IP address when this occurs. These technologies are
+                used to measure the effectiveness of their advertising campaigns
+                and/or to personalise the advertising content that you see on
+                websites that you visit.
               </p>
               <p className=" pt-2 mb-5">
-                Note that <span className="text-black">Lubxen</span> has no
-                access to or control over these cookies that are used by
+                Note that{" "}
+                <span className="text-black dark:text-white">Lubxen</span> has
+                no access to or control over these cookies that are used by
                 third-party advertisers.
               </p>
             </>
             <>
-              <p className="text-justify mulish-semibold text-sm leading-normal text-black ">
+              <p className="text-justify mulish-semibold text-sm leading-normal text-black dark:text-white ">
                 Third Party Privacy Policies
               </p>
               <p className=" pt-5">
-                <span className="text-black">Lubxen</span>‘s Privacy Policy does
-                not apply to other advertisers or websites. Thus, we are
-                advising you to consult the respective Privacy Policies of these
-                third-party ad servers for more detailed information. It may
-                include their practices and instructions about how to opt-out of
-                certain options.
+                <span className="text-black dark:text-white">Lubxen</span>‘s
+                Privacy Policy does not apply to other advertisers or websites.
+                Thus, we are advising you to consult the respective Privacy
+                Policies of these third-party ad servers for more detailed
+                information. It may include their practices and instructions
+                about how to opt-out of certain options.
               </p>
               <p className=" pt-2 mb-5">
                 You can choose to disable cookies through your individual
@@ -214,7 +215,7 @@ export default function Privacypoclicy() {
               </p>
             </>
             <>
-              <p className="text-justify mulish-semibold text-sm leading-normal text-black ">
+              <p className="text-justify mulish-semibold text-sm leading-normal text-black dark:text-white ">
                 CCPA Privacy Rights (Do Not Sell My Personal Information)
               </p>
               <p className=" pt-5">
@@ -235,7 +236,7 @@ export default function Privacypoclicy() {
               </p>
             </>
             <>
-              <p className="text-justify mulish-semibold text-sm leading-normal text-black ">
+              <p className="text-justify mulish-semibold text-sm leading-normal text-black dark:text-white ">
                 GDPR Data Protection Rights
               </p>
               <p className=" pt-5">
@@ -270,7 +271,7 @@ export default function Privacypoclicy() {
               </p>
             </>
             <>
-              <p className="text-justify mulish-semibold text-sm leading-normal text-black ">
+              <p className="text-justify mulish-semibold text-sm leading-normal text-black dark:text-white ">
                 Children’s Information
               </p>
               <p className=" pt-5">
@@ -280,12 +281,12 @@ export default function Privacypoclicy() {
                 activity.
               </p>
               <p className=" pt-2 ">
-                <span className="text-black">Lubxen</span> does not knowingly
-                collect any Personal Identifiable Information from children
-                under the age of 13. If you think that your child provided this
-                kind of information on our website, we strongly encourage you to
-                contact us immediately and we will do our best efforts to
-                promptly remove such information from our records.
+                <span className="text-black dark:text-white">Lubxen</span> does
+                not knowingly collect any Personal Identifiable Information from
+                children under the age of 13. If you think that your child
+                provided this kind of information on our website, we strongly
+                encourage you to contact us immediately and we will do our best
+                efforts to promptly remove such information from our records.
               </p>
             </>
           </div>

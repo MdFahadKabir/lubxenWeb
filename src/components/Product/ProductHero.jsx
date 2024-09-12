@@ -26,11 +26,11 @@ export default function ProductHero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
         >
-          <p className="poppins-regular text-black text-sm sm:text-lg md:text-xl lg:text-xl">
+          <p className="poppins-regular text-black dark:text-white text-sm sm:text-lg md:text-xl lg:text-xl">
             Products
           </p>
           <motion.p
-            className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal w-full md:w-3/5"
+            className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal w-full md:w-3/5 dark:text-white"
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeInOut" }}

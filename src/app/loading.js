@@ -4,7 +4,7 @@ import animation from "../../public/images/Animation.gif";
 
 export default function Loading() {
   return (
-    <div className="flex justify-center items-center h-screen bg-[#F5F7F9] backdrop-filter backdrop-blur-md">
+    <div className="flex justify-center items-center h-screen bg-[#F5F7F9]  backdrop-filter backdrop-blur-md">
       <div className="flex h-screen">
         <svg viewBox="0 0 100 20" className="w-full max-w-[600px] h-full">
           <defs>

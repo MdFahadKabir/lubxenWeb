@@ -6,12 +6,8 @@ import React from "react";
 export default function Service() {
   return (
     <>
-      <div className="mt-5 mb-20 ">
-        {/* <BlogHero />
-        <BlogsList /> */}
-        <div className="my-40">
-          <CommingSoon />
-        </div>
+      <div className="bg-transparent dark:bg-gradient-to-b dark:from-black dark:to-[#101010] py-10">
+        <CommingSoon />
       </div>
     </>
   );

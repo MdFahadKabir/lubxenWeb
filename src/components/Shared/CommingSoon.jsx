@@ -40,7 +40,7 @@ export default function CommingSoon() {
   // }, []);
   return (
     <>
-      <div className="">
+      <div className="py-10 md:py-20">
         <div className=" w-full flex items-center justify-center ">
           <div className="flex flex-col">
             <motion.div

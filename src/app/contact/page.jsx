@@ -7,22 +7,13 @@ import ContactInfo from "@/components/Contact/ContactInfo";
 export default function Contact() {
   return (
     <>
-      <div className="mt-5 mb-20  px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16">
-        <div className="pb-20">
+      <div className="bg-transparent dark:bg-gradient-to-b dark:from-black dark:to-[#101010] py-10">
+        <div className="pb-10">
           <ContactInfo />
         </div>
-        <ContactForm />
-        {/* <div className="flex flex-col md:justify-between md:flex-row ">
-          <div className="w-full">
-            <ContactForm />
-          </div>
-          <div className="mx-10 my-5 md:my-0"></div>
-          <div className="w-full">
-            <MapProvider>
-              <Map />
-            </MapProvider>
-          </div>
-        </div>{" "} */}
+        <div className="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16">
+          <ContactForm />
+        </div>
       </div>
     </>
   );

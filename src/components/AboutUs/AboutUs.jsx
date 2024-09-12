@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion"; // Import Framer Motion
 import oil from "../../../public/images/oil10.jpeg";
+import oil_dark from "../../../public/images/lubxen-oil-dark.png";
 import vision_icon from "../../../public/images/vision_icon.png";
 import mission_icon from "../../../public/images/mission_icon.png";
 import { FaFileDownload } from "react-icons/fa";
@@ -19,11 +20,20 @@ export default function AboutUs() {
         >
           <Image
             src={oil}
-            alt="lubxen-oil.jpg"
+            alt="lubxen-oil-light"
             width={400}
             height={400}
             priority
-            className="w-full h-auto rounded-xl "
+            className="w-full h-auto rounded-xl dark:hidden"
+          />
+          {/* Dark mode image */}
+          <Image
+            src={oil_dark}
+            alt="lubxen-oil-dark"
+            width={400}
+            height={400}
+            priority
+            className="w-full h-auto rounded-xl hidden dark:block"
           />
         </motion.div>
         <div className="md:mx-10 mx-0 "></div>
@@ -34,17 +44,17 @@ export default function AboutUs() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <p className="poppins-regular text-black text-sm sm:text-lg md:text-xl lg:text-xl pb-2">
+          <p className="poppins-regular text-black dark:text-white text-sm sm:text-lg md:text-xl lg:text-xl pb-2">
             About us
           </p>
-          <p className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal">
+          <p className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal dark:text-white">
             Empowering Your Performance with World-Class Lubricant{" "}
             <span className="text-[#BF1D2F] playfair-display-sc-bold-italic">
               Solutions
             </span>
           </p>
           <div className="border-2 border-[#BF1D2F] w-16 sm:w-20 mt-2 mb-5"></div>
-          <p className="mulish-regular  text-sm  leading-normal mx-auto text-black text-justify">
+          <p className="mulish-regular  text-sm  leading-normal mx-auto text-black dark:text-white text-justify">
             LUBXEN manufactures its products in the UAE and serves a global
             market. As a rising leader in the United Arab Emirates, we deliver
             premium lubricant solutions tailored to meet the diverse needs of
@@ -54,7 +64,7 @@ export default function AboutUs() {
             enhance performance, extend equipment life, and ensure operational
             efficiency.
           </p>
-          <p className="mulish-regular  text-sm  leading-normal mx-auto text-black pt-3 text-justify">
+          <p className="mulish-regular  text-sm  leading-normal mx-auto text-black dark:text-white pt-3 text-justify">
             At LUBXEN, we aim to be your go-to partner for superior lubricant
             solutions tailored to your specific needs. From heavy machinery and
             rally driving to daily commuting and sectors like automotive,
@@ -95,7 +105,7 @@ export default function AboutUs() {
               className="w-auto h-10"
             />
             <div className="mx-2"></div>
-            <p className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal my-auto w-full">
+            <p className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal my-auto w-full dark:text-white">
               Our {}
               <span className="text-[#BF1D2F] playfair-display-sc-bold-italic">
                 Mission
@@ -104,7 +114,7 @@ export default function AboutUs() {
           </div>
 
           <div className="border-2 border-[#BF1D2F] w-20  mt-2 mb-5"></div>
-          <p className="mulish-regular  text-sm  leading-normal mx-auto text-black text-justify">
+          <p className="mulish-regular  text-sm  leading-normal mx-auto text-black dark:text-white text-justify">
             Our mission at LUBXEN is to empower our customers by providing
             premium-quality products at competitive prices, meeting market
             demands, and exceeding expectations. We are committed to aligning
@@ -128,7 +138,7 @@ export default function AboutUs() {
               className="w-auto h-10"
             />
             <div className="mx-2"></div>
-            <p className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal my-auto w-full">
+            <p className="poppins-bold text-lg sm:text-2xl md:text-2xl lg:text-2xl leading-normal my-auto w-full dark:text-white">
               Our {}
               <span className="text-[#BF1D2F] playfair-display-sc-bold-italic">
                 Vision
@@ -137,7 +147,7 @@ export default function AboutUs() {
           </div>
 
           <div className="border-2 border-[#BF1D2F] w-20  mt-2 mb-5"></div>
-          <p className="mulish-regular  text-sm  leading-normal mx-auto text-black text-justify">
+          <p className="mulish-regular  text-sm  leading-normal mx-auto text-black dark:text-white text-justify">
             Our vision is to become a global leader in the lubricant
             manufacturing industry and a trusted, lifelong partner for our
             customers. We are dedicated to offering top-quality products and

@@ -5,7 +5,7 @@ import React from "react";
 export default function Product() {
   return (
     <>
-      <div className="mt-5 mb-20 ">
+      <div className="bg-transparent dark:bg-gradient-to-b dark:from-black dark:to-[#101010] py-10">
         <ProductHero />
         <ProductsList />
       </div>

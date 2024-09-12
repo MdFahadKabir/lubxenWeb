@@ -9,7 +9,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-transparent dark:bg-gradient-to-b dark:from-black dark:to-[#101010]">
       <Hero />
       <div className="mt-12 md:mt-20 pb-10 md:pb-14 ">
         <AboutUs />

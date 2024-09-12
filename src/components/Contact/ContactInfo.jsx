@@ -17,24 +17,24 @@ export default function ContactInfo({
     { type: "mail", value: "contact@lubxen.com", label: "Mail Us Now" },
   ],
   textColor = "text-[#BF1D2F]",
-  textColor2 = "text-black",
+  textColor2 = "text-black dark:text-white",
   borderColor = "border-gray-300",
   hoverBorderColor = "#FB4F00",
-  bgColor = "bg-white",
+  bgColor = "bg-white dark:bg-transparent",
 }) {
   const renderIcon = (type) => {
     switch (type) {
       case "phone":
-        return <IoMdCall className={`text-4xl sm:text-5xl ${textColor}`} />;
+        return <IoMdCall className={`text-4xl md:text-5xl ${textColor}`} />;
       case "mail":
         return (
           <MdOutlineSupportAgent
-            className={`text-4xl sm:text-5xl ${textColor}`}
+            className={`text-4xl md:text-5xl ${textColor}`}
           />
         );
       case "address":
         return (
-          <FaMapLocationDot className={`text-4xl sm:text-5xl ${textColor}`} />
+          <FaMapLocationDot className={`text-4xl md:text-5xl ${textColor}`} />
         );
       default:
         return null;
@@ -43,7 +43,7 @@ export default function ContactInfo({
 
   return (
     <div className="mx-4 sm:mx-8 md:mx-12 lg:mx-16 xl:mx-40">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 ">
         {data.map((item, index) => (
           <motion.div
             key={index}

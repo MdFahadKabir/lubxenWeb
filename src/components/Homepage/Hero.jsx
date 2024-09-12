@@ -15,13 +15,13 @@ export default function Hero() {
 
   return (
     <>
-      <div className="relative bg-[#F5F7F9] md:-mt-80 ">
+      <div className="relative bg-[#F5F7F9] dark:bg-black md:-mt-80 ">
         <div className="bg-transparent flex justify-between w-full">
           <div className="w-full md:w-2/5 lg:w-2/5 xl:w-2/5">
             <Image
               src={heroImage}
               alt="heroimg"
-              className="w-auto h-auto overflow-hidden"
+              className="w-auto h-auto overflow-hidden dark:opacity-10 "
             />
           </div>
           <div className="w-2/5 hidden md:block lg:block xl:block relative overflow-hidden">
@@ -29,7 +29,7 @@ export default function Hero() {
               <Image
                 src={heroImage}
                 alt="heroimg"
-                className="w-auto h-auto overflow-hidden"
+                className="w-auto h-auto overflow-hidden dark:opacity-10"
               />
             </div>
           </div>
@@ -51,7 +51,7 @@ export default function Hero() {
             </motion.p>
 
             <motion.p
-              className="text-3xl md:text-5xl mulish-bold py-5 "
+              className="text-3xl md:text-5xl mulish-bold py-5 dark:text-white "
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.4 }}
@@ -63,7 +63,7 @@ export default function Hero() {
               Partner
             </motion.p>
             <motion.p
-              className="text-sm md:text-base mulish-regular  text-black pb-5 text-justify"
+              className="text-sm md:text-base mulish-regular  text-black dark:text-white pb-5 text-justify"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.6 }}
@@ -88,7 +88,7 @@ export default function Hero() {
               </Link>
               <a
                 href="/product_catalog.pdf"
-                download="product_catalog.pdf"
+                // download="product_catalog.pdf"
                 className="bg-white text-xs md:text-base px-5 py-2 rounded-full text-black border border-black mulish-semibold hover:text-white hover:bg-[#BF1D2F] hover:border-[#BF1D2F] duration-700 ml-5 "
               >
                 Product Catalogue
