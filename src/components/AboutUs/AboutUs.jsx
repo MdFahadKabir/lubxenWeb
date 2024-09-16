@@ -18,14 +18,14 @@ export default function AboutUs() {
           animate={{ opacity: 1, x: 0 }} // Final animation state
           transition={{ duration: 1 }} // Animation duration
         >
-          <Image
+          {/* <Image
             src={oil}
             alt="lubxen-oil-light"
             width={400}
             height={400}
             priority
             className="w-full h-auto rounded-xl dark:hidden"
-          />
+          /> */}
           {/* Dark mode image */}
           <Image
             src={oil_dark}
@@ -33,7 +33,7 @@ export default function AboutUs() {
             width={400}
             height={400}
             priority
-            className="w-full h-auto rounded-xl hidden dark:block"
+            className="w-full h-auto rounded-xl "
           />
         </motion.div>
         <div className="md:mx-10 mx-0 "></div>
