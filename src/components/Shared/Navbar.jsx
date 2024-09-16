@@ -5,8 +5,79 @@ import Image from "next/image";
 import LubxenLogo from "../../../public/images/LubxenLogo.png";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
+import Script from "next/script";
 
-const Navbar = () => {
+// Languages
+const languages = [
+  { label: "English", value: "en", src: "https://flagcdn.com/h60/us.png" },
+  { label: "Spanish", value: "es", src: "https://flagcdn.com/h60/es.png" },
+  { label: "Arabic", value: "ar", src: "https://flagcdn.com/h60/sa.png" },
+];
+
+// Init
+const includedLanguages = languages.map((lang) => lang.value).join(",");
+function googleTranslateElementInit() {
+  new window.google.translate.TranslateElement(
+    {
+      pageLanguage: "auto",
+      includedLanguages,
+    },
+    "google_translate_element"
+  );
+}
+
+export function GoogleTranslate({ prefLangCookie }) {
+  const [langCookie, setLangCookie] = useState(
+    decodeURIComponent(prefLangCookie)
+  );
+
+  useEffect(() => {
+    window.googleTranslateElementInit = googleTranslateElementInit;
+  }, []);
+
+  const onChange = (value) => {
+    setLangCookie(value);
+    const element = document.querySelector(".goog-te-combo");
+    element.value = value;
+    element.dispatchEvent(new Event("change"));
+  };
+
+  return (
+    <div className="flex items-center">
+      <div
+        id="google_translate_element"
+        style={{ visibility: "hidden", width: "1px", height: "1px" }}
+      ></div>
+      <LanguageSelector onChange={onChange} value={langCookie} />
+      <Script
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+        strategy="afterInteractive"
+      />
+    </div>
+  );
+}
+
+function LanguageSelector({ onChange, value }) {
+  return (
+    <select
+      onChange={(e) => onChange(e.target.value)}
+      value={value}
+      className="ml-2 bg-transparent text-white md:text-[#0A529B] dark:text-white border-none cursor-pointer outline-none"
+    >
+      {languages.map((it) => (
+        <option
+          value={it.value}
+          key={it.value}
+          className="text-sm text-[#0A529B] hover:bg-[#BF1D2F] hover:text-white duration-700 outline-none"
+        >
+          {it.label}
+        </option>
+      ))}
+    </select>
+  );
+}
+
+const Navbar = ({ setLang }) => {
   const [nav, setNav] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -17,11 +88,9 @@ const Navbar = () => {
     const storedDarkMode = localStorage.getItem("darkMode");
 
     if (storedDarkMode === null) {
-      // If no preference is stored, default to dark mode
       localStorage.setItem("darkMode", "true");
       document.documentElement.classList.add("dark");
     } else {
-      // Apply the stored preference
       const isDarkMode = storedDarkMode === "true";
       setDarkMode(isDarkMode);
       document.documentElement.classList.toggle("dark", isDarkMode);
@@ -97,13 +166,12 @@ const Navbar = () => {
 
   const toggleNav = () => {
     setNav(!nav);
-    setActiveDropdown(null); // Close dropdown when the mobile menu is toggled
+    setActiveDropdown(null);
   };
 
   return (
     <>
       <div className="z-40 relative">
-        {/* <GoogleTranslate /> */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -226,6 +294,8 @@ const Navbar = () => {
                   </a>
                 </Link>
               ))}
+
+              <GoogleTranslate prefLangCookie="en" setLang={setLang} />
               {/* Dark mode toggle button */}
               <button
                 onClick={toggleDarkMode}
@@ -331,6 +401,8 @@ const Navbar = () => {
                     </Link>
                   </li>
                 ))}
+                {/* Google Translate Component in Mobile */}
+
                 <li className="px-4 py-6 text-base w-full">
                   <button
                     onClick={toggleDarkMode}
@@ -338,6 +410,9 @@ const Navbar = () => {
                   >
                     {darkMode ? <FaSun /> : <FaMoon />}
                   </button>
+                </li>
+                <li className="w-full px-1">
+                  <GoogleTranslate prefLangCookie="en" setLang={setLang} />
                 </li>
               </motion.ul>
             )}
