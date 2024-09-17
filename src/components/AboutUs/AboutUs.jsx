@@ -33,10 +33,10 @@ export default function AboutUs() {
             width={400}
             height={400}
             priority
-            className="w-full h-auto rounded-xl "
+            className="w-full h-auto rounded-xl  border"
           />
         </motion.div>
-        <div className="md:mx-10 mx-0 "></div>
+        <div className="md:mx-5 mx-0 "></div>
 
         <motion.div
           className="w-full md:w-6/12 my-auto"
