@@ -10,8 +10,15 @@ import Script from "next/script";
 // Languages
 const languages = [
   { label: "English", value: "en", src: "https://flagcdn.com/h60/us.png" },
-  { label: "Spanish", value: "es", src: "https://flagcdn.com/h60/es.png" },
+  { label: "Bangla", value: "bn", src: "https://flagcdn.com/h60/bd.png" },
   { label: "Arabic", value: "ar", src: "https://flagcdn.com/h60/sa.png" },
+  { label: "Hindi", value: "hi", src: "https://flagcdn.com/h60/in.png" },
+  { label: "Malay", value: "ms", src: "https://flagcdn.com/h60/my.png" },
+  { label: "Swahili", value: "sw", src: "https://flagcdn.com/h60/tz.png" },
+  { label: "French", value: "fr", src: "https://flagcdn.com/h60/fr.png" },
+  { label: "Italian", value: "it", src: "https://flagcdn.com/h60/it.png" },
+  { label: "Spanish", value: "es", src: "https://flagcdn.com/h60/es.png" },
+  { label: "Chinese", value: "zh-CN", src: "https://flagcdn.com/h60/cn.png" },
 ];
 
 // Init
@@ -147,9 +154,6 @@ const Navbar = ({ setLang }) => {
         },
       ],
     },
-  ];
-
-  const linksRight = [
     { id: 9, name: "E&A", href: "/blog" },
     { id: 10, name: "Contact Us", href: "/contact" },
     { id: 11, name: "Become A Distributor", href: "/become_a_distributor" },
@@ -183,6 +187,25 @@ const Navbar = ({ setLang }) => {
           }`}
         >
           <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-3 lg:px-8">
+            {/* Logo */}
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              className="flex justify-center"
+            >
+              <Link href="/" legacyBehavior>
+                <a>
+                  <Image
+                    src={LubxenLogo}
+                    alt="Lubxen"
+                    width={800}
+                    height={800}
+                    className="w-auto h-28 md:h-32"
+                  />
+                </a>
+              </Link>
+            </motion.div>
             {/* Left Links */}
             <motion.div
               initial={{ x: -100, opacity: 0 }}
@@ -200,7 +223,7 @@ const Navbar = ({ setLang }) => {
                       className="relative my-auto"
                     >
                       <div
-                        className={`text-lg font-medium cursor-pointer hover:scale-105 transition duration-200 flex flex-row ${
+                        className={`text-lg font-medium cursor-pointer hover:scale-105 transition duration-200 flex flex-row  ${
                           isActive("/company")
                             ? "text-[#BF1D2F]"
                             : "text-[#0A529B] dark:text-white"
@@ -211,7 +234,7 @@ const Navbar = ({ setLang }) => {
                       </div>
 
                       {activeDropdown === id && (
-                        <div className="absolute left-0 mt-0 w-40 bg-white shadow-lg rounded-md z-50">
+                        <div className="absolute left-0 mt-0 w-40 bg-white shadow-lg rounded-md z-50 ">
                           {links.map(({ id, name, href, isDownload }) => (
                             <Link
                               key={id}
@@ -223,7 +246,7 @@ const Navbar = ({ setLang }) => {
                               legacyBehavior
                             >
                               <a
-                                className={`block px-4 py-2 text-sm text-[#0A529B] hover:bg-[#BF1D2F] hover:text-white duration-700`}
+                                className={`block px-4 py-2 text-sm text-[#0A529B] hover:bg-[#BF1D2F] hover:text-white duration-700 border-b border-[#BF1D2F]`}
                               >
                                 {name}
                               </a>
@@ -244,57 +267,6 @@ const Navbar = ({ setLang }) => {
                     </Link>
                   )
               )}
-            </motion.div>
-
-            {/* Logo */}
-            <motion.div
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.5 }}
-              className="flex justify-center"
-            >
-              <Link href="/" legacyBehavior>
-                <a>
-                  <Image
-                    src={LubxenLogo}
-                    alt="Lubxen"
-                    width={800}
-                    height={800}
-                    className="w-auto h-28 md:h-32"
-                  />
-                </a>
-              </Link>
-            </motion.div>
-
-            {/* Right Links */}
-            <motion.div
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.5 }}
-              className="hidden md:flex space-x-6"
-            >
-              {linksRight.map(({ id, name, href }) => (
-                <Link key={id} href={href || "#"} legacyBehavior>
-                  <a
-                    className={`my-auto ${
-                      name === "Become A Distributor"
-                        ? "text-lg text-white bg-[#BF1D2F] hover:bg-[#0A529B] duration-700 px-4 py-2 rounded-full relative before:absolute before:inset-y-[5px] before:inset-x-[45px] before:rounded-full before:border-2 before:border-[#BF1D2F] before:animate-ping before:z-[-1]"
-                        : "text-lg font-medium hover:scale-105 transition duration-200 relative after:absolute after:left-0 after:bottom-0 after:w-full after:h-1 after:bg-[#BF1D2F] after:scale-x-0 after:transition-transform after:duration-300 "
-                    } ${
-                      isActive(href)
-                        ? "text-[#BF1D2F]"
-                        : "text-[#0A529B] dark:text-white"
-                    } ${
-                      name !== "Become A Distributor"
-                        ? "hover:after:scale-x-100"
-                        : ""
-                    }`}
-                  >
-                    {name}
-                  </a>
-                </Link>
-              ))}
-
               <GoogleTranslate prefLangCookie="en" setLang={setLang} />
               {/* Dark mode toggle button */}
               <button
@@ -387,21 +359,6 @@ const Navbar = ({ setLang }) => {
                     </li>
                   )
                 )}
-                {linksRight.map(({ id, name, href }) => (
-                  <li key={id} className="px-4 py-6 text-base  w-full">
-                    <Link href={href || "#"} legacyBehavior>
-                      <a
-                        onClick={() => {
-                          setNav(false);
-                          setActiveDropdown(null);
-                        }}
-                      >
-                        {name}
-                      </a>
-                    </Link>
-                  </li>
-                ))}
-                {/* Google Translate Component in Mobile */}
 
                 <li className="px-4 py-6 text-base w-full">
                   <button
