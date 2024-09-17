@@ -19,7 +19,7 @@ export default function ClientWrapper({ children }) {
       const timer = setTimeout(() => {
         setLoading(false);
         setInitialVisit(false);
-      }, 3000);
+      }, 2100);
 
       return () => clearTimeout(timer);
     } else {
