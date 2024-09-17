@@ -21,8 +21,9 @@ const languages = [
   { label: "Chinese", value: "zh-CN", src: "https://flagcdn.com/h60/cn.png" },
 ];
 
-// Init
+// Init Google Translate
 const includedLanguages = languages.map((lang) => lang.value).join(",");
+
 function googleTranslateElementInit() {
   new window.google.translate.TranslateElement(
     {
@@ -34,20 +35,36 @@ function googleTranslateElementInit() {
 }
 
 export function GoogleTranslate({ prefLangCookie }) {
-  const [langCookie, setLangCookie] = useState(
-    decodeURIComponent(prefLangCookie)
-  );
+  const [langCookie, setLangCookie] = useState(prefLangCookie || "en");
 
-  useEffect(() => {
-    window.googleTranslateElementInit = googleTranslateElementInit;
-  }, []);
-
+  // Handle language change
   const onChange = (value) => {
     setLangCookie(value);
+    try {
+      localStorage.setItem("selectedLanguage", value); // Persist language in localStorage
+    } catch (e) {
+      console.warn("Could not save language selection:", e);
+    }
+
     const element = document.querySelector(".goog-te-combo");
-    element.value = value;
-    element.dispatchEvent(new Event("change"));
+    if (element) {
+      element.value = value;
+      element.dispatchEvent(new Event("change"));
+    }
   };
+
+  // Load selected language from localStorage if available
+  useEffect(() => {
+    try {
+      const savedLanguage = localStorage.getItem("selectedLanguage");
+      if (savedLanguage) {
+        setLangCookie(savedLanguage);
+      }
+    } catch (e) {
+      console.warn("Could not load saved language:", e);
+    }
+    window.googleTranslateElementInit = googleTranslateElementInit;
+  }, []);
 
   return (
     <div className="flex items-center">
@@ -59,6 +76,9 @@ export function GoogleTranslate({ prefLangCookie }) {
       <Script
         src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
         strategy="afterInteractive"
+        onError={() => {
+          console.error("Google Translate script failed to load.");
+        }}
       />
     </div>
   );
